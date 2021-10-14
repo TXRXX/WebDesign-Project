@@ -4,6 +4,7 @@
     position: relative;
     top: 70px;
     overflow: hidden;
+    z-index: -2;
 }
 
 .wrapper-slide {
