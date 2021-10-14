@@ -1,5 +1,10 @@
+* {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
 .container {
     position: relative;
+    margin-top: 30%;
 }
 
 #box1, #box2, #box3, #box4 {
@@ -14,3 +19,23 @@
     background-size: cover;
 }
 
+.wel-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.homepage {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.col-sm {
+    
+}

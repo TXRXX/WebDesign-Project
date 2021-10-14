@@ -1,7 +1,7 @@
 .container-slide {
     width: 100%;
-    height: calc(100vh - 70px);
-    position: relative;
+    padding-top: 70px;
+    height: 100vh;
     top: 70px;
     overflow: hidden;
     z-index: 0;
