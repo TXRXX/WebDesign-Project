@@ -4,7 +4,7 @@
     position: relative;
     top: 70px;
     overflow: hidden;
-    z-index: -2;
+    z-index: 0;
 }
 
 .wrapper-slide {
@@ -34,8 +34,8 @@
     bottom: 0;
     margin: auto;
     cursor: pointer;
-    z-index: 1;
     transition: 0.3s;
+    z-index: 3;
 }
 
 .arrow:hover {
@@ -44,9 +44,11 @@
 
 .arrow-left {
     left: 15px;
+    z-index: 3;
 }
 
 .arrow-right {
     right: 15px;
+    z-index: 3;
 }
 

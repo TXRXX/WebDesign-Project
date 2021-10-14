@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none !important;
-    font-family: 'Poppins', sans-serif;
     font-family: 'IBM Plex Sans Thai', sans-serif;
 }
 
@@ -21,6 +20,7 @@ body {
     position: fixed;
     width: 100%;
     border-bottom: 3px solid rgb(20, 39, 75);
+    z-index: 1;
 }
 
 .wrapper nav {
