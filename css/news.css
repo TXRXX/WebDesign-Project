@@ -57,6 +57,7 @@
 
 .timestamps {
     font-size: 16px;
+    font-weight: 300;
 }
 
 /* START OTHER NEWS */
@@ -92,10 +93,11 @@
     width: 100%;
     /* height: 30px; */
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.55);
     font-weight: 500;
     padding-top: 10%;
     padding-bottom: 5%;
+    border-radius: 5px 5px 0 0;
 }
 
 .news img {
