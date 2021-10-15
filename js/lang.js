@@ -7,8 +7,7 @@ const education = document.getElementById("education");
 const education2 = document.getElementById("education2");
 const admission = document.getElementById("admission");
 const admission2 = document.getElementById("admission2");
-const bachelor = document.querySelectorAll("#bachelor");
-
+const contact = document.getElementById("contact");
 let thai = false;
 
 lang.addEventListener("click", () => {
@@ -22,8 +21,7 @@ lang.addEventListener("click", () => {
     education2.textContent = "การศึกษา";
     admission.textContent = "การรับเข้าศึกษา";
     admission2.textContent = "การรับเข้าศึกษา";
-    // bachelor.textContent = "ระดับปริญญาตรี";
-    bachelor.forEach((item) => {item.textContent = "ระดับปริญญาตรี";});
+    contact.textContent = "ติดต่อ";
   } else {
     document.querySelector(".slider").style.left = "29px";
     switchLang.textContent = "EN";
@@ -32,10 +30,9 @@ lang.addEventListener("click", () => {
     about2.textContent = "ABOUT";
     education.textContent = "EDUCATION";
     education2.textContent = "EDUCATION";
-    admission.textContent = "ADDMISSION";
-    admission2.textContent = "ADDMISSION";
-    // bachelor.textContent = "BACHELOR'S DEGREE";
-    bachelor.forEach((item) => {item.textContent = "BACHELOR'S DEGREE";});
+    admission.textContent = "ADMISSION";
+    admission2.textContent = "ADMISSION";
+    contact.textContent = "CONTACT";
   }
   thai = !thai;
 })

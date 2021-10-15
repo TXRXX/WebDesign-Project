@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/35c103d6a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="./css/lang.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/scholarships.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&display=swap');
+	  * {
+		  box-sizing: border-box;
+	  }
+    </style>
+    <title>COC | Scholarships</title>
+</head>
+<body>
+  <!-- START NAV-BAR -->
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#"><img src="./img/logoC2.png" alt="" width="120"></a></div>
+        <ul class="links">
+          <li><a href="#" id="home">หน้าหลัก</a></li>
+          <li>
+            <a href="#" class="desktop-link" id="about">เกี่ยวกับ</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features" id="about2">เกี่ยวกับ</label>
+            <ul>
+              <li class="right-b"><a href="#">Drop Menu 1</a></li>
+              <li class="right-b"><a href="#">Drop Menu 2</a></li>
+              <li class="right-b"><a href="#">Drop Menu 3</a></li>
+              <li class="right-b"><a href="#">Drop Menu 4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link" id="education">การศึกษา</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services" id="education2">การศึกษา</label>
+            <ul>
+              <li class="right-b"><a href="#">ทุนการศึกษา</a></li>
+              <li class="right-b"><a href="#">ปฏิทินการศึกษา</a></li>
+              <li class="right-b"><a href="#">บริการการศึกษา</a></li>
+              <li>
+                <a href="#" class="desktop-link">หลักสูตร<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">หลักสูตร<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="#">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="#">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="#">ระดับปริญญาเอก</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link" id="admission">การรับเข้าศึกษา</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services" id="admission2">การรับเข้าศึกษา</label>
+            <ul>
+              <li class="right-b"><a href="#">ระดับปริญญาตรี</a></li>
+              <li class="right-b"><a href="#">ระดับบัณฑิตศึกษา</a></li>
+            </ul>
+          </li>
+          <li><a href="#" id="contact">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <!-- START CHANGE LANG. -->
+        <label for="" class="lang">
+          <span class="slide">
+            <span class="slide-text1">TH</span>
+            <span class="slide-text2">EN</span>
+          <span class="slider">
+            <span class="slider-text" id="selected-lang">TH</span>
+          </span>
+        </span>
+        </label>
+        <script src="./js/lang.js"></script>
+      <!-- END CHANGE LANG. -->
+
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Search.." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  <!-- END NAV-BAR -->
+
+
+  <!-- START SLIDE -->
+    
+    <div class="container-slide">
+      <span class="arrow arrow-left"><i class="fas fa-chevron-left"></i></span>
+      <div class="wrapper-slide">
+        <div class="img-container">
+          <img src="./img/banner_scholarship.jpg" alt="" class="img-slide">
+        </div>
+        <div class="img-container">
+          <img src="./img/banner_scholarship.jpg" alt="" class="img-slide">
+        </div>
+        <div class="img-container">
+          <img src="./img/banner_scholarship.jpg" alt="" class="img-slide">
+        </div>
+      </div>
+      <span class="arrow arrow-right"><i class="fas fa-chevron-right"></i></span>
+    </div>
+
+  <script src="./js/slide.js"></script>
+  <!-- END SLIDE -->
+
+ 
+
+    <!-- START MAIN NEWS -->
+    <div class="main-news" id = "scocontainer">
+
+        <div class="head-text">ทุนการศึกษา</div>
+
+        <div class="content-news">
+            
+
+            <div class="text-news">
+
+
+                <div class="desc-news">
+                    <span>
+                        ทุนการศึกษา ปริญญาตรี
+                        <ul>
+                            <li>
+                                <a class = "scolist" href="https://www.cs.kku.ac.th/index.php/th/education/scholarship?layout=edit&id=1589">
+                                    รายละเอียดทุนการศึกษาระดับปริญญาตรี 
+                                </a>
+                            </li>
+                        </ul>
+                    </span>
+
+                    <span>
+                        ทุนการศึกษา ปริญญาโท
+                        <ul>
+                            <li>
+                                <a class = "scolist" href="https://www.cs.kku.ac.th/index.php/th/education/scholarship?layout=edit&id=1499">
+                                    รับผู้สำเร็จการศึกษาระดับปริญญาตรี 
+                                </a>
+                            </li>
+                        </ul>
+                    </span>
+
+                    <span>
+                        ทุนการศึกษา ปริญญาเอก
+                        <ul>
+                            <li>
+                                <a class = "scolist" href="https://www.cs.kku.ac.th/index.php/th/education/scholarship?layout=edit&id=1500">
+                                    รับผู้สำเร็จการศึกษาระดับปริญญาโท 
+                                </a>
+                            </li>
+                        </ul>
+                    </span>
+
+                </div>
+
+                <div class="timestamps">latest update : 15/10/2564</div>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN NEWS -->
+
+    
+  
+
+    <!-- START FOOTER -->
+    <div class="footer">
+      <span class="footer-text">COPYRIGHT © 2021 ALL RIGHTS RESERVED</span> 
+    </div>
+    <!-- END FOOTER -->
+</body>
+</html>

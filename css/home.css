@@ -2,7 +2,9 @@
     font-family: 'IBM Plex Sans Thai', sans-serif;
 }
 
-.container {}
+.container {
+    
+}
 
 .wel-text {
     display: flex;
