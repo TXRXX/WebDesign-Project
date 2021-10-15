@@ -48,14 +48,14 @@
     font-size: 16px;
     position: absolute;
     left: 6px;
-    top: 3px;
+    top: 5px;
     color: rgb(170, 170, 170);
 }
 .slide-text2 {
     font-size: 16px;
     position: absolute;
     right: 5px;
-    top: 3px;
+    top: 5px;
     color: rgb(170, 170, 170);
 }
 
