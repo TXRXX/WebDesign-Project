@@ -2,9 +2,7 @@
     font-family: 'IBM Plex Sans Thai', sans-serif;
 }
 
-.container {
-
-}
+.container {}
 
 .wel-text {
     display: flex;
@@ -24,8 +22,6 @@
     flex-direction: column;
     margin-top: 5%;
 }
-
-
 
 .col-sm {
     width: 400px;
