@@ -8,6 +8,13 @@ const education2 = document.getElementById("education2");
 const admission = document.getElementById("admission");
 const admission2 = document.getElementById("admission2");
 const bachelor = document.querySelectorAll("#bachelor");
+const personnel = document.querySelectorAll("#personnel");
+const syllabus = document.querySelectorAll("#syllabus");
+const scholarship = document.querySelectorAll("#scholarship");
+const calendar = document.querySelectorAll("#calendar");
+
+let arrow = document.createElement("i");
+arrow.classList.add("fas", "fa-caret-right");
 
 let thai = false;
 
@@ -22,8 +29,11 @@ lang.addEventListener("click", () => {
     education2.textContent = "การศึกษา";
     admission.textContent = "การรับเข้าศึกษา";
     admission2.textContent = "การรับเข้าศึกษา";
-    // bachelor.textContent = "ระดับปริญญาตรี";
-    bachelor.forEach((item) => {item.textContent = "ระดับปริญญาตรี";});
+    changeTextAndAddArrow(bachelor, "ระดับปริญญาตรี");
+    changeTextAndAddArrow(personnel, "บุคลากร");
+    changeTextAndAddArrow(syllabus, "หลักสูตร");
+    changeTextAndAddArrow(scholarship, "ทุนการศึกษา");
+    changeTextAndAddArrow(calendar, "ปฏิทินการศึกษา");
   } else {
     document.querySelector(".slider").style.left = "29px";
     switchLang.textContent = "EN";
@@ -34,9 +44,18 @@ lang.addEventListener("click", () => {
     education2.textContent = "EDUCATION";
     admission.textContent = "ADDMISSION";
     admission2.textContent = "ADDMISSION";
-    // bachelor.textContent = "BACHELOR'S DEGREE";
-    bachelor.forEach((item) => {item.textContent = "BACHELOR'S DEGREE";});
+    changeTextAndAddArrow(bachelor, "BACHELOR'S DEGREE");
+    changeTextAndAddArrow(personnel, "PERSONNEL");
+    changeTextAndAddArrow(syllabus, "SYLLABUS");
+    changeTextAndAddArrow(scholarship, "SCHOLARSHIP");
+    changeTextAndAddArrow(calendar, "CALENDAR");
   }
   thai = !thai;
 })
 
+const changeTextAndAddArrow = (array, textChange) => {
+  for (let i=0; i<array.length; i++) {
+    array[i].textContent = textChange;
+    array[i].appendChild(arrow.cloneNode(true));
+  }
+}
