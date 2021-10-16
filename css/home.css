@@ -43,11 +43,11 @@
 }
 
 .image2 {
-    background-image: url("../img/quicklink_5.jpg");
+    background-image: url("../img/quicklink_6.jpg");
 }
 
 .image3 {
-    background-image: url("../img/quicklink_6.jpg");
+    background-image: url("../img/quicklink_5.jpg");
 }
 
 .image4 {
@@ -56,7 +56,7 @@
 
 .hello {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 0;
     bottom: 0;
     right: 0;

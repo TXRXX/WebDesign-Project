@@ -19,6 +19,7 @@ const researchGroup = document.getElementById("researchGroup");
 const MOU = document.getElementById("MOU");
 const contact = document.getElementById("contact");
 const weltext = document.getElementById("wel-text");
+const history = document.getElementById("history");
 // const research = document.getElementById("research");
 // weltext.setAttribute('style', 'white-space: pre;');
 
@@ -63,6 +64,7 @@ lang.addEventListener("click", () => {
     researchGroup.textContent = "ศูนย์วิจัยและกลุ่มวิจัย";
     MOU.textContent = "ความร่วมมือ MOU";
     contact.textContent = "ติดต่อ";
+    history.textContent = "ประวัติ";
     // research.textContent = "งานวิจัย";
     // weltext.innerHTML = "ยินดีต้อนรับสู่<br>วิทยาลัยการคอมพิวเตอร์";
     // weltext.textContent = "ยินดีต้อนรับสู่ \r\n วิทยาลัยการคอมพิวเตอร์";
@@ -99,6 +101,7 @@ lang.addEventListener("click", () => {
     researchGroup.textContent = "RESEARCH GROUP";
     MOU.textContent = "MOU";
     contact.textContent = "CONTACT";
+    history.textContent = "HISTORY";
     // research.textContent = "RESEARCH";
     // weltext.innerHTML = "WELCOME TO<br>COLLEGE OF COMPUTING";
     // weltext.textContent = "WELCOME TO\r\nCOLLEGE OF COMPUTING";
