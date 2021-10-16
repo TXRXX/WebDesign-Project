@@ -22,7 +22,7 @@ const weltext = document.getElementById("wel-text");
 const history = document.getElementById("history");
 
 // const research = document.getElementById("research");
-// weltext.setAttribute('style', 'white-space: pre;');
+
 
 const bachelor = document.querySelectorAll("#bachelor");
 const personnel = document.querySelectorAll("#personnel");
@@ -66,7 +66,8 @@ lang.addEventListener("click", () => {
     MOU.textContent = "ความร่วมมือ MOU";
     contact.textContent = "ติดต่อ";
     history.textContent = "ประวัติ";
-    document.getElementById("history-th").src="./img/banner/history_th.jpg";
+    researchGroup.textContent = "งานวิจัย";
+    // document.getElementById("history-th").src="./img/banner/history_th.jpg";
     // research.textContent = "งานวิจัย";
     // weltext.innerHTML = "ยินดีต้อนรับสู่<br>วิทยาลัยการคอมพิวเตอร์";
     // weltext.textContent = "ยินดีต้อนรับสู่ \r\n วิทยาลัยการคอมพิวเตอร์";
@@ -105,7 +106,7 @@ lang.addEventListener("click", () => {
     MOU.textContent = "MOU";
     contact.textContent = "CONTACT";
     history.textContent = "HISTORY";
-    document.getElementById("history-th").src="./img/banner/history_en.jpg";
+    // document.getElementById("history-th").src="./img/banner/history_en.jpg";
     // research.textContent = "RESEARCH";
     // weltext.innerHTML = "WELCOME TO<br>COLLEGE OF COMPUTING";
     // weltext.textContent = "WELCOME TO\r\nCOLLEGE OF COMPUTING";
