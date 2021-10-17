@@ -2,15 +2,13 @@
     font-family: 'IBM Plex Sans Thai', sans-serif;
 }
 
-.container {
-    
-}
+.container {}
 
 .wel-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     text-align: center;
     margin-bottom: 5%;
@@ -33,33 +31,39 @@
 
 .image {
     background-size: cover;
-    width: 100%;
-    height: 100%;
-    filter: blur(2px);
+    width: 300px;
+    height: 300px;
+    /* filter: blur(2px); */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .image1 {
-    background-image: url("../img/slide_1.jpg");
+    background-image: url("../img/quicklink_1.jpg");
 }
 
 .image2 {
-    background-image: url("../img/slide_1.jpg");
+    background-image: url("../img/quicklink_6.jpg");
 }
 
 .image3 {
-    background-image: url("../img/slide_1.jpg");
+    background-image: url("../img/quicklink_5.jpg");
 }
 
 .image4 {
-    background-image: url("../img/slide_1.jpg");
+    background-image: url("../img/quicklink_4.jpg");
 }
 
 .hello {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 0;
     bottom: 0;
     right: 0;
     text-align: center;
-    font-size: 60px;
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
 }

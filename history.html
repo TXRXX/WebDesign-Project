@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/35c103d6a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="./css/lang.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/history.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&display=swap');
+	  * {
+		  box-sizing: border-box;
+	  }
+    </style>
+    <title>COLLEGE OF COMPUTING @KKU</title>
+</head>
+<body>
+  <!-- START NAV-BAR -->
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="./index.html"><img src="./img/logoC.png" alt="" width="120"></a></div>
+        <ul class="links">
+          <li><a href="./index.html" id="home">หน้าหลัก</a></li>
+          <li>
+            <a href="#" class="desktop-link" id="about">เกี่ยวกับ</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features" id="about2">เกี่ยวกับ</label>
+            <ul>
+              <li class="right-b"><a href="./history.html" id="history">ประวัติ</a></li>
+              <li class="right-b"><a href="./administrators.html" id="admins">คณะผู้บริหาร</a></li>
+              <li>
+                <a href="#" class="desktop-link" id="personnel">บุคลากร<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items" id="personnel">บุคลากร<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./personel-cs.html" id="T-CS">คณาจารย์ประจำหลักสูตร CS</a></li>
+                  <li class="right-b"><a href="./personel-it.html" id="T-IT">คณาจารย์ประจำหลักสูตร IT</a></li>
+                  <li class="right-b"><a href="./personel-gis.html" id="T-GIS">คณาจารย์ประจำหลักสูตร GIS</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link" id="education">การศึกษา</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services" id="education2">การศึกษา</label>
+            <ul>
+              
+              <li>
+                <a href="#" class="desktop-link" id="syllabus">หลักสูตร<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items2">
+                <label for="show-items2" id="syllabus">หลักสูตร<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./syllabus-bachelor.html" id="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./syllabus-master.html" id="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./syllabus-doctor.html" id="doctor-text">ระดับปริญญาเอก</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link" id="scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items3">
+                <label for="show-items3" id="scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./scholarship-bachelor.html" id="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./scholarship-master.html" id="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./scholarship-doctor.html" id="doctor-text">ระดับปริญญาเอก</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link" id="calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items4">
+                <label for="show-items4" id="calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./calendar-grad.html" id="grad">ระดับบัณฑิตศึกษา</a></li>
+                  <li class="right-b"><a href="./calendar-bachelor.html" id="bachelor-text">ระดับปริญญาตรี</a></li>
+                </ul>
+              </li>
+              <li class="right-b"><a href="https://reg.kku.ac.th/" target="_blank" id="service">บริการการศึกษา</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link" id="admission">การรับเข้าศึกษา</a>
+            <input type="checkbox" id="show-services2">
+            <label for="show-services2" id="admission2">การรับเข้าศึกษา</label>
+            <ul>
+              <li>
+                <a href="#" class="desktop-link" id="bachelor">ระดับปริญญาตรี<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items5">
+                <label for="show-items5" id="bachelor">ระดับปริญญาตรี<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./round2.html" id="round2">รอบที่ 2</a></li>
+                  <li class="right-b"><a href="./round2-2.html" id="round2-2">รอบที่ 2.2</a></li>
+                  <li class="right-b"><a href="./round3.html" id="round3">รอบที่ 3</a></li>
+                </ul>
+              </li>
+              <li class="right-b"><a href="https://gs.kku.ac.th" target="_blank" id="grad">ระดับบัณฑิตศึกษา</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#" class="desktop-link" id="research">งานวิจัย</a>
+            <input type="checkbox" id="show-services3">
+            <label for="show-services3" id="research">งานวิจัย</label>
+            <ul>
+              <li class="right-b"><a href="./research.html" id="researchGroup">ศูนย์วิจัยและกลุ่มวิจัย</a></li>
+              <li class="right-b"><a href="./mou.html" id="MOU">ความร่วมมือ MOU</a></li>
+            </ul>
+          </li>
+          <li><a href="./contact.html" id="contact">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <!-- START CHANGE LANG. -->
+        <label for="" class="lang">
+          <span class="slide">
+            <span class="slide-text1">TH</span>
+            <span class="slide-text2">EN</span>
+          <span class="slider">
+            <span class="slider-text" id="selected-lang">TH</span>
+          </span>
+        </span>
+        </label>
+      <!-- END CHANGE LANG. -->
+
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Search.." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  <!-- END NAV-BAR -->
+
+
+<!--***** START CONTENT *****-->
+
+<!-- START BANNER -->
+  <div class="banner">
+    <img src="./img/banner/history_th.jpg" alt="history_banner" class="banner-img" id="history-th">
+  </div>
+<!-- END BANNER -->
+
+<div class="container container-content">
+  <div class="row">
+    <div class="col-sm">
+        <h1>ประวัติความเป็นมา</h1>
+        <p>สาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น จัดตั้งอย่างเป็นทางการเมื่อวันที่ 23 มีนาคม 2537 ผลิตบัณฑิตระดับปริญญาตรีมาแล้ว 21 รุ่น และปริญญาโทมาแล้วมากกว่า 10 รุ่น ปัจจุบันสาขาวิชาเปิดสอนหลักสูตรทั้งระดับปริญญาตรี ปริญญาโท และปริญญาเอก รวม 3 สาขาวิชา คือ สาขาวิชาวิทยาการคอมพิวเตอร์ สาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร และสาขาวิชาภูมิสารสนเทศศาสตร์ มีจำนวนนักศึกษารวมประมาณ 1,600 คน แบ่งเป็นนักศึกษาระดับปริญญาตรี 1,300 คน และระดับปริญญาโท และปริญญาเอก 300 คน มี อาจารย์ประจำ รวมทั้งสิ้น 37 คน และ อาจารย์ชาวต่างชาติสอนเสริมภาษาอังกฤษ 1 คน
+          <p>สาขาวิชาแบ่งงานวิจัยออกเป็น 5 กลุ่มวิจัย เพื่อรองรับนักศึกษาในการทำวิจัยให้มีความเชี่ยวชาญเฉพาะด้าน และผลิตผลงานวิจัยเพื่อตีพิมพ์ในวารสารทั้งระดับประเทศและระดับนานาชาติ และสาขาวิชามีห้องปฏิบัติการเพื่อรองรับการเรียนการสอนและการวิจัยทั้งสิ้น 12 ห้อง </p> 
+          <p>สาขาวิชาวิทยาการคอมพิวเตอร์ มีความมุ่งมั่นที่จะผลิตบัณฑิตที่มีคุณภาพ มีคุณธรรมจริยธรรม และมีความเชี่ยวชาญเฉพาะด้าน ตรงกับความต้องการของผู้ประกอบการ โดยความร่วมมือกับหน่วยงานภายนอกแบบไตรภาคี ประกอบด้วยสาขาวิชา (ผู้ผลิตบัณฑิต) บริษัทเจ้าของผลิตภัณฑ์ (ผู้จัดหาเครื่องมือ) และบริษัทซอฟต์แวร์ (ผู้ใช้บัณฑิต) ซึ่งทั้ง 3 องค์กรร่วมมือกันอย่างใกล้ชิด เพื่อผลิตบัณฑิตที่พึงประสงค์ อีกทั้งลงนามความร่วมมือกับหน่วยงานภายนอก เช่น สวทช เพื่อให้สาขาวิชาเป็นศูนย์สอบมาตรฐานวิชาชีพไอที (Information Technology Professional Examination—ITPE) และ ลงนามความร่วมมือกับ 12 สถาบันในภาคตะวันออกเฉียงเหนือ เพื่อร่วมมือพัฒนาบุคลากรและงานวิจัยด้าน IT</p> 
+          <br> 
+          <br><h5>1. สถานที่ตั้ง</h4>
+              <p>สาขาวิชาวิทยาการคอมพิวเตอร์ ตั้งอยู่ ณ อาคารวิทยาศาสตร์ SC.06 ชั้น 3 คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น</p> 
+              <p>โทรศัพท์. 0-4336-2188-90 ต่อ 101-105 โทรสาร. 0-4334-2910 </p>
+          <br><h5>2. ปรัชญา</h5> 
+          <p>วิทยา จริยา ปัญญา </p>
+          <br><h5>3. ปณิธาน</h5> 
+          <p>สาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น ใช้ปรัชญาของมหาวิทยาลัยเป็นปรัชญาของภาคฯ คือ วิทยา จริยา ปัญญา เพื่อให้มีความสอดคล้องและมีทิศทางการพัฒนาการศึกษาและการดำเนินงานในทิศทางเดียวกัน </p>
+          <br><h5>4. วิสัยทัศน์ (Vision)</h5> 
+          <p>สาขาวิชาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยขอนแก่น มุ่งพัฒนาไปสู่หน่วยงานการศึกษาที่มีความเป็นเลิศ ที่จะผลิตบัณฑิตทั้งระดับปริญญาตรีและระดับบัณฑิตศึกษาทางด้านวิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศ เพื่อเป็นแหล่งความรู้และบริการวิชาการ แก่สังคมในภูมิภาคภาคตะวันออกเฉียงเหนือ ประเทศชาติและอนุภูมิภาคลุ่มน้ำโขง อันจะนำไปสู่มาตรฐานระดับสากล</p>
+          <br><h5>5. พันธกิจ (Mission)</h5> 
+          <p>มุ่งผลิตบัณฑิตทางด้านวิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศที่เพียบพร้อมด้วยความรู้ สติปัญญา จริยธรรม การสอนวิชาพื้นฐานทางด้านวิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศแก่นักศึกษาคณะต่างๆ ของมหาวิทยาลัยขอนแก่น การวิจัยเพื่อสร้างองค์ความรู้ให้เกิดการพัฒนาที่สมดุลและยั่งยืน การบริการวิชาการแก่สังคมในภาคตะวันออกเฉียงเหนือ และการเชื่อมโยงเครือข่ายความร่วมมือ และส่งเสริมทางวิชาการกับประเทศต่างๆ ในอนุภูมิภาคลุ่มน้ำโขงและภูมิภาคอื่น</p>
+          <br><h5>6. วัตถุประสงค์</h5> 
+          <p>ผลิตบัณฑิตและมหาบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์ สาขาวิชาเทคโนโลยีสารสนเทศ และสาขาวิชาการรับรู้จากระยะไกลและสารสนเทศภูมิศาสตร์
+            ให้บริการจัดการเรียนการสอนรายวิชาพื้นฐานทางด้านคอมพิวเตอร์และเทคโนโลยีสารสนเทศแก่คณะวิชาต่างๆ ภายในมหาวิทยาลัยขอนแก่น
+            วิจัย ศึกษาค้นคว้า สร้างองค์ความรู้ให้เกิดการพัฒนา และนำความรู้ เทคโนโลยีไปประยุกต์ ถ่ายทอดในการพัฒนาศักยภาพของประเทศเพื่อการแข่งขัน
+            ให้บริการวิชาการ การวิเคราะห์ การให้คำปรึกษา การฝึกอบรม ทางด้านเทคโนโลยีสารสนเทศที่ทันสมัยต่อสังคม
+            ทำนุบำรุงศิลปวัฒนธรรม ด้วยการร่วมอนุรักษ์สิ่งที่ดีงามของสังคม และประยุกต์เทคโนโลยีใหม่ให้สอดคล้องต่อการอนุรักษ์ศิลปวัฒนธรรมของไทย
+          </p>
+          <br>
+          <p>วิทยาการคอมพิวเตอร์เป็นศาสตร์แขนงหนึ่งทางวิทยาศาสตร์ที่เกี่ยวข้องในการพัฒนาเทคโนโลยีให้ก้าวหน้าเพื่อสร้างสรรค์สังคมมนุษย์ให้ได้รับสารสนเทศที่เป็นประโยชน์ต่อการดำเนินชีวิต บัณฑิตสาขาวิทยาการคอมพิวเตอร์ ต้องมีทักษะและความชำนาญด้านการพัฒนาโปรแกรมคอมพิวเตอร์เป็นอย่างดี มีความเชี่ยวชาญในการวิเคราะห์ระบบงาน เพื่อการออกแบบระบบให้สอดคล้องผสมผสานระหว่างมนุษย์และระบบคอมพิวเตอร์ ให้ประสานร่วมกันอย่างเป็นหนึ่งเดียว มีลักษณะนิสัยชอบศึกษา ค้นคว้าความรู้ วิชาการใหม่ๆ เพื่อที่ให้สามารถนำวิทยาการดังกล่าวมาประยุกต์อย่างเหมาะสมต่อการงาน มีสำนึกในจรรยาบรรณของวิชาชีพ</p>
+        </p>
+    </div>
+  </div>
+</div>
+
+
+<!--***** END CONTENT *****-->
+  
+
+    <!-- START FOOTER -->
+    <div class="footer">
+      <span class="footer-text">COPYRIGHT © 2021 ALL RIGHTS RESERVED</span> 
+    </div>
+    <!-- END FOOTER -->
+  <script src="./js/lang.js"></script>
+  </body>
+</html>

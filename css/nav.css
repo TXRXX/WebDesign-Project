@@ -150,7 +150,7 @@ nav .content .links {
 
 .content .links ul {
     position: absolute;
-    background: #ffffff;
+    background: rgb(255, 255, 255,1);
     /* top: 80px; */
     z-index: -1;
     opacity: 0;
@@ -258,7 +258,15 @@ nav .content .links {
         max-height: 0px;
         overflow: hidden;
     }
-    .content .links #show-features:checked~ul, .content .links #show-services:checked~ul, .content .links #show-items:checked~ul {
+    .content .links #show-features:checked~ul, 
+    .content .links #show-services:checked~ul,
+    .content .links #show-services2:checked~ul, 
+    .content .links #show-services3:checked~ul, 
+    .content .links #show-items:checked~ul,
+    .content .links #show-items2:checked~ul, 
+    .content .links #show-items3:checked~ul, 
+    .content .links #show-items4:checked~ul,
+    .content .links #show-items5:checked~ul {
         max-height: 100vh;
     }
     .content .links ul li {
@@ -290,22 +298,7 @@ nav .content .links {
     }
 }
 
-.dummy-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    z-index: -1;
-    padding: 0 20px;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
-
-.dummy-text h2 {
-    font-size: 45px;
-    margin: 5px 0;
-}
-
 .fa-caret-right {
-    margin-left: 5px;
+    margin-top: 5px;
+    float: right;
 }
