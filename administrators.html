@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/administrators.css">
+    <link rel="stylesheet" href="./css/banner.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&display=swap');
 	  * {
@@ -144,10 +145,18 @@
 
 
 <!--***** START CONTENT *****-->
+
+  <!-- START BANNER -->
+  <div class="banner">
+    <img src="./img/banner/history_th.jpg" alt="history_banner" class="banner-img" id="history-th">
+  </div>
+  <!-- END BANNER -->
+
   <div class="container">
     <div class="row">
-      <div class="col-sm">
-        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <div class="col-sm hidethis"></div>
+      <div class="col-sm colGra">
+        <div class="card cardGra" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <img src="./img/administrators/DrSirapat.jpg" class="card-img-top" alt="Vice President">
           <p class="card-text">
             <h4>รศ.ดร.สิรภัทร เชี่ยวชาญวัฒนา</h4>
@@ -155,6 +164,7 @@
           </p>
         </div>
       </div>
+      <div class="rowGra"></div>
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -166,23 +176,111 @@
               <img src="./img/administrators/DrSirapat.jpg" class="card-img-top" alt="Vice President">
               <br><br>
               <h5>รศ.ดร.สิรภัทร เชี่ยวชาญวัฒนา</h5>
-              <h6>E-MAIL : N/A</h6>
+              <p>E-MAIL : N/A</p>
             </div>
           </div>
         </div>
       </div>
-      
-
+      <div class="col-sm hidethis"></div>
+    </div>
+    <div class="row">
+      <!--  -->
       <div class="col-sm">
-        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <img src="./img/administrators/DrSirapat.jpg" class="card-img-top" alt="Vice President">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+          <img src="./img/administrators/DrWaranya.jpg" class="card-img-top" alt="Vice President">
           <p class="card-text">
-            <h4>รศ.ดร.สิรภัทร เชี่ยวชาญวัฒนา</h4>
-            <h5>หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
+            <h4>อ.ดร.วรัญญา วรรณศรี</h4>
+            <p>รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</p>
+            <p>ฝ่ายแผนยุทธศาตร์</p>
           </p>
         </div>
       </div>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/administrators/DrWaranya.jpg" class="card-img-top" alt="Vice President">
+              <br><br>
+              <h5>อ.ดร.วรัญญา วรรณศรี</h5>
+              <p>ฝ่ายแผนยุทธศาตร์</p>
+              <p>E-MAIL : N/A</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-sm">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+          <img src="./img/administrators/DrChitSuta.jpg" class="card-img-top" alt="Vice President">
+          <p class="card-text">
+            <h4>ผศ.ดร.ชิตสุธา สุ่มเล็ก</h4>
+            <p>รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</p>
+            <p>ฝ่ายวิชาการ</p>
+          </p>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/administrators/DrChitSuta.jpg" class="card-img-top" alt="Vice President">
+              <br><br>
+              <h5>ผศ.ดร.ชิตสุธา สุ่มเล็ก</h5>
+              <p>ฝ่ายวิชาการ</p>
+              <p>E-MAIL : N/A</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+          <img src="./img/administrators/DrWachirawut.jpg" class="card-img-top" alt="Vice President">
+          <p class="card-text">
+            <h4>อ.ดร.วชิราวุธ ธรรมวิเศษ</h4>
+            <p>รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</p>
+            <p>ฝ่ายสารสนเทศ</p>
+          </p>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/administrators/DrWachirawut.jpg" class="card-img-top" alt="Vice President">
+              <br><br>
+              <h5>อ.ดร.วชิราวุธ ธรรมวิเศษ</h5>
+              <p>ฝ่ายสารสนเทศ</p>
+              <p>E-MAIL : N/A</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!--  -->
+      <div class="col-sm">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+          <img src="./img/administrators/Nakorn.jpg" class="card-img-top" alt="Vice President">
+          <p class="card-text">
+            <h4>ผศ.ดร.ณกร วัฒนกิจ</h4>
+            <p>รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</p>
+            <p>ฝ่ายพัฒนานักศึกษาและศิษย์เก่าสัมพันธ์</p>
+          </p>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -190,25 +288,27 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <img src="./img/administrators/DrSirapat.jpg" class="card-img-top" alt="Vice President">
+              <img src="./img/administrators/Nakorn.jpg" class="card-img-top" alt="Vice President">
               <br><br>
               <h5>รศ.ดร.สิรภัทร เชี่ยวชาญวัฒนา</h5>
-              <h6>E-MAIL : N/A</h6>
+              <p>ฝ่ายพัฒนานักศึกษาและศิษย์เก่าสัมพันธ์</p>
+              <p>E-MAIL : N/A</p>
             </div>
           </div>
+        </div>
       </div>
-
-      
+      <!--  -->
       <div class="col-sm">
-        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <img src="./img/administrators/DrSirapat.jpg" class="card-img-top" alt="Vice President">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+          <img src="./img/administrators/AjSaran.jpg" class="card-img-top" alt="Vice President">
           <p class="card-text">
-            <h4>รศ.ดร.สิรภัทร เชี่ยวชาญวัฒนา</h4>
-            <h5>หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
+            <h4>อ.ศรัณย์ อภิชนตระกูล</h4>
+            <p>หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</p>
+            <p>ฝ่ายวิจัย</p>
           </p>
         </div>
       </div>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -216,14 +316,41 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <img src="./img/administrators/DrSirapat.jpg" class="card-img-top" alt="Vice President">
+              <img src="./img/administrators/AjSaran.jpg" class="card-img-top" alt="Vice President">
               <br><br>
-              <h5>รศ.ดร.สิรภัทร เชี่ยวชาญวัฒนา</h5>
-              <h6>E-MAIL : N/A</h6>
+              <h5>อ.ศรัณย์ อภิชนตระกูล</h5>
+              <p>ฝ่ายวิจัย</p>
+              <p>E-MAIL : N/A</p>
             </div>
           </div>
+        </div>
       </div>
-      
+      <div class="col-sm">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+          <img src="./img/administrators/KPraiwan.jpg" class="card-img-top" alt="Vice President">
+          <p class="card-text">
+            <h4>คุณไพรวัลย์ คุณาสถิต์ชัย</h4>
+            <p>เลขาณุการวิชาวิทยาการคอมพิวเตอร์</p>
+          </p>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">เลขาณุการวิชาวิทยาการคอมพิวเตอร์</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/administrators/KPraiwan.jpg" class="card-img-top" alt="Vice President">
+              <br><br>
+              <h5>รศ.ดร.สิรภัทร เชี่ยวชาญวัฒนา</h5>
+              <p>เลขาณุการวิชาวิทยาการคอมพิวเตอร์</p>
+              <p>E-MAIL : N/A</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
