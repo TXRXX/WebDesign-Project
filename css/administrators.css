@@ -48,6 +48,10 @@
     background-size: cover;
 }
 
+.cardGra:hover {
+    box-shadow: 0px 5px 15px #d4ebff;
+}
+
 .animation-rowGra {
     animation: showGra .7s;
 }
