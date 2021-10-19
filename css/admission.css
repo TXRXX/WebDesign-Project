@@ -25,12 +25,34 @@ a#research_entersite:hover{
     border: solid #d1d1d1 1px;
 }
 
-
-
-img#negistda{
-    margin-top: 1rem;
-    width: auto;
-    margin-right: 2rem;
-
+table, td, th {
+    text-align: left;
+    padding: 0.5rem;
+    border: 1px solid black;
 }
+
+td, th{
+    width: fit-content;
+}
+
+
+
+td:hover, th:hover {
+    padding: 0.5rem;
+    border: 1px solid black;
+    background-color: #dddddd;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+  }
+
+li.admissionlink{
+    list-style-type: none;
+    
+}
+
+
+
 
