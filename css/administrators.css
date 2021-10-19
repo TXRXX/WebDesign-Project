@@ -80,4 +80,7 @@ background: linear-gradient(135deg, rgba(255,255,255,1) 10%, rgba(46,74,98,1) 10
     .hidethis {
         display: none;
     }
+    .rowGra {
+        display: none;
+    }
 }
