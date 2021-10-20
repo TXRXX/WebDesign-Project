@@ -1,0 +1,16 @@
+.container-content {
+    margin-top: 5%;
+}
+
+.container-content .row .col-sm p{
+    text-indent: 3rem;
+}
+
+.container-content .row .col-sm {
+    padding: 4rem;
+}
+
+
+ul{
+    list-style-type: none;
+}
