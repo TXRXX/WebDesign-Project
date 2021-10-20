@@ -70,6 +70,7 @@ lang.addEventListener("click", () => {
     changeText(grad, "ระดับบัณฑิตศึกษา");
     changeText(about, "เกี่ยวกับ");
     changeText(education, "การศึกษา");
+
   } else {
     document.querySelector(".slider").style.left = "29px";
     switchLang.textContent = "EN";
