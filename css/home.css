@@ -2,6 +2,10 @@
     font-family: 'IBM Plex Sans Thai', sans-serif;
 }
 
+*:focus {
+    outline: none;
+}
+
 .container {}
 
 .wel-text {

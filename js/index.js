@@ -9,6 +9,7 @@ langSwitch.addEventListener("click", () => {
     document.querySelector("#research-ql").textContent = "วิจัย";
     document.querySelector(".head-text").textContent = "ข่าวประชาสัมพันธ์";
     document.querySelector(".viewallnews").textContent = "ดูข่าวทั้งหมด";
+    document.querySelector(".readmore").textContent = "อ่านเพิ่มเติม";
   } else {
     document.querySelector("#wel-text").innerHTML = "WELCOME TO<br>COLLEGE OF COMPUTING";
     document.querySelector("#news-ql").textContent = "NEWS";
@@ -17,6 +18,7 @@ langSwitch.addEventListener("click", () => {
     document.querySelector("#research-ql").textContent = "RESEARCH";
     document.querySelector(".head-text").textContent = "NEWS";
     document.querySelector(".viewallnews").textContent = "VIEW ALL NEWS";
+    document.querySelector(".readmore").textContent = "READ";
   }
   isThai = !isThai;
 });

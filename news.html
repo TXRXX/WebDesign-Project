@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/35c103d6a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="./css/lang.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/news-page.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/breadcrumb.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&display=swap');
+	  * {
+		  box-sizing: border-box;
+	  }
+    </style>
+    <title>C² | News</title>
+</head>
+<body>
+  <!-- START NAV-BAR -->
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="./index.html"><img src="./img/logoC2.png" alt="" width="120"></a></div>
+        <ul class="links">
+          <li><a href="./index.html" class="home">หน้าหลัก</a></li>
+          <li>
+            <a href="#" class="desktop-link about">เกี่ยวกับ</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features" class="about">เกี่ยวกับ</label>
+            <ul>
+              <li class="right-b"><a href="./history.html" class="history">ประวัติ</a></li>
+              <li class="right-b"><a href="./administrators.html" class="admins">คณะผู้บริหาร</a></li>
+              <li>
+                <a href="#" class="desktop-link personnel">บุคลากร<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items" class="personnel">บุคลากร<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./personel-cs.html" id="T-CS">คณาจารย์ประจำหลักสูตร CS</a></li>
+                  <li class="right-b"><a href="./personel-it.html" id="T-IT">คณาจารย์ประจำหลักสูตร IT</a></li>
+                  <li class="right-b"><a href="./personel-gis.html" id="T-GIS">คณาจารย์ประจำหลักสูตร GIS</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link education">การศึกษา</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services" class="education">การศึกษา</label>
+            <ul>
+              
+              <li>
+                <a href="#" class="desktop-link syllabus">หลักสูตร<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items2">
+                <label for="show-items2" class="syllabus">หลักสูตร<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./syllabus-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./syllabus-master.html" class="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./syllabus-doctor.html" class="doctor-text">ระดับปริญญาเอก</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items3">
+                <label for="show-items3" class="scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./scholarship-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./scholarship-master.html" class="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./scholarship-doctor.html" class="doctor-text">ระดับปริญญาเอก</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items4">
+                <label for="show-items4" class="calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./calendar-grad.html" class="grad">ระดับบัณฑิตศึกษา</a></li>
+                  <li class="right-b"><a href="./calendar-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                </ul>
+              </li>
+              <li class="right-b"><a href="https://reg.kku.ac.th/" target="_blank" id="service">บริการการศึกษา</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link" id="admission">การรับเข้าศึกษา</a>
+            <input type="checkbox" id="show-services2">
+            <label for="show-services2" id="admission2">การรับเข้าศึกษา</label>
+            <ul>
+              <li>
+                <li class="right-b"><a href="./admission.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                <li class="right-b"><a href="https://gs.kku.ac.th" target="_blank" class="grad">ระดับบัณฑิตศึกษา</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#" class="desktop-link research">งานวิจัย</a>
+            <input type="checkbox" id="show-services3">
+            <label for="show-services3" class="research">งานวิจัย</label>
+            <ul>
+              <li class="right-b"><a href="./research.html" id="researchGroup">ศูนย์วิจัยและกลุ่มวิจัย</a></li>
+              <li class="right-b"><a href="./mou.html" id="MOU">ความร่วมมือ MOU</a></li>
+            </ul>
+          </li>
+          <li><a href="./contact.html" id="contact">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <!-- START CHANGE LANG. -->
+        <label class="lang">
+          <span class="slide">
+            <span class="slide-text1">TH</span>
+            <span class="slide-text2">EN</span>
+          <span class="slider">
+            <span class="slider-text" id="selected-lang">TH</span>
+          </span>
+        </span>
+        </label>
+      <!-- END CHANGE LANG. -->
+
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Search.." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  <!-- END NAV-BAR -->
+
+
+<!--***** START CONTENT *****-->
+
+  <!-- START BANNER -->
+  <div class="banner" data-aos="flip-left">
+    <img src="./img/banner/news_th.jpg" alt="news_banner" class="banner-img" id="news-th">
+  </div>
+  <!-- END BANNER -->
+  <p class="breadcrumb">หน้าหลัก > ข่าวประชาสัมพันธ์</p>
+  <h1 class="text-news">ข่าวประชาสัมพันธ์</h1>
+
+  <div class="container">
+    <div class="row">
+      
+      <!--  -->
+      <div class="col-sm" data-aos="fade-up">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          <img src="./img/news/top10-2.jpg" class="card-img-top" alt="">
+          <p class="card-text">
+            <p>CSs@KKU ติด TOP10 สถาบันการศึกษาของรัฐด้านไอทีและเทคโนโลยีสารสนเทศ</p>
+          </p>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/news/top10-2.jpg" class="card-img-top" alt="Vice President">
+              <br><br>
+              <h5>CSs@KKU ติด TOP10 สถาบันการศึกษาของรัฐด้านไอทีและเทคโนโลยีสารสนเทศ</h5>
+              <p class="news-content">สาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น ติด TOP10 สถาบันการศึกษาของรัฐด้านไอทีและเทคโนโลยีสารสนเทศ ตามโครงการจัดอันดับมหาวิทยาลัยไทยยอดนิยม โดยสถาบันจัดอันดับด้านการศึกษา Thailand Education Ranking (TER) ซึ่งมี บริษัท อัพบีน จำกัด เป็นผู้สำรวจความคิดเห็นของนักเรียน นักศึกษา ผู้ปกครอง และประชาชนทั่วประเทศ  จำนวน 7,720 คน (สำรวจทางออนไลน์)  ซึ่งการจัดอันดับมหาวิทยาลัยไทยยอดนิยม ประจำปี 2563 ระหว่างวันที่ 1 กันยายน – 31 ธันวาคม 2563  ทั้งนี้  TER ได้รวบรวมผลการจัดอันดับสถาบันการศึกษาในประเทศไทย อาทิเช่น มหาวิทยาลัยไทยยอดนิยม The Most Popular Universities in Thailand ซึ่งมีเกณฑ์การจัดอันดับ ดังนี้</p>
+              <p class="news-content">1.วัดความนิยมจากคะแนนโหวตของนักเรียน นักศึกษา และประชาชนทั่วประเทศ เก็บข้อมูลแบ่งตามหมวดคำถามความสนใจของผู้เรียน เช่น มหาวิทยาลัยยอดนิยมด้านวิศวกรรมศาสตร์ ด้านบริหาร-บัญชี ด้านนิเทศศาสตร์</p>
+              <p class="news-content">2.เก็บข้อมูลแบ่งตามกลุ่มมหาวิทยาลัย เช่น มหาวิทยาลัยรัฐ มหาวิทยาลัยเอกชน มหาวิทยาลัยราชภัฏ เก็บข้อมูลและประกาศผลปีละ 1 ครั้ง (เก็บข้อมูลระหว่างเดือนมีนาคม – ธันวาคม และประกาศผลการโหวตในเดือนมกราคม – กุมภาพันธ์ของทุกปี)  ทั้งนี้เพื่อใช้เป็นส่วนหนึ่งของข้อมูลให้นักเรียน นักศึกษา ผู้ปกครอง และประชาชนทั่วประเทศ ใช้เป็นข้อมูลประกอบการตัดสินใจเลือกศึกษาต่อในระดับมหาวิทยาลัยต่อไป</p>
+              <p class="news-content">รศ. ดร.สิรภัทร เชี่ยวชาญวัฒนา หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น ได้กล่าวว่า รู้สึกมีความยินดีเป็นอย่างยิ่งที่ นักเรียน นักศึกษา ผู้ปกครอง และประชาชนทั่วประเทศ  กว่า 7,720 คนได้ให้ความนิยม มหาวิทยาลัยขอนแก่นของเรา  โดยเฉพาะอย่างยิ่ง สาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ ซึ่งเป็นสาขาวิชาที่มุ่งพัฒนาบัณฑิตด้านเทคโนโลยีดิจิทัลออกสู่สังคม เราจะพัฒนาคุณภาพด้านวิชาการ นวัตกรรม งานวิจัยที่มีคุณภาพ เพื่อรับใช้สังคมต่อไป</p>
+              <img src="./img/news/top10-3.jpg" alt="" class="img-fluid">
+              <p class="time">17 มีนาคม 2564</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <!--  -->
+      <div class="col-sm" data-aos="fade-up">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+          <img src="./img/news/sadness.jpg" class="card-img-top" alt="">
+          <p class="card-text">
+            <p>ผศ. ดร.สุมณฑา เกษมวิลาศ ได้รับเชิญจากโรงพยาบาลพระศรีมหาโพธิ์ เป็นวิทยากรในงานประชุมเชิงปฏิบัติการเพื่อพัฒนาต้นแบบ...</p>
+        </p>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/news/sadness.jpg" class="card-img-top" alt="">
+              <br><br>
+              <h5>ผศ. ดร.สุมณฑา เกษมวิลาศ ได้รับเชิญจากโรงพยาบาลพระศรีมหาโพธิ์ เป็นวิทยากรในงานประชุมเชิงปฏิบัติการเพื่อพัฒนาต้นแบบแอปพลิเคชันการบำบัดด้วยการกระตุ้นพฤติกรรมสำหรับผู้มีภาวะซึมเศร้า ครั้งที่ 2</h5>
+                <p class="news-content"> ผศ. ดร.สุมณฑา เกษมวิลาศ ได้รับเชิญจากโรงพยาบาลพระศรีมหาโพธิ์ กรมสุขภาพจิต เป็นวิทยากรในงานประชุมเชิงปฏิบัติการเพื่อพัฒนาต้นแบบแอปพลิเคชันการบำบัดด้วยการกระตุ้นพฤติกรรมสำหรับผู้มีภาวะซึมเศร้า ครั้งที่ 2 ในวันที่ 15 กันยายน 2564 เพื่อทดสอบประสิทธิภาพของต้นแบบโปรแกรมการบำบัดด้วยการกระตุ้นพฤติกรรมกับผู้มีภาวะซึมเศร้า และพัฒนาแอปพลิเคชันการบำบัดด้วยการกระตุ้นพฤติกรรมสำหรับผู้มีภาวะซึมเศร้า ผ่านโปรแกรม Cisco Webex Meeting</p>
+                <img src="./img/news/sadness2.png" alt="" class="img-fluid">
+                <img src="./img/news/sadness3.png" alt="" class="img-fluid">
+                <img src="./img/news/sadness4.png" alt="" class="img-fluid">
+                <p class="time">16 กันยายน 2564</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-sm" data-aos="fade-up">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+          <img src="./img/news/olympiad.jpg" class="card-img-top" alt="">
+          <p class="card-text">
+            <p>พิธีปิดการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 16 และผลการแข่งขัน</p>
+          </p>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/news/olympiad.jpg" class="card-img-top" alt="">
+              <br><br>
+              <h5>พิธีปิดการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 16 และผลการแข่งขัน</h5>
+              <p class="news-content">เมื่อวันอังคารที่ 1 ธันวาคม พ.ศ. 2563 เวลา 09.00 น. ณ ห้องประชุมวิทยวิภาส 1 อาคารวิทยวิภาส คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น ผู้ช่วยศาสตราจารย์ ดร.สมเกียรติ ศรีจารนัย คณบดีคณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น ประธานศูนย์โอลิมปิกวิชาการ สอวน. มหาวิทยาลัยขอนแก่น ได้กว่าในพิธีปิดการแข่งขันฯว่า นามของมหาวิทยาลัยขอนแก่น ขอแสดงความชื่นชมในความรับผิดชอบของนักเรียนทุกคน ที่มีการเตรียมตัวและฝึกฝนทักษะด้านการเขียนโปรแกรมมาอย่างดี เพื่อให้มีความพร้อมทางด้านวิชาการ เพื่อการแข่งขันในครั้งนี้ สำหรับนักเรียนที่ประสบความสำเร็จ และในการสอบการแข่งขัน ได้รับรางวัลเหรียญทอง เหรียญเงิน เหรียญทองแดง และเกียรติคุณประกาศ นับเป็นเกียรติยศ และความภาคภูมิใจของคุณพ่อคุณแม่ ครูอาจารย์ และคณาจารย์ประจำศูนย์ สอวน. ที่ได้ทุ่มเททั้งแรงกาย แรงใจในการถ่ายทอดความรู้และอบรมมาเป็นอย่างดี การแข่งขันย่อมมีทั้งผู้ที่สมหวัง และพลาดหวัง แต่สิ่งสำคัญยิ่งกว่าคือเรามีโอกาสทำหน้าที่เป็นตัวแทนของเพื่อนจากศูนย์ สอวน. มาร่วมกิจกรรมในครั้งนี้ มีโอกาสพบเพื่อนใหม่ ได้รับประสบการณ์และความรู้ทางวิชาการ ผมหวังว่าพวกเราจะนำสิ่งดีดีเหล่านี้ ไปถ่ายทอดและฝึกฝนเรียนรู้เพิ่มเติม เพื่อนำความรู้ที่มีร่วมมือช่วยกันพัฒนาประเทศชาติต่อไปในอนาคต</p>
+                <p class="news-content">รองศาสตราจารย์ ดร.สิรภัทร  เชี่ยวชาญวัฒนา ประธานคณะกรรมการดำเนินการจัดการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 16 ได้กล่าวรายงานสรุปผลการแข่งขันว่าในนามประธานคณะกรรมการดำเนินการจัดการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 16 มีความยินดีและขอขอบคุณทุกท่านเป็นอย่างสูง ที่ให้เกียรติมาร่วมงานในครั้งนี้ การจัดการแข่งขันคอมพิวเตอร์โอลิมปิกวิชาการ ครั้งที่ 16 มูลนิธิ สอวน. ได้มอบหมายให้ สาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น เป็นเจ้าภาพจัดการแข่งขัน การจัดการแข่งขันครั้งนี้ ได้เริ่มดำเนินมาตั้งแต่วันที่ 28 พฤศจิกายน ถึง 1 ธันวาคม พุทธศักราช 2563 ซึ่งได้รับความร่วมมือจากหน่วยงานภาครัฐและเอกชนเป็นอย่างดี จึงขอขอบคุณเป็นอย่างสูงมา ณ โอกาสนี้ กิจกรรมการแข่งขันของนักเรียน เป็นการการจัดการแข่งขันเขียนโปรแกรมคอมพิวเตอร์เพื่อแก้ไขโจทย์ปัญหาในด้านการคำนวณเชิงตัวเลข วิทยาการคอมพิวเตอร์ และสาขาที่เกี่ยวข้อง โดยยึดรูปแบบตามธรรมนูญการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ การสอบมีทั้งหมด 2 รอบ โดยข้อสอบอยู่ในระดับค่อนข้างยาก ผู้เข้าสอบต้องมีความเชี่ยวชาญในการเขียนโปรแกรมและการแก้ปัญหาโดยใช้คอมพิวเตอร์ การแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 16 นี้ มีนักเรียนที่เข้าร่วมในการแข่งขันจำนวนทั้งสิ้น 93 คน โดยเป็นนักเรียนตัวแทนศูนย์ สอวน. ทั่วประเทศ 13 แห่ง จำนวน 90 คน และนักเรียนจากโครงการ สสวท. จำนวน 3 คน อีกทั้งยังมีคณะที่ปรึกษา ผู้ทรงคุณวุฒิ คณะกรรมการวิชาการ คณาจารย์ประจำศูนย์จากสถาบันต่าง ๆ ทั้งหัวหน้าทีม รองหัวหน้าทีม ครูสังเกตการณ์ และคณะกรรมการดำเนินงานจัดการแข่งขันเข้าร่วมกว่า 300 คน</p>
+                <p class="time">2 ธันวาคม 2563</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm" data-aos="fade-up">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+          <img src="./img/news/healthy1.jpg" class="card-img-top" alt="">
+          <p class="card-text">
+            <p>ผศ.ดร.สุมณฑา เกษมวิลาศ ได้รับเชิญจากโรงพยาบาลพระศรีมหาโพธิ์ จ.อุบลราชธานี เป็นวิทยากรบรรยายในหัวข้อ “สุขภาพวิถีใหม่ในยุคดิจิทัล”</p>
+          </p>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/news/healthy1.jpg" class="card-img-top" alt="">
+              <br><br>
+              <h5>ผศ.ดร.สุมณฑา เกษมวิลาศ ได้รับเชิญจากโรงพยาบาลพระศรีมหาโพธิ์ จ.อุบลราชธานี เป็นวิทยากรบรรยายในหัวข้อ “สุขภาพวิถีใหม่ในยุคดิจิทัล”</h5>
+              <p class="news-content">ผศ. ดร.สุมณฑา เกษมวิลาศ ได้รับเชิญจากโรงพยาบาลพระศรีมหาโพธิ์ จังหวัดอุบลราชธานี เป็นวิทยากรในงานประชุมเชิงปฏิบัติการแลกเปลี่ยนเรียนรู้การดำเนินงานวิกฤตสุขภาพจิตในเขตสุขภาพที่ 10 ในหัวข้อ “สุขภาพวิถีใหม่ในยุคดิจิทัล”  ในวันที่ 26 สิงหาคม 2564 เวลา 9.00-12.00 น. เพื่อแลกเปลี่ยนเรียนรู้การดำเนินงานพัฒนาคุณภาพระบบบริการสุขภาพจิตและจิตเวช การป้องกันปัญหาการฆ่าตัวตาย การช่วยเหลือเยียวยาจิตใจผู้ประสบภาวะวิกฤตสุขภาพจิตในรูปแบบ New Normal และจัดทำแผนพัฒนาระบบบริการสุขภาพจิตและจิตเวช ปี 2564 มีผู้เข้าอบรมเป็นบุคลากรจากจังหวัดอุบลราชธานี ศรีษะเกษ มุกดาหาร ยโสธร และอำนาจเจริญ ประมาณ 100 คน โดยใช้รูปแบบ Tele ด้วยระบบอินเทอร์เน็ตความเร็วสูง แบบ VDO Conference ผ่านโปรแกรม Cisco Webex Meeting</p>
+              <p class="time">26 สิงหาคม 2564</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!--  -->
+      <div class="col-sm" data-aos="fade-up">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+          <img src="./img/news/year4.jpg" class="card-img-top" alt="">
+          <p class="card-text">
+            <p>นศ. ชั้นปีที่4 ได้รับรางวัลชมเชยจากกิจกรรมการจัดการแข่งขันระดับชาติ เพื่อนําเสนอนวัตกรรมในการยกระดับขีดความสามารถ ทางการท่องเที่ยวอย่างมีส่วนร่วมตามฐานวิถีชีวิตใหม่</p>
+          </p>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/news/year4.jpg" class="card-img-top" alt="Vice President">
+              <br><br>
+              <h5>นศ. ชั้นปีที่4 ได้รับรางวัลชมเชยจากกิจกรรมการจัดการแข่งขันระดับชาติ เพื่อนําเสนอนวัตกรรมในการยกระดับขีดความสามารถ ทางการท่องเที่ยวอย่างมีส่วนร่วมตามฐานวิถีชีวิตใหม่</h5>
+                <p class="news-content">  นักศึกษาสาขาวิชาวิทยาการคอมพิวเตอร์ หลักสูตรเทคโนโลยีสารสนเทศ ชั้นปีที่ 4 ได้รับรางวัลชมเชยจากการแข่งขันรอบชิงชนะเลิศในกิจกรรมการจัดการแข่งขันระดับชาติเพื่อนําเสนอนวัตกรรมในการยกระดับขีดความสามารถทางการท่องเที่ยวอย่างมีส่วนร่วมตามฐานวิถีชีวิตใหม่ (New Normal) จัดโดย องค์การบริหารการพัฒนาพื้นที่พิเศษเพื่อการท่องเที่ยวอย่างยั่งยืน (องค์การมหาชน) ในวันที่ 20 สิงหาคม พ.ศ. 2564 ตั้งแต่เวลา 8.30- 16.30 น. ผ่านโปรแกรม Zoom</p>
+                <p class="news-content">“ไกด์ทิพย์ (Guide Trip) แอปพลิเคชันการท่องเที่ยวโดยชุมชนด้วยระบบแนะนํา” พัฒนาโดย นายกัณฑ์อเนก รัตนศิริพรม และ นางสาวกษมา ใจตรง มี ผศ. ดร.สุมณฑา เกษมวิลาศ เป็นอาจารย์ที่ปรึกษาโครงงาน ได้รับรางวัลชมเชย ในการแข่งขันนวัตกรรมด้าน Digital Technology เพื่อการท่องเที่ยว รุ่นนักศึกษาปริญญาตรี เงินรางวัลมูลค่า 2,500 บาท โดยมี ดร.ชูวิทย์ มิตรชอบ รองผู้อำนวยการองค์การบริหารการพัฒนาพื้นที่พิเศษเพื่อการท่องเที่ยวอย่างยั่งยืน (อพท.) เป็นประธานกล่าวตอบรับและกล่าวแสดงความยินดีกับผู้ที่ได้รับรางวัล</p>
+                <p class="time">25 สิงหาคม 2564</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-sm" data-aos="fade-up">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+          <img src="./img/news/year4-2.jpg" class="card-img-top" alt="">
+          <p class="card-text">
+            <p>นศ. ชั้นปีที่ 4 เข้ารอบชิงชนะเลิศกิจกรรมการแข่งขันระดับชาติ เพื่อนําเสนอนวัตกรรมในการยกระดับขีดความสามารถ ทางการท่องเที่ยวอย่างมีส่วนร่วมตามฐานวิถีชีวิตใหม่</p>
+          </p>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./img/news/year4-2.jpg" class="card-img-top" alt="">
+              <br><br>
+              <h5>นศ. ชั้นปีที่ 4 เข้ารอบชิงชนะเลิศกิจกรรมการแข่งขันระดับชาติ เพื่อนําเสนอนวัตกรรมในการยกระดับขีดความสามารถ ทางการท่องเที่ยวอย่างมีส่วนร่วมตามฐานวิถีชีวิตใหม่</h5>
+                <p class="news-content"> นักศึกษาหลักสูตรเทคโนโลยีสารสนเทศ ชั้นปีที่ 4 เข้ารอบชิงชนะเลิศในกิจกรรมการจัดการแข่งขันระดับชาติเพื่อนําเสนอนวัตกรรมในการยกระดับขีดความสามารถทางการท่องเที่ยวอย่างมีส่วนร่วมตามฐานวิถีชีวิตใหม่ (New Normal) จัดโดย องค์การบริหารการพัฒนาพื้นที่พิเศษเพื่อการท่องเที่ยวอย่างยั่งยืน (องค์การมหาชน)</p>
+                <p class="news-content">  ในหัวข้อโครงงาน “ไกด์ทิพย์ (Guide Trip) แอปพลิเคชันการท่องเที่ยวโดยชุมชนด้วยระบบแนะนํา” ที่พัฒนาโดยนายกัณฑ์อเนก รัตนศิริพรม และ นางสาวกษมา ใจตรง มี ผศ. ดร.สุมณฑา เกษมวิลาศ เป็นอาจารย์ที่ปรึกษาโครงงาน ได้ผ่านเข้ารอบ Pitching รอบสุดท้ายในการหาสุดยอดนวัตกรรมในการยกระดับขีดความสามารถทางการท่องเที่ยวอย่างมีส่วนร่วมตามฐานวิถีชีวิตใหม่ (New Normal) ประเภทที่ 2 นวัตกรรมด้าน Digital Technology เพื่อการท่องเที่ยว (รุ่นนักศึกษาปริญญาตรี) โดยกำหนดการ Pitching จะจัดขึ้นในวันที่ 20 สิงหาคม 2564 นี้</p>
+                <p class="time">16 สิงหาคม 2564</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm" data-aos="fade-up">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+          <div class="card-img-top"></div>
+          <p class="card-text">
+            <p>Disable News</p>
+          </p>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card-img-top"></div>
+              <br><br>
+              <h5>Nothing Here</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm" data-aos="fade-up">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+          <div class="card-img-top"></div>
+          <p class="card-text">
+            <p>Disable News</p>
+          </p>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card-img-top"></div>
+              <br><br>
+              <h5>Nothing Here</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+<!--***** END CONTENT *****-->
+  
+
+    <!-- START FOOTER -->
+    <div class="footer">
+      <span class="footer-text">COPYRIGHT © 2021 ALL RIGHTS RESERVED</span> 
+    </div>
+    <!-- END FOOTER -->
+  <script src="./js/lang.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="./js/news.js"></script>
+  </body>
+</html>

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="./css/footer.css">
+
     <style>
       @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&display=swap');
 	  * {
@@ -162,13 +163,13 @@
     <div class="container">
       <div class="row">
         <div class="col-sm QL">
-          <a href="#">
+          <a href="./news.html">
           <div class="image image1"></div>
           <span class="hello" id="news-ql">ข่าวสาร</span>
           </a>
         </div>
         <div class="col-sm QL">
-          <a href="#">
+          <a href="./admission.html">
           <div class="image image2"></div>
           <span class="hello" id="admission-ql">การสอบเข้า</span>
           </a>
@@ -180,7 +181,7 @@
           </a>
         </div>
         <div class="col-sm QL" >
-          <a href="#">
+          <a href="./research.html">
 			    <div class="image image4"></div>
 			    <span class="hello" id="research-ql">วิจัย</span>
           </a>
@@ -188,7 +189,7 @@
       </div>
     </div>
     <!-- END QUICK LINK -->
-	</div>
+
   
     <!--  END HOMEPAG -->
 
@@ -203,8 +204,8 @@
                 <div class="header-news">
                     <span class="title-news">ผศ.ดร.สุมณฑา เกษมวิลาศ ได้รับเชิญจากโรงพยาบาลพระศรีมหาโพธิ์...</span>
                     <div class="view">
-                        <a href="#">
-                            <span>VIEW</span>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                            <span class="readmore">อ่านเพิ่มเติม</span>
                             <i class="fas fa-long-arrow-alt-right"></i>
                         </a>
                     </div>
@@ -220,39 +221,140 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./img/news/healthy1.jpg" class="card-img-top" alt="">
+            <br><br>
+            <h5>ผศ.ดร.สุมณฑา เกษมวิลาศ ได้รับเชิญจากโรงพยาบาลพระศรีมหาโพธิ์ จ.อุบลราชธานี เป็นวิทยากรบรรยายในหัวข้อ “สุขภาพวิถีใหม่ในยุคดิจิทัล”</h5>
+            <p class="news-content">ผศ. ดร.สุมณฑา เกษมวิลาศ ได้รับเชิญจากโรงพยาบาลพระศรีมหาโพธิ์ จังหวัดอุบลราชธานี เป็นวิทยากรในงานประชุมเชิงปฏิบัติการแลกเปลี่ยนเรียนรู้การดำเนินงานวิกฤตสุขภาพจิตในเขตสุขภาพที่ 10 ในหัวข้อ “สุขภาพวิถีใหม่ในยุคดิจิทัล”  ในวันที่ 26 สิงหาคม 2564 เวลา 9.00-12.00 น. เพื่อแลกเปลี่ยนเรียนรู้การดำเนินงานพัฒนาคุณภาพระบบบริการสุขภาพจิตและจิตเวช การป้องกันปัญหาการฆ่าตัวตาย การช่วยเหลือเยียวยาจิตใจผู้ประสบภาวะวิกฤตสุขภาพจิตในรูปแบบ New Normal และจัดทำแผนพัฒนาระบบบริการสุขภาพจิตและจิตเวช ปี 2564 มีผู้เข้าอบรมเป็นบุคลากรจากจังหวัดอุบลราชธานี ศรีษะเกษ มุกดาหาร ยโสธร และอำนาจเจริญ ประมาณ 100 คน โดยใช้รูปแบบ Tele ด้วยระบบอินเทอร์เน็ตความเร็วสูง แบบ VDO Conference ผ่านโปรแกรม Cisco Webex Meeting</p>
+            <p class="time">26 สิงหาคม 2564</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- END MAIN NEWS -->
 
     <!-- START OTHER NEWS -->
     <div class="container">
       <div class="row">
-        <div class="col-sm news-container">
+        <div class="col-sm news-container" data-bs-toggle="modal" data-bs-target="#exampleModal1">
           <div class="name-news">CSs@KKU ติด TOP10</div>
           <a href="#">
             <div class="images-news img1"></div>
           </a>
         </div>
-        <div class="col-sm news-container">
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/news/top10-2.jpg" class="card-img-top" alt="Vice President">
+                <br><br>
+                <h5>CSs@KKU ติด TOP10 สถาบันการศึกษาของรัฐด้านไอทีและเทคโนโลยีสารสนเทศ</h5>
+                <p class="news-content">สาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น ติด TOP10 สถาบันการศึกษาของรัฐด้านไอทีและเทคโนโลยีสารสนเทศ ตามโครงการจัดอันดับมหาวิทยาลัยไทยยอดนิยม โดยสถาบันจัดอันดับด้านการศึกษา Thailand Education Ranking (TER) ซึ่งมี บริษัท อัพบีน จำกัด เป็นผู้สำรวจความคิดเห็นของนักเรียน นักศึกษา ผู้ปกครอง และประชาชนทั่วประเทศ  จำนวน 7,720 คน (สำรวจทางออนไลน์)  ซึ่งการจัดอันดับมหาวิทยาลัยไทยยอดนิยม ประจำปี 2563 ระหว่างวันที่ 1 กันยายน – 31 ธันวาคม 2563  ทั้งนี้  TER ได้รวบรวมผลการจัดอันดับสถาบันการศึกษาในประเทศไทย อาทิเช่น มหาวิทยาลัยไทยยอดนิยม The Most Popular Universities in Thailand ซึ่งมีเกณฑ์การจัดอันดับ ดังนี้</p>
+                <p class="news-content">1.วัดความนิยมจากคะแนนโหวตของนักเรียน นักศึกษา และประชาชนทั่วประเทศ เก็บข้อมูลแบ่งตามหมวดคำถามความสนใจของผู้เรียน เช่น มหาวิทยาลัยยอดนิยมด้านวิศวกรรมศาสตร์ ด้านบริหาร-บัญชี ด้านนิเทศศาสตร์</p>
+                <p class="news-content">2.เก็บข้อมูลแบ่งตามกลุ่มมหาวิทยาลัย เช่น มหาวิทยาลัยรัฐ มหาวิทยาลัยเอกชน มหาวิทยาลัยราชภัฏ เก็บข้อมูลและประกาศผลปีละ 1 ครั้ง (เก็บข้อมูลระหว่างเดือนมีนาคม – ธันวาคม และประกาศผลการโหวตในเดือนมกราคม – กุมภาพันธ์ของทุกปี)  ทั้งนี้เพื่อใช้เป็นส่วนหนึ่งของข้อมูลให้นักเรียน นักศึกษา ผู้ปกครอง และประชาชนทั่วประเทศ ใช้เป็นข้อมูลประกอบการตัดสินใจเลือกศึกษาต่อในระดับมหาวิทยาลัยต่อไป</p>
+                <p class="news-content">รศ. ดร.สิรภัทร เชี่ยวชาญวัฒนา หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น ได้กล่าวว่า รู้สึกมีความยินดีเป็นอย่างยิ่งที่ นักเรียน นักศึกษา ผู้ปกครอง และประชาชนทั่วประเทศ  กว่า 7,720 คนได้ให้ความนิยม มหาวิทยาลัยขอนแก่นของเรา  โดยเฉพาะอย่างยิ่ง สาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ ซึ่งเป็นสาขาวิชาที่มุ่งพัฒนาบัณฑิตด้านเทคโนโลยีดิจิทัลออกสู่สังคม เราจะพัฒนาคุณภาพด้านวิชาการ นวัตกรรม งานวิจัยที่มีคุณภาพ เพื่อรับใช้สังคมต่อไป</p>
+                <img src="./img/news/top10-3.jpg" alt="" class="img-fluid">
+                <p class="time">17 มีนาคม 2564</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm news-container" data-bs-toggle="modal" data-bs-target="#exampleModal2">
           <div class="name-news">พิธีปิดการแข่งขันคอมพิวเตอร์โอลิมปิก</div>
           <a href="#">
             <div class="images-news img2"></div>
           </a>
         </div>
-        <div class="col-sm news-container">
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/news/olympiad.jpg" class="card-img-top" alt="">
+                <br><br>
+                <h5>พิธีปิดการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 16 และผลการแข่งขัน</h5>
+                <p class="news-content">เมื่อวันอังคารที่ 1 ธันวาคม พ.ศ. 2563 เวลา 09.00 น. ณ ห้องประชุมวิทยวิภาส 1 อาคารวิทยวิภาส คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น ผู้ช่วยศาสตราจารย์ ดร.สมเกียรติ ศรีจารนัย คณบดีคณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น ประธานศูนย์โอลิมปิกวิชาการ สอวน. มหาวิทยาลัยขอนแก่น ได้กว่าในพิธีปิดการแข่งขันฯว่า นามของมหาวิทยาลัยขอนแก่น ขอแสดงความชื่นชมในความรับผิดชอบของนักเรียนทุกคน ที่มีการเตรียมตัวและฝึกฝนทักษะด้านการเขียนโปรแกรมมาอย่างดี เพื่อให้มีความพร้อมทางด้านวิชาการ เพื่อการแข่งขันในครั้งนี้ สำหรับนักเรียนที่ประสบความสำเร็จ และในการสอบการแข่งขัน ได้รับรางวัลเหรียญทอง เหรียญเงิน เหรียญทองแดง และเกียรติคุณประกาศ นับเป็นเกียรติยศ และความภาคภูมิใจของคุณพ่อคุณแม่ ครูอาจารย์ และคณาจารย์ประจำศูนย์ สอวน. ที่ได้ทุ่มเททั้งแรงกาย แรงใจในการถ่ายทอดความรู้และอบรมมาเป็นอย่างดี การแข่งขันย่อมมีทั้งผู้ที่สมหวัง และพลาดหวัง แต่สิ่งสำคัญยิ่งกว่าคือเรามีโอกาสทำหน้าที่เป็นตัวแทนของเพื่อนจากศูนย์ สอวน. มาร่วมกิจกรรมในครั้งนี้ มีโอกาสพบเพื่อนใหม่ ได้รับประสบการณ์และความรู้ทางวิชาการ ผมหวังว่าพวกเราจะนำสิ่งดีดีเหล่านี้ ไปถ่ายทอดและฝึกฝนเรียนรู้เพิ่มเติม เพื่อนำความรู้ที่มีร่วมมือช่วยกันพัฒนาประเทศชาติต่อไปในอนาคต</p>
+                  <p class="news-content">รองศาสตราจารย์ ดร.สิรภัทร  เชี่ยวชาญวัฒนา ประธานคณะกรรมการดำเนินการจัดการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 16 ได้กล่าวรายงานสรุปผลการแข่งขันว่าในนามประธานคณะกรรมการดำเนินการจัดการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 16 มีความยินดีและขอขอบคุณทุกท่านเป็นอย่างสูง ที่ให้เกียรติมาร่วมงานในครั้งนี้ การจัดการแข่งขันคอมพิวเตอร์โอลิมปิกวิชาการ ครั้งที่ 16 มูลนิธิ สอวน. ได้มอบหมายให้ สาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น เป็นเจ้าภาพจัดการแข่งขัน การจัดการแข่งขันครั้งนี้ ได้เริ่มดำเนินมาตั้งแต่วันที่ 28 พฤศจิกายน ถึง 1 ธันวาคม พุทธศักราช 2563 ซึ่งได้รับความร่วมมือจากหน่วยงานภาครัฐและเอกชนเป็นอย่างดี จึงขอขอบคุณเป็นอย่างสูงมา ณ โอกาสนี้ กิจกรรมการแข่งขันของนักเรียน เป็นการการจัดการแข่งขันเขียนโปรแกรมคอมพิวเตอร์เพื่อแก้ไขโจทย์ปัญหาในด้านการคำนวณเชิงตัวเลข วิทยาการคอมพิวเตอร์ และสาขาที่เกี่ยวข้อง โดยยึดรูปแบบตามธรรมนูญการแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ การสอบมีทั้งหมด 2 รอบ โดยข้อสอบอยู่ในระดับค่อนข้างยาก ผู้เข้าสอบต้องมีความเชี่ยวชาญในการเขียนโปรแกรมและการแก้ปัญหาโดยใช้คอมพิวเตอร์ การแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติ ครั้งที่ 16 นี้ มีนักเรียนที่เข้าร่วมในการแข่งขันจำนวนทั้งสิ้น 93 คน โดยเป็นนักเรียนตัวแทนศูนย์ สอวน. ทั่วประเทศ 13 แห่ง จำนวน 90 คน และนักเรียนจากโครงการ สสวท. จำนวน 3 คน อีกทั้งยังมีคณะที่ปรึกษา ผู้ทรงคุณวุฒิ คณะกรรมการวิชาการ คณาจารย์ประจำศูนย์จากสถาบันต่าง ๆ ทั้งหัวหน้าทีม รองหัวหน้าทีม ครูสังเกตการณ์ และคณะกรรมการดำเนินงานจัดการแข่งขันเข้าร่วมกว่า 300 คน</p>
+                  <p class="time">2 ธันวาคม 2563</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm news-container" data-bs-toggle="modal" data-bs-target="#exampleModal3">
           <div class="name-news">ผศ. ดร.สุมณฑา เกษมวิลาศ ได้รับเชิญ</div>
           <a href="#">
             <div class="images-news img3"></div>
           </a>
         </div>
-        <div class="col-sm news-container">
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/news/sadness.jpg" class="card-img-top" alt="">
+                <br><br>
+                <h5>ผศ. ดร.สุมณฑา เกษมวิลาศ ได้รับเชิญจากโรงพยาบาลพระศรีมหาโพธิ์ เป็นวิทยากรในงานประชุมเชิงปฏิบัติการเพื่อพัฒนาต้นแบบแอปพลิเคชันการบำบัดด้วยการกระตุ้นพฤติกรรมสำหรับผู้มีภาวะซึมเศร้า ครั้งที่ 2</h5>
+                  <p class="news-content"> ผศ. ดร.สุมณฑา เกษมวิลาศ ได้รับเชิญจากโรงพยาบาลพระศรีมหาโพธิ์ กรมสุขภาพจิต เป็นวิทยากรในงานประชุมเชิงปฏิบัติการเพื่อพัฒนาต้นแบบแอปพลิเคชันการบำบัดด้วยการกระตุ้นพฤติกรรมสำหรับผู้มีภาวะซึมเศร้า ครั้งที่ 2 ในวันที่ 15 กันยายน 2564 เพื่อทดสอบประสิทธิภาพของต้นแบบโปรแกรมการบำบัดด้วยการกระตุ้นพฤติกรรมกับผู้มีภาวะซึมเศร้า และพัฒนาแอปพลิเคชันการบำบัดด้วยการกระตุ้นพฤติกรรมสำหรับผู้มีภาวะซึมเศร้า ผ่านโปรแกรม Cisco Webex Meeting</p>
+                  <img src="./img/news/sadness2.png" alt="" class="img-fluid">
+                  <img src="./img/news/sadness3.png" alt="" class="img-fluid">
+                  <img src="./img/news/sadness4.png" alt="" class="img-fluid">
+                  <p class="time">16 กันยายน 2564</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm news-container" data-bs-toggle="modal" data-bs-target="#exampleModal4">
           <div class="name-news">นศ. ชั้นปีที่4 ได้รับรางวัลชมเชยจากกิจกรรมการจัดการแข่งขัน</div>
           <a href="#">
             <div class="images-news img4"></div>
           </a>
         </div>
+        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./img/news/year4.jpg" class="card-img-top" alt="Vice President">
+                <br><br>
+                <h5>นศ. ชั้นปีที่4 ได้รับรางวัลชมเชยจากกิจกรรมการจัดการแข่งขันระดับชาติ เพื่อนําเสนอนวัตกรรมในการยกระดับขีดความสามารถ ทางการท่องเที่ยวอย่างมีส่วนร่วมตามฐานวิถีชีวิตใหม่</h5>
+                  <p class="news-content">  นักศึกษาสาขาวิชาวิทยาการคอมพิวเตอร์ หลักสูตรเทคโนโลยีสารสนเทศ ชั้นปีที่ 4 ได้รับรางวัลชมเชยจากการแข่งขันรอบชิงชนะเลิศในกิจกรรมการจัดการแข่งขันระดับชาติเพื่อนําเสนอนวัตกรรมในการยกระดับขีดความสามารถทางการท่องเที่ยวอย่างมีส่วนร่วมตามฐานวิถีชีวิตใหม่ (New Normal) จัดโดย องค์การบริหารการพัฒนาพื้นที่พิเศษเพื่อการท่องเที่ยวอย่างยั่งยืน (องค์การมหาชน) ในวันที่ 20 สิงหาคม พ.ศ. 2564 ตั้งแต่เวลา 8.30- 16.30 น. ผ่านโปรแกรม Zoom</p>
+                  <p class="news-content">“ไกด์ทิพย์ (Guide Trip) แอปพลิเคชันการท่องเที่ยวโดยชุมชนด้วยระบบแนะนํา” พัฒนาโดย นายกัณฑ์อเนก รัตนศิริพรม และ นางสาวกษมา ใจตรง มี ผศ. ดร.สุมณฑา เกษมวิลาศ เป็นอาจารย์ที่ปรึกษาโครงงาน ได้รับรางวัลชมเชย ในการแข่งขันนวัตกรรมด้าน Digital Technology เพื่อการท่องเที่ยว รุ่นนักศึกษาปริญญาตรี เงินรางวัลมูลค่า 2,500 บาท โดยมี ดร.ชูวิทย์ มิตรชอบ รองผู้อำนวยการองค์การบริหารการพัฒนาพื้นที่พิเศษเพื่อการท่องเที่ยวอย่างยั่งยืน (อพท.) เป็นประธานกล่าวตอบรับและกล่าวแสดงความยินดีกับผู้ที่ได้รับรางวัล</p>
+                  <p class="time">25 สิงหาคม 2564</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
     <div class="viewall">
-      <a href="#"><div class="viewallnews">ดูข่าวทั้งหมด</div></a>
+      <a href="./news.html"><div class="viewallnews">ดูข่าวทั้งหมด</div></a>
     </div>
     <!-- END OTHER NEWS -->
   
