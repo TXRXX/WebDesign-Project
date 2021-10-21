@@ -51,12 +51,15 @@ h4 {
     line-height: 2rem;
 }
 
-.modal-img {
-    width: 350px;
-    margin: 0 auto;
-    justify-items: center;
-    justify-content: center;
+.modal-body {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+.img-lightbox {
+    width: 50%;
+    border-radius: 20px;
 }
 
 
