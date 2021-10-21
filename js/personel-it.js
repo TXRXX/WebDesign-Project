@@ -27,11 +27,11 @@ const observer = new IntersectionObserver(entries => {
     if (isThai) {
       document.querySelector(".breadcrumb").textContent = "หน้าหลัก > เกี่ยวกับ > บุคลากร > คณาจารย์ประจำหลักสูตร IT";
       document.querySelector(".text-personel").textContent = "คณาจารย์ประจำหลักสูตร IT";
-      document.getElementById("staffCS-th").src="./img/banner/banner_ITstaff_th.jpg";
+      document.getElementById("staffIT-th").src="./img/banner/banner_ITstaff_th.jpg";
     } else {
       document.querySelector(".breadcrumb").textContent = "HOME > ABOUT > PERSONEL > TEACHING STAFF IN IT";
       document.querySelector(".text-personel").textContent = "TEACHING STAFF IN IT";
-      document.getElementById("staffCS-th").src="./img/banner/banner_ITstaff_en.jpg";
+      document.getElementById("staffIT-th").src="./img/banner/banner_ITstaff_en.jpg";
     }
     isThai = !isThai;
   });
