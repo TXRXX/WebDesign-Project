@@ -18,6 +18,7 @@ const MOU = document.getElementById("MOU");
 const contact = document.getElementById("contact");
 const weltext = document.getElementById("wel-text");
 const history = document.querySelector(".history");
+const news = document.querySelector(".news-class");
 
 
 const personnel = document.querySelectorAll(".personnel");
@@ -56,6 +57,7 @@ lang.addEventListener("click", () => {
     contact.textContent = "ติดต่อ";
     history.textContent = "ประวัติ";
     researchGroup.textContent = "งานวิจัย";
+    news.textContent = "ข่าวสาร";
 
 
     changeTextAndAddArrow(personnel, "บุคลากร");
@@ -86,6 +88,7 @@ lang.addEventListener("click", () => {
     MOU.textContent = "MOU";
     contact.textContent = "CONTACT";
     history.textContent = "HISTORY";
+    news.textContent = "NEWS";
 
 
     changeTextAndAddArrow(personnel, "PERSONNEL");
