@@ -37,6 +37,7 @@
     transition: 0.3s;
     z-index: 3;
     height: max-content;
+    color: rgb(255, 255, 255, 0.7);
 }
 
 .arrow:hover {
