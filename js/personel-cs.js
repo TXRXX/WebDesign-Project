@@ -1,18 +1,30 @@
 // START EFFECT
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      const square = entry.target.querySelector('.text-personel');
+// const observer = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//       const square = entry.target.querySelector('.text-personel');
   
-      if (entry.isIntersecting) {
-        square.classList.add('animation-slide');
-        return;
-      }
-      square.classList.remove('animation-slide');
-    });
-  });
+//       if (entry.isIntersecting) {
+//         square.classList.add('animation-slide');
+//         return;
+//       }
+//       square.classList.remove('animation-slide');
+//     });
+//   });
   
-  observer.observe(document.querySelector('.header-text'));
+//   observer.observe(document.querySelector('.header-text'));
 // END EFFECT
+const observer = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add('animation-slide');
+    }
+  });
+});
+
+observer.observe(document.querySelector('.text-personel'));
 
 
 

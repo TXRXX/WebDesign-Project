@@ -51,6 +51,19 @@ h4 {
     line-height: 2rem;
 }
 
+.modal-img {
+    width: 350px;
+    margin: 0 auto;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
 .animation-slide {
     animation: slide 1s;
 }
