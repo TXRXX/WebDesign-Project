@@ -114,6 +114,10 @@
     color: white;
 }
 
+.name-news:hover {
+    cursor: pointer;
+}
+
 .viewall {
     display: flex;
     width: 100%;
