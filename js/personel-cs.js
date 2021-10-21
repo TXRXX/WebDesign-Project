@@ -1,18 +1,4 @@
 // START EFFECT
-// const observer = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//       const square = entry.target.querySelector('.text-personel');
-  
-//       if (entry.isIntersecting) {
-//         square.classList.add('animation-slide');
-//         return;
-//       }
-//       square.classList.remove('animation-slide');
-//     });
-//   });
-  
-//   observer.observe(document.querySelector('.header-text'));
-// END EFFECT
 const observer = new IntersectionObserver(entries => {
   // Loop over the entries
   entries.forEach(entry => {
@@ -25,6 +11,8 @@ const observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(document.querySelector('.text-personel'));
+// END EFFECT
+
 
 
 
