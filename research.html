@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +8,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/35c103d6a4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/slide.css">
     <link rel="stylesheet" href="./css/lang.css">
-    <link rel="stylesheet" href="./css/banner.css">
-    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/research.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/breadcrumb.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&display=swap');
 	  * {
 		  box-sizing: border-box;
 	  }
     </style>
-    <title>COLLEGE OF COMPUTING @KKU</title>
+    <title>C² | Research Group</title>
 </head>
 <body>
   <!-- START NAV-BAR -->
@@ -31,59 +31,60 @@
       <div class="content">
       <div class="logo"><a href="./index.html"><img src="./img/logoC2.png" alt="" width="120"></a></div>
         <ul class="links">
-          <li><a href="./index.html" id="home">หน้าหลัก</a></li>
+          <li><a href="./index.html" class="home">หน้าหลัก</a></li>
           <li>
-            <a href="#" class="desktop-link" id="about">เกี่ยวกับ</a>
+            <a href="#" class="desktop-link about">เกี่ยวกับ</a>
             <input type="checkbox" id="show-features">
-            <label for="show-features" id="about2">เกี่ยวกับ</label>
+            <label for="show-features" class="about">เกี่ยวกับ</label>
             <ul>
-              <li class="right-b"><a href="./history.html" id="history">ประวัติ</a></li>
-              <li class="right-b"><a href="./administrators.html" id="admins">คณะผู้บริหาร</a></li>
+              <li class="right-b"><a href="./history.html" class="history">ประวัติ</a></li>
+              <li class="right-b"><a href="./administrators.html" class="admins">คณะผู้บริหาร</a></li>
               <li>
-                <a href="#" class="desktop-link" id="personnel">บุคลากร<i class="fas fa-caret-right"></i></a>
+                <a href="#" class="desktop-link personnel">บุคลากร<i class="fas fa-caret-right"></i></a>
                 <input type="checkbox" id="show-items">
-                <label for="show-items" id="personnel">บุคลากร<i class="fas fa-caret-right"></i></label>
+                <label for="show-items" class="personnel">บุคลากร<i class="fas fa-caret-right"></i></label>
                 <ul>
                   <li class="right-b"><a href="./personel-cs.html" id="T-CS">คณาจารย์ประจำหลักสูตร CS</a></li>
                   <li class="right-b"><a href="./personel-it.html" id="T-IT">คณาจารย์ประจำหลักสูตร IT</a></li>
                   <li class="right-b"><a href="./personel-gis.html" id="T-GIS">คณาจารย์ประจำหลักสูตร GIS</a></li>
                 </ul>
               </li>
+              <li class="right-b"><a href="./news.html" class="news-class">ข่าวสาร</a></li>
             </ul>
           </li>
           <li>
-            <a href="#" class="desktop-link" id="education">การศึกษา</a>
+            <a href="#" class="desktop-link education">การศึกษา</a>
             <input type="checkbox" id="show-services">
-            <label for="show-services" id="education2">การศึกษา</label>
+            <label for="show-services" class="education">การศึกษา</label>
             <ul>
               
               <li>
-                <a href="#" class="desktop-link" id="syllabus">หลักสูตร<i class="fas fa-caret-right"></i></a>
+                <a href="#" class="desktop-link syllabus">หลักสูตร<i class="fas fa-caret-right"></i></a>
                 <input type="checkbox" id="show-items2">
-                <label for="show-items2" id="syllabus">หลักสูตร<i class="fas fa-caret-right"></i></label>
+                <label for="show-items2" class="syllabus">หลักสูตร<i class="fas fa-caret-right"></i></label>
                 <ul>
-                  <li class="right-b"><a href="./syllabus-bachelor.html" id="bachelor-text">ระดับปริญญาตรี</a></li>
-                  <li class="right-b"><a href="./syllabus-master.html" id="master-text">ระดับปริญญาโท</a></li>
-                  <li class="right-b"><a href="./syllabus-doctor.html" id="doctor-text">ระดับปริญญาเอก</a></li>
+                  <li class="right-b"><a href="./syllabus-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./syllabus-master.html" class="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./syllabus-doctor.html" class="doctor-text">ระดับปริญญาเอก</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="desktop-link" id="scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></a>
+                <a href="#" class="desktop-link scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></a>
                 <input type="checkbox" id="show-items3">
-                <label for="show-items3" id="scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></label>
+                <label for="show-items3" class="scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></label>
                 <ul>
-                  <li class="right-b"><a href="./scholarship-bachelor.html" id="bachelor-text">ระดับปริญญาตรี</a></li>
-                  <li class="right-b"><a href="./scholarship-master.html" id="master-text">ระดับปริญญาโท</a></li>
-                  <li class="right-b"><a href="./scholarship-doctor.html" id="doctor-text">ระดับปริญญาเอก</a></li>
+                  <li class="right-b"><a href="./scholarship-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./scholarship-master.html" class="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./scholarship-doctor.html" class="doctor-text">ระดับปริญญาเอก</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="desktop-link" id="calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></a>
+                <a href="#" class="desktop-link calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></a>
                 <input type="checkbox" id="show-items4">
-                <label for="show-items4" id="calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></label>
+                <label for="show-items4" class="calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></label>
                 <ul>
-                  <li class="right-b"><a href="./calendar-grad.html" id="grad">ระดับบัณฑิตศึกษา</a></li>
-                  <li class="right-b"><a href="./calendar-bachelor.html" id="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./calendar-grad.html" class="grad">ระดับบัณฑิตศึกษา</a></li>
+                  <li class="right-b"><a href="./calendar-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
                 </ul>
               </li>
               <li class="right-b"><a href="https://reg.kku.ac.th/" target="_blank" id="service">บริการการศึกษา</a></li>
@@ -95,23 +96,15 @@
             <label for="show-services2" id="admission2">การรับเข้าศึกษา</label>
             <ul>
               <li>
-                <a href="#" class="desktop-link" id="bachelor">ระดับปริญญาตรี<i class="fas fa-caret-right"></i></a>
-                <input type="checkbox" id="show-items5">
-                <label for="show-items5" id="bachelor">ระดับปริญญาตรี<i class="fas fa-caret-right"></i></label>
-                <ul>
-                  <li class="right-b"><a href="./round2.html" id="round2">รอบที่ 2</a></li>
-                  <li class="right-b"><a href="./round2-2.html" id="round2-2">รอบที่ 2.2</a></li>
-                  <li class="right-b"><a href="./round3.html" id="round3">รอบที่ 3</a></li>
-                </ul>
-              </li>
-              <li class="right-b"><a href="https://gs.kku.ac.th" target="_blank" id="grad">ระดับบัณฑิตศึกษา</a></li>
+                <li class="right-b"><a href="./admission.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                <li class="right-b"><a href="https://gs.kku.ac.th" target="_blank" class="grad">ระดับบัณฑิตศึกษา</a></li>
             </ul>
           </li>
 
           <li>
-            <a href="#" class="desktop-link" id="research">งานวิจัย</a>
+            <a href="#" class="desktop-link research">งานวิจัย</a>
             <input type="checkbox" id="show-services3">
-            <label for="show-services3" id="research">งานวิจัย</label>
+            <label for="show-services3" class="research">งานวิจัย</label>
             <ul>
               <li class="right-b"><a href="./research.html" id="researchGroup">ศูนย์วิจัยและกลุ่มวิจัย</a></li>
               <li class="right-b"><a href="./mou.html" id="MOU">ความร่วมมือ MOU</a></li>
@@ -121,7 +114,7 @@
         </ul>
       </div>
       <!-- START CHANGE LANG. -->
-        <label for="" class="lang">
+        <label class="lang">
           <span class="slide">
             <span class="slide-text1">TH</span>
             <span class="slide-text2">EN</span>
@@ -143,13 +136,12 @@
 
 
 <!--***** START CONTENT *****-->
-
 <!-- START BANNER -->
 <div class="banner">
-  <img src="./img/banner/research_th.jpg" alt="research_banner" class="banner-img" id="research-th">
+  <img src="./img/banner/mou_th.jpg" alt="mou_banner" class="banner-img" id="mou-th">
 </div>
 <!-- END BANNER -->
-
+<p class="breadcrumb">หน้าหลัก > งานวิจัย > ศูนย์วิจัยและกลุ่มวิจัย</p>
 <div class="container container-content">
 <div class="row">
   <div class="col-sm">
@@ -165,9 +157,9 @@
       <br>
       <br>
       <h1>กลุ่มวิจัย</h1>
-      <p>
+      <div>
         <br><h5>1. Advanced GIS Technology (AGT)</h5>
-            <p>To conduct research and provide academic services in the fields of Internet, GIS, Health GIS, and Hydrologic modeling with GIS.
+            <div>To conduct research and provide academic services in the fields of Internet, GIS, Health GIS, and Hydrologic modeling with GIS.
               
               <ul>
                 <li>Assist. Prof. Pipat Reungsang, Ph.D., ISU (USA)</li>
@@ -175,7 +167,7 @@
                 <li>Nagon Watanakij, Ph.D., CU (TH)</li>
               </ul>
 
-            </p>
+            </div>
 
         <br><h5>2. ห้องปฏิบัติการวิจัย เทคโนโลยีการสื่อสารเครือข่ายประยุกต์ (ANT)</h5> 
         <p>เนื่องจากในปัจจุบันในแต่ละหน่วยงานทั้งในภาครัฐและเอกชนรวมถึงสถาบันการศึกษาทั้งในและต่างประเทศ ต่างมีความต้องการที่จะพัฒนาเครือข่ายและระบบการสื่อสาร ทั้งแบบใช้สายและไร้สายขึ้นมาใช้งานภายในหน่วยงานของตนเอง รวมถึงนโยบายการพัฒนา เครือข่ายระดับชาติ หน่วยงาน กสทช. เพื่อพัฒนาระบบโทรศัพท์เคลื่อนที่แบบอนาคต 3.XG/4G/5G โดยมีวัตถุประสงค์เพื่อใช้ในการติดต่อสื่อสารให้ได้ระยะทางที่ไกลและครอบคลุมมากยิ่งขึ้น และเพื่อเพิ่มความสะดวก รวดรเร็ว รวมไปถึงความจุของเครือข่ายสื่อสารเพื่อให้สามารถส่งผ่านข้อมูลได้มากขึ้น เช่น สามารถดูวีดีโอ โทรทัศน์ การประชุมทางไกลด้วยวีดีโอ โดยประยุกต์ใช้ในด้านต่างๆ เช่น การศึกษา การเกษตร อุตสาหกรรม การแพทย์ สถานการณ์ภัยพิบัติ และการทหาร ผ่านระบบเครือข่ายความเร็วสูงได้ หรือแม้แต่การแลกเปลี่ยนข้อมูลกันระหว่างองค์กร รวมถึงเครือข่ายสังคมออนไลน์ นอกจากนี้เครือข่ายในปัจจุบันยังมีความเสี่ยงต่อการบุกรุกและโจมตีในรูปแบบต่างๆ ซึ่งในทุกภาคส่วนได้เล็งเห็นถึงความสำคัญของการปกป้อง หรือเพิ่มความปลอดภัยให้กับการทำธุรกรรม หรือการส่งผ่านข้อมูลในด้านต่างๆ รวมไปถึงการรักษาความเป็นส่วนตัวอีกด้วย</p>
@@ -188,7 +180,7 @@
         <p>6.เทคโนโลยีอัจฉริยะ (Smart Thing): การเพิ่มความอัจฉริยะให้กับอุปกรณ์หรือเทคโนโลยีต่างๆ  เช่น ในด้านกสิกรรม เกษตรกรรม ยานยนต์ เซนเซอร์ที่หลากหลาย โรงพยาบาล โรงแรม บ้านที่อยู่อาศัย และบริการการดูแลสุขภาพ (Smart Technology, Smart Farming, Smart Car, Smart Dust/Sensors, Smart Hotel, Smart Healthcare, Smart Home, etc.)</p>
         
         <br><h5>3. ห้องปฏิบัติการการคำนวณแบบฉลาดขั้นสูง (ASC)</h5> 
-        <p>This laboratory aims to study and research on the smart technology for high performance computing which imitates the nature-inspired behaviors.
+        <div>This laboratory aims to study and research on the smart technology for high performance computing which imitates the nature-inspired behaviors.
           <ul>
             <li>Assist. Prof. Khamron Sunat, Ph.D., CU (TH)</li>
             <li>Assist. Prof. Sirapat Chiewchanwattana, Ph.D., CU (TH)</li>
@@ -196,7 +188,7 @@
             <li>Nunnapus Moungmingsuk, D.Eng., KU (TH) </li>
             
           </ul>
-        </p> 
+        </div> 
         <br><h5>4. ห้องปฏิบัติการอินเตอร์เฟสระหว่างฮาร์ดแวร์กับมนุษย์และการสื่อสาร (H2 I-Comm)</h5> 
         <p>กลุ่มวิจัย H2I-Comm ให้ความสำคัญกับการบูรณาการความรู้จากหลากหลายสาขาวิชาที่แตกต่างแต่มีความเกี่ยวข้องสัมพันธ์กัน เพื่อให้ได้ผลลัพธ์ที่ครอบคลุมหลายศาสตร์แบบสร้างสรรค์และได้ผลดีมากที่สุด</p>
         <p>วัตถุประสงค์ของกลุ่มวิจัย H2I-Comm เพื่อออกแบบ พัฒนา และประเมิน เครื่องมือและเทคโนโลยีที่เป็นนวัตกรรมใหม่ให้สามารถใช้งานได้ง่ายและมีประโยชน์ เป้าหมายของกลุ่มวิจัย H2I-Comm จะเน้นการศึกษา วิจัย สร้างองค์ความรู้ใหม่ที่เกี่ยวกับเทคโนโลยีทางอินเทอร์เน็ต การสื่อสารแบบไร้สาย การเข้ารหัสและความปลอดภัยของข้อมูล หุ่นยนต์ การประมวลผลทางสัญญาณดิจิทัลที่เกี่ยวกับหุ่นยนต์ การพัฒนาฮาร์ดแวร์ต่างๆ การออกแบบปฏิสัมพันธ์ระหว่างมนุษย์และคอมพิวเตอร์ อินเตอร์เฟสของอุปกรณ์ไร้สาย โซเชียลคอมพิวติ้ง เทคโนโลยีการจูงใจ เทคโนโลยีมัลติมีเดีย อินเทอร์เน็ตในทุกสิ่ง ระบบการประมวลผลที่มีอยู่ทุกหนทุกแห่ง หรือการนำคอมพิวเตอร์เข้ามาเป็นส่วนหนึ่งของการดำรงชีวิต รวมไปถึงระบบสารสนเทศทางสุขภาพที่ประยุกต์ใช้เทคโนโลยีไร้สายและอินเทอร์เน็ต </p>
@@ -217,7 +209,7 @@
         <p>จากขอบเขตการศึกษาวิจัยทั้ง 3 หัวข้อ ประโยชน์ที่คาดว่าจะได้รับจากกลุ่มงานวิจัยนี้ คือการพัฒนาและเผยแพร่องค์ความรู้ในการนำเทคโนโลยีเข้าไปใช้เพื่อเสริมประสิทธิภาพให้กับการบริหารจัดการโลจิสติกส์และห่วงโซ่อุปทานในอุตสาหกรรมต่างๆ ทั้งภาครัฐและเอกชน อันจะเป็นประโยชน์อย่างยิ่งในการเพิ่มความสามารถในการแข่งขันให้ทัดเทียมกับต่างประเทศ และประโยชน์สูงสุดที่คาดว่าจะได้รับได้แก่ การได้องค์ความรู้ใหม่ที่สามารถนำมาใช้ในการพัฒนาประเทศ และในการตีพิมพ์ผลงานวิจัยในวารสารระดับนานาชาติต่อไปได้</p>
         
         <br><h5>6. ห้องปฏิบัติการวิจัย ระบบอัจฉริยะและการเรียนรู้เครื่อง (MLIS)</h5> 
-        <p>
+        <div>
           The main purpose of this project is to conduct research and build new knowledge concerning machine learning and intelligent systems as well as their applications.
           
           <ul>
@@ -227,20 +219,20 @@
             
           </ul>
 
-        </p>
+        </div>
 
         <br><h5>7. ห้องปฎิบัติการประมวลผลภาษาธรรมชาติและการประมวลผลด้านเสียง (NLSP)</h5> 
-        <p>
+        <div>
           The main aims of this project are to conduct research concerning natural language and speech processing in the computer system, Machine Tanslation system, Speech Synthesis and Speech Recognition computer system, Char- acter Recognition and information searching, construction and development of working system to integrate natural language and speech processing with business work system, and to create academic works on natural processing.
           <ul>
             <li> Assist. Prof. Pusadee Seresangtakul, Ph.D., Ry dai (JP)</li>
     
           </ul>
 
-        </p>
+        </div>
 
         <br><h5>8. ห้องปฎิบัติการการทำเหมืองข้อมูลและการบูรณาการข้อมูลสารสนเทศอย่างสื่อความหมาย (SMIIL) </h5> 
-        <p>
+        <div>
           เนื่องจากในปัจจุบันในแต่ละหน่วยงานทั้งในภาครัฐและเอกชน ต่างมีความต้องการที่จะพัฒนาระบบงานสารสนเทศขึ้นมาใช้งานในหน่วยงานของตนเอง โดยมีวัตถุประสงค์เพื่อใช้ประมวลผลข้อมูล การสร้างรายงาน การประชาสัมพันธ์องค์กร การทำงานด้านธุรกิจ หรือแม้แต่การแลกเปลี่ยนข้อมูลกันระหว่างองค์กร ซึ่งระบบงานสารสนเทศที่หลากหลายนี้จะถูกพัฒนาในรูปแบบที่ต่างแพลตฟอร์ม (platform) กัน หรือมีระบบจัดการฐานข้อมูลที่แตกต่างกันออกไป จึงทําให้เกิดปัญหาต่างๆขึ้นซึ่งสามารถ แบ่งออกได้เป็นหลายประเด็นดังต่อไปนี้
           <p>(1)   การแลกเปลี่ยนข้อมูลกัน: ระบบสารสนเทศที่ถูกพัฒนาด้วยแพลตฟอร์มที่แตกต่างกัน จะไม่สามารถแลกเปลี่ยนข้อมูลระหว่างระบบงานได้อย่างโดยตรง ซึ่งทำให้ขาดความยืดหยุ่นและการทำงานร่วมกันระหว่างระบบงาน</p>
           <p>(2) ความซ้ำซ้อนกันของข้อมูล: ข้อมูลแบบเดียวกันอาจถูกเก็บแยกกันอยู่ตามระบบงานของหน่วยงานต่างๆและไม่สามารถนำมาใช้งานร่วมกันได้ ดังนั้น จึงทำให้มีการเก็บข้อมูลที่มีความซ้ำซ้อนกันเกิดขึ้นในหลายระบบงานสารสนเทศ ซึ่งนำไปสู่การขาดรูปแบบของการนําข้อมูลที่มีอยู่แล้วไปใช้ใหม่ (reusability) และมีความยากในการแลกเปลี่ยนข้อมูลกัน (exchangeability) ระหว่างระบบงานที่แตกต่างกัน อันนําไปสู่การสูญเสียของกําลังคนและทรัพยากร รวมไปถึงค่าใช้จ่ายที่สูงมาก</p>
@@ -250,10 +242,10 @@
           <p> จุดประสงค์หลักของกลุ่มวิจัย SMIIL นี้คือการนำเทคโนโลยีเว็บเซอร์วิส และเว็บแบบสื่อความหมายไปประยุกต์ใช้งานกับระบบสารสนเทศที่หลากหลายของทั้งภาครัฐและเอกชนที่ต้องการให้ระบบงานสามารถทำงานร่วมกันได้ การแลกเปลี่ยนสารสนเทศระหว่างกันและการบูรณาการสารสนเทศ ซึ่งแต่ละระบบงานจะไม่จำเป็นต้องมีการเปลี่ยนแพลตฟอร์มของระบบงานตนเองหรือมีการเปลี่ยนโครงสร้างของข้อมูลใหม่ที่ต้องการจะแลกเปลี่ยนกัน ดังนั้น จึงทำให้ลดค่าใช้จ่ายขององค์กรลงได้   นอกจากนี้ ยังมีการใช้เหมืองข้อมูลและธุรกิจอัจฉริยะ ในการค้นหาความรู้ใหม่จากข้อมูลที่ได้จากการบูรณาการ เพื่อใช้ในการวางแผน การพยากรณ์และการตัดสินใจ ต่อไปได้  ซึ่งโครงการวิจัยในปัจจุบัน ได้ถูกพัฒนาขึ้นมาเพื่อแก้ปัญหากับระบบงานในหลากหลายโดเมน เช่น ระบบงานทางด้าน e-learning, ระบบงานด้าน healthcare, และระบบงานด้านภูมิสารสนเทศหรือ GIS เป็นต้น</p>
           <p>เป้าหมายสูงสุดของกลุ่มวิจัย SMIIL คือการได้รับองค์ความรู้ใหม่ที่ได้จากงานวิจัยที่สามารถนำไปใช้ในการพัฒนาประเทศต่อไปได้ และได้รับการตีพิมพ์ผลงานวิจัยในวารสารทั้งระดับชาติและนานาชาติต่อไปได้</p>
 
-        </p>
+        </div>
 
         <br><h5>9. ห้องปฏิบัติการคอมพิวเตอร์ในทุกสภาพแวดล้อม (UCL)</h5> 
-        <p>
+        <div>
           Ubiquitous Computing Lab works on various areas such as games, human-computer interaction, virtual reality, augmented and mixed reality, animation graphics and smart apps. Presently, Asst.Prof.Dr. Urachart Kokaew, Dr. Wachirawut Thamviset, Dr.Paweena Wanchai and Dr.Monlica Wattana,  supervise more than thirty graduate and undergraduate students from Department of Computer Science,Khon Kaen University.
           
           <ul>
@@ -264,12 +256,12 @@
     
           </ul>
 
-        </p>
+        </div>
 
 
         <br>
         
-      </p>
+      </div>
   </div>
 </div>
 </div>
@@ -284,5 +276,6 @@
     </div>
     <!-- END FOOTER -->
   <script src="./js/lang.js"></script>
+  <script src="./js/research.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/35c103d6a4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/slide.css">
     <link rel="stylesheet" href="./css/lang.css">
-    <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/breadcrumb.css">
+    <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/scholarship-bachelor.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&display=swap');
@@ -31,59 +31,60 @@
       <div class="content">
       <div class="logo"><a href="./index.html"><img src="./img/logoC2.png" alt="" width="120"></a></div>
         <ul class="links">
-          <li><a href="./index.html" id="home">หน้าหลัก</a></li>
+          <li><a href="./index.html" class="home">หน้าหลัก</a></li>
           <li>
-            <a href="#" class="desktop-link" id="about">เกี่ยวกับ</a>
+            <a href="#" class="desktop-link about">เกี่ยวกับ</a>
             <input type="checkbox" id="show-features">
-            <label for="show-features" id="about2">เกี่ยวกับ</label>
+            <label for="show-features" class="about">เกี่ยวกับ</label>
             <ul>
-              <li class="right-b"><a href="./history.html" id="history">ประวัติ</a></li>
-              <li class="right-b"><a href="./administrators.html" id="admins">คณะผู้บริหาร</a></li>
+              <li class="right-b"><a href="./history.html" class="history">ประวัติ</a></li>
+              <li class="right-b"><a href="./administrators.html" class="admins">คณะผู้บริหาร</a></li>
               <li>
-                <a href="#" class="desktop-link" id="personnel">บุคลากร<i class="fas fa-caret-right"></i></a>
+                <a href="#" class="desktop-link personnel">บุคลากร<i class="fas fa-caret-right"></i></a>
                 <input type="checkbox" id="show-items">
-                <label for="show-items" id="personnel">บุคลากร<i class="fas fa-caret-right"></i></label>
+                <label for="show-items" class="personnel">บุคลากร<i class="fas fa-caret-right"></i></label>
                 <ul>
                   <li class="right-b"><a href="./personel-cs.html" id="T-CS">คณาจารย์ประจำหลักสูตร CS</a></li>
                   <li class="right-b"><a href="./personel-it.html" id="T-IT">คณาจารย์ประจำหลักสูตร IT</a></li>
                   <li class="right-b"><a href="./personel-gis.html" id="T-GIS">คณาจารย์ประจำหลักสูตร GIS</a></li>
                 </ul>
               </li>
+              <li class="right-b"><a href="./news.html" class="news-class">ข่าวสาร</a></li>
             </ul>
           </li>
           <li>
-            <a href="#" class="desktop-link" id="education">การศึกษา</a>
+            <a href="#" class="desktop-link education">การศึกษา</a>
             <input type="checkbox" id="show-services">
-            <label for="show-services" id="education2">การศึกษา</label>
+            <label for="show-services" class="education">การศึกษา</label>
             <ul>
               
               <li>
-                <a href="#" class="desktop-link" id="syllabus">หลักสูตร<i class="fas fa-caret-right"></i></a>
+                <a href="#" class="desktop-link syllabus">หลักสูตร<i class="fas fa-caret-right"></i></a>
                 <input type="checkbox" id="show-items2">
-                <label for="show-items2" id="syllabus">หลักสูตร<i class="fas fa-caret-right"></i></label>
+                <label for="show-items2" class="syllabus">หลักสูตร<i class="fas fa-caret-right"></i></label>
                 <ul>
-                  <li class="right-b"><a href="./syllabus-bachelor.html" id="bachelor-text">ระดับปริญญาตรี</a></li>
-                  <li class="right-b"><a href="./syllabus-master.html" id="master-text">ระดับปริญญาโท</a></li>
-                  <li class="right-b"><a href="./syllabus-doctor.html" id="doctor-text">ระดับปริญญาเอก</a></li>
+                  <li class="right-b"><a href="./syllabus-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./syllabus-master.html" class="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./syllabus-doctor.html" class="doctor-text">ระดับปริญญาเอก</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="desktop-link" id="scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></a>
+                <a href="#" class="desktop-link scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></a>
                 <input type="checkbox" id="show-items3">
-                <label for="show-items3" id="scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></label>
+                <label for="show-items3" class="scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></label>
                 <ul>
-                  <li class="right-b"><a href="./scholarship-bachelor.html" id="bachelor-text">ระดับปริญญาตรี</a></li>
-                  <li class="right-b"><a href="./scholarship-master.html" id="master-text">ระดับปริญญาโท</a></li>
-                  <li class="right-b"><a href="./scholarship-doctor.html" id="doctor-text">ระดับปริญญาเอก</a></li>
+                  <li class="right-b"><a href="./scholarship-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./scholarship-master.html" class="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./scholarship-doctor.html" class="doctor-text">ระดับปริญญาเอก</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="desktop-link" id="calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></a>
+                <a href="#" class="desktop-link calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></a>
                 <input type="checkbox" id="show-items4">
-                <label for="show-items4" id="calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></label>
+                <label for="show-items4" class="calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></label>
                 <ul>
-                  <li class="right-b"><a href="./calendar-grad.html" id="grad">ระดับบัณฑิตศึกษา</a></li>
-                  <li class="right-b"><a href="./calendar-bachelor.html" id="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./calendar-grad.html" class="grad">ระดับบัณฑิตศึกษา</a></li>
+                  <li class="right-b"><a href="./calendar-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
                 </ul>
               </li>
               <li class="right-b"><a href="https://reg.kku.ac.th/" target="_blank" id="service">บริการการศึกษา</a></li>
@@ -95,23 +96,15 @@
             <label for="show-services2" id="admission2">การรับเข้าศึกษา</label>
             <ul>
               <li>
-                <a href="#" class="desktop-link" id="bachelor">ระดับปริญญาตรี<i class="fas fa-caret-right"></i></a>
-                <input type="checkbox" id="show-items5">
-                <label for="show-items5" id="bachelor">ระดับปริญญาตรี<i class="fas fa-caret-right"></i></label>
-                <ul>
-                  <li class="right-b"><a href="./round2.html" id="round2">รอบที่ 2</a></li>
-                  <li class="right-b"><a href="./round2-2.html" id="round2-2">รอบที่ 2.2</a></li>
-                  <li class="right-b"><a href="./round3.html" id="round3">รอบที่ 3</a></li>
-                </ul>
-              </li>
-              <li class="right-b"><a href="https://gs.kku.ac.th" target="_blank" id="grad">ระดับบัณฑิตศึกษา</a></li>
+                <li class="right-b"><a href="./admission.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                <li class="right-b"><a href="https://gs.kku.ac.th" target="_blank" class="grad">ระดับบัณฑิตศึกษา</a></li>
             </ul>
           </li>
 
           <li>
-            <a href="#" class="desktop-link" id="research">งานวิจัย</a>
+            <a href="#" class="desktop-link research">งานวิจัย</a>
             <input type="checkbox" id="show-services3">
-            <label for="show-services3" id="research">งานวิจัย</label>
+            <label for="show-services3" class="research">งานวิจัย</label>
             <ul>
               <li class="right-b"><a href="./research.html" id="researchGroup">ศูนย์วิจัยและกลุ่มวิจัย</a></li>
               <li class="right-b"><a href="./mou.html" id="MOU">ความร่วมมือ MOU</a></li>
@@ -121,7 +114,7 @@
         </ul>
       </div>
       <!-- START CHANGE LANG. -->
-        <label for="" class="lang">
+        <label class="lang">
           <span class="slide">
             <span class="slide-text1">TH</span>
             <span class="slide-text2">EN</span>
@@ -143,22 +136,21 @@
 
 
 <!--***** START CONTENT *****-->
-
 <!-- START BANNER -->
 <div class="banner">
   <img src="./img/banner/p1scholarship_th.jpg" alt="p1scholarship_banner" class="banner-img" id="p1scholarship-th">
 </div>
 <!-- END BANNER -->
-
+<p class="breadcrumb">หน้าหลัก > การศึกษา > ทุนการศึกษา > ระดับปริญญาตรี</p>
 <div class="container container-content">
 <div class="row">
   <div class="col-sm">
       
       <h1>รายละเอียดทุนการศึกษาระดับปริญญาตรี</h1>
-      <p>
+      <div>
         <br><h3>โครงการรับสมัครนักเรียนทุนผู้มีความสามารถดีเด่นด้านคอมพิวเตอร์และเทคโนโลยีสารสนเทศ</h3>
         <br><h5>1. คุณสมบัติทั่วไป</h5>
-            <p>
+            <div>
               
               <ol>
                 <li>เป็นผู้ที่กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6</li>
@@ -168,10 +160,10 @@
                 <li>เป็นผู้มีความขยันหมั่นเพียร  มีความความประพฤติดี และมีบุคลิกภาพเหมาะสม</li>
               </ol>
 
-            </p>
+            </div>
 
             <br><h5>2. คุณสมบัติเฉพาะ</h5>
-            <p>
+            <div>
               <ol>
 
                 <li>เป็นผู้ที่มีผลการเรียนดี
@@ -179,8 +171,8 @@
                   1.1 มีผลการเรียนเฉลี่ยสะสม (GPAX) คำนวณจากผลการเรียนชั้นมัธยมศึกษาปีที่ 4-5 รวม 4 ภาคการศึกษาไม่ต่ำกว่า 2.75
                   <br><br>
                   1.2 มีผลการเรียนเฉลี่ยวิชาคณิตศาสตร์ในชั้นมัธยมศึกษาปีที่ 4-5 รวม 4 ภาคการศึกษาไม่ต่ำกว่า 2.75
-                </li><br>
-
+                </li>
+<br>
                 <li>เป็นผู้ได้รับรางวัลการแข่งขันในโครงการดังต่อไปนี้และรางวัลที่ได้รับจะต้องไม่เกิน 2 ปี
                   <br><br>
                   2.1 ได้รับรางวัล (เหรียญ) ในระดับ ดี ถึง ดีเยี่ยม หรือผู้ผ่านรอบ 2 ของการสอบแข่งขันคอมพิวเตอร์โอลิมปิกวิชาการ สอวน. หรือ
@@ -203,17 +195,17 @@
 
               </ol>
 
-            </p>
+            </div>
 
             <br><h5>3. สาขาวิชาที่จะรับเข้าศึกษา</h5>
-            <p>
+            <div>
               <ol>
-                <li>>สาขาวิชาวิทยาการคอมพิวเตอร์ จำนวน 4 คน</li>
+                <li>สาขาวิชาวิทยาการคอมพิวเตอร์ จำนวน 4 คน</li>
                 <li>สาขาวิชาเทคโนโลยีสารสนเทศ จำนวน 4 คน</li>
                 <li>สาขาวิชาภูมิสารสนเทศศาสตร์ จำนวน 4 คน</li>
               </ol>
 
-            </p>
+            </div>
 
             <br><h5>4. กำหนดการการรับสมัคร และ ขั้นตอนการสมัคร</h5>
             <p>
@@ -221,7 +213,7 @@
             </p>
 
             <br><h5>5. เอกสารหลักฐานที่ใช้ประกอบการสมัคร</h5>
-            <p>
+            <div>
               
               <ol>
                 <li>ใบคำรับรองของผู้บริหารโรงเรียน</li>
@@ -232,7 +224,7 @@
                 <li>ผลงานที่ได้รับรางวัล</li>
               </ol>
 
-            </p>
+            </div>
 
             <br><h5>6. ค่าธรรมเนียมสมัครสอบ</h5>
             <p>
@@ -247,7 +239,7 @@
 
             <br><h5>8. เงื่อนไขในการเข้าศึกษา</h5>
             <br>
-            <p>
+            <div>
               <strong>ประเภททุนการศึกษา</strong>
               <ol>
                 <li>ผู้รับทุนจะต้องทำสัญญากับ คณะวิทยาศาสตร์  มหาวิทยาลัยขอนแก่น เพื่อรับทุนการศึกษาโครงการผู้มีความสามารถดีเด่นด้านคอมพิวเตอร์และเทคโนโลยีสารสนเทศ และยินยอมปฏิบัติตามเงื่อนไขและข้อผูกพันที่โครงการผู้มีความสามารถดีเด่นด้านคอมพิวเตอร์และเทคโนโลยีสารสนเทศกำหนดโดยมี ผู้ปกครอง/ผู้แทนโดยชอบธรรม เป็นผู้ค้ำประกันการทำสัญญา</li>
@@ -262,10 +254,10 @@
                 <li>ผู้ให้ทุนสามารถยกเลิกการให้ทุนแก่ผู้รับทุนได้ หากพบว่าผู้รับทุนประพฤติไม่เหมาะสม</li>
               </ol>
 
-            </p>
+            </div>
 
             <br>
-            <p>
+            <div>
               <strong>ประเภทเข้าร่วม</strong>
               <ol>
                 <li>นักศึกษาที่ได้รับการคัดเลือกเข้าร่วมโครงการผู้มีความสามารถดีเด่นด้านคอมพิวเตอร์และเทคโนโลยีสารสนเทศ จะต้องรับทราบเงื่อนไขการเป็นนักศึกษาของภาควิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์  มหาวิทยาลัยขอนแก่น เพื่อยินยอมปฏิบัติตามเงื่อนไขและข้อผูกพันที่โครงการผู้มีความสามารถดีเด่นด้านคอมพิวเตอร์และเทคโนโลยีสารสนเทศกำหนดไว้ ในการนี้ บิดา หรือมารดา สามารถเป็นพยานในการรับทราบเงื่อนไขดังกล่าวได้</li>
@@ -277,11 +269,11 @@
                 <li>นักศึกษาที่เข้าร่วมโครงการผู้มีความสามารถดีเด่นด้านคอมพิวเตอร์และเทคโนโลยีสารสนเทศเมื่อสำเร็จการศึกษาตามสาขาวิชาที่ได้รับทุนแล้ว จะไม่มีข้อผูกมัดใดๆ กับภาควิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น</li>
               </ol>
 
-            </p>
+            </div>
 
             <br><h5>9. ทุนการศึกษา</h5>
             <br>
-            <p>
+            <div>
               ทุนการศึกษาตลอดหลักสูตร 4 ปี แก่ผู้ผ่านการคัดเลือกตามโครงการฯ จำนวน 6 ทุน (สาขาวิชาละ 2 ทุน) ทุนการศึกษาประกอบด้วย
               
               <ol>
@@ -289,17 +281,17 @@
                 <li>ค่าใช้จ่ายส่วนตัวรายเดือน เดือนละ 4,000 บาท</li>
                 <li>ค่าร่วมกิจกรรมต่างๆของนักศึกษาที่ภาควิชาวิทยาการคอมพิวเตอร์จัดขึ้น หรือภาควิชาฯ อนุมัติ</li>
               </ol>
-            </p>
+            </div>
         
-      </p>
+      </div>
 
 
 
 
-      <p>
+      <div>
         <br><h3>โครงการส่งเสริมการผลิตบัณฑิตที่มีความสามารถพิเศษทางวิทยาการคอมพิวเตอร์ (โครงการช้างเผือก)</h3>
         <br><h5>1. คุณสมบัติทั่วไป</h5>
-            <p>
+            <div>
               
               <ol>
                 <li>เป็นผู้ที่กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6</li>
@@ -309,10 +301,10 @@
                 <li>เป็นผู้มีความขยันหมั่นเพียร  มีความความประพฤติดี และมีบุคลิกภาพเหมาะสม</li>
               </ol>
 
-            </p>
+            </div>
 
             <br><h5>2. คุณสมบัติเฉพาะ</h5>
-            <p>
+            <div>
               <ol>
 
                 <li>ผู้สมัครเข้าโครงการ ต้องมีคุณสมบัติดังนี้
@@ -324,17 +316,17 @@
 
               </ol>
 
-            </p>
+            </div>
 
             <br><h5>3. สาขาวิชาที่จะรับเข้าศึกษา</h5>
-            <p>
+            <div>
               <ol>
                 <li>>สาขาวิชาวิทยาการคอมพิวเตอร์ จำนวน 5 คน</li>
                 <li>สาขาวิชาเทคโนโลยีสารสนเทศ จำนวน 5 คน</li>
                 <li>สาขาวิชาภูมิสารสนเทศศาสตร์ จำนวน 5 คน</li>
               </ol>
 
-            </p>
+            </div>
 
             <br><h5>4. กำหนดการการรับสมัคร และ ขั้นตอนการสมัคร</h5>
             <p>
@@ -342,7 +334,7 @@
             </p>
 
             <br><h5>5. เอกสารหลักฐานที่ใช้ประกอบการสมัคร</h5>
-            <p>
+            <div>
               
               <ol>
                 <li>ใบคำรับรองของผู้บริหารโรงเรียน</li>
@@ -353,7 +345,7 @@
                 <li>ผลงานที่ได้รับรางวัล</li>
               </ol>
 
-            </p>
+            </div>
 
             <br><h5>6. ค่าธรรมเนียมสมัครสอบ</h5>
             <p>
@@ -368,7 +360,7 @@
 
             <br><h5>8. เงื่อนไขในการเข้าศึกษา</h5>
             
-            <p>
+            <div>
               <ol>
                 <li>มีคุณสมบัติตามที่ประกาศไว้และต้องสำเร็จการศึกษาชั้นมัธยมศึกษาปีที่ 6</li>
                 <li>ต้องช่วยเหลือกิจกรรมของภาควิชาฯ และเข้าร่วมกิจกรรมการเรียนการสอนโปรแกรมเสริมและกิจกรรมพิเศษ ที่ภาควิชาฯ กำหนดขึ้นสำหรับนักศึกษาในโครงการฯ</li>
@@ -380,7 +372,7 @@
                 <li>เมื่อได้รับปริญญาตรีวิทยาศาสตรบัณฑิตแล้ว นักศึกษาจะไม่มีข้อผูกพันใดๆ กับภาควิชาวิทยาการคอมพิวเตอร์  คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น</li>
               </ol>
 
-            </p>
+            </div>
 
             
 
@@ -389,7 +381,7 @@
               ผู้ที่ได้รับการคัดเลือกเข้าเป็นนักศึกษาในโครงการส่งเสริมการผลิตบัณฑิตที่มีความสามารถพิเศษทางวิทยาการคอมพิวเตอร์ (โครงการช้างเผือก)  ระดับปริญญาตรี จะได้รับค่าใช้จ่ายส่วนตัว ปีละ 60,000 บาท ( หรือ 5,000.- บาท/เดือน ) ค่าหน่วยกิตและค่าธรรมเนียมในการศึกษา (ตามจ่ายจริง)  และค่าร่วมกิจกรรมต่างๆ ของนักศึกษาที่ภาควิชาฯ จัดขึ้น
             </p>
         
-      </p>
+      </div>
 
       <h5>สอบถามเพิ่มเติม</h5>
       <p>
@@ -407,6 +399,8 @@
 </div>
 
 
+
+
 <!--***** END CONTENT *****-->
   
 
@@ -416,5 +410,6 @@
     </div>
     <!-- END FOOTER -->
   <script src="./js/lang.js"></script>
+  <script src="./js/scholarship-bachelor.js"></script>
   </body>
 </html>

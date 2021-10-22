@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/administrators.css">
     <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/breadcrumb.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&display=swap');
@@ -22,7 +23,7 @@
 		  box-sizing: border-box;
 	  }
     </style>
-    <title>COLLEGE OF COMPUTING @KKU</title>
+    <title>C² | Administrators</title>
 </head>
 <body>
   <!-- START NAV-BAR -->
@@ -34,59 +35,60 @@
       <div class="content">
       <div class="logo"><a href="./index.html"><img src="./img/logoC2.png" alt="" width="120"></a></div>
         <ul class="links">
-          <li><a href="./index.html" id="home">หน้าหลัก</a></li>
+          <li><a href="./index.html" class="home">หน้าหลัก</a></li>
           <li>
-            <a href="#" class="desktop-link" id="about">เกี่ยวกับ</a>
+            <a href="#" class="desktop-link about">เกี่ยวกับ</a>
             <input type="checkbox" id="show-features">
-            <label for="show-features" id="about2">เกี่ยวกับ</label>
+            <label for="show-features" class="about">เกี่ยวกับ</label>
             <ul>
-              <li class="right-b"><a href="./history.html" id="history">ประวัติ</a></li>
-              <li class="right-b"><a href="./administrators.html" id="admins">คณะผู้บริหาร</a></li>
+              <li class="right-b"><a href="./history.html" class="history">ประวัติ</a></li>
+              <li class="right-b"><a href="./administrators.html" class="admins">คณะผู้บริหาร</a></li>
               <li>
-                <a href="#" class="desktop-link" id="personnel">บุคลากร<i class="fas fa-caret-right"></i></a>
+                <a href="#" class="desktop-link personnel">บุคลากร<i class="fas fa-caret-right"></i></a>
                 <input type="checkbox" id="show-items">
-                <label for="show-items" id="personnel">บุคลากร<i class="fas fa-caret-right"></i></label>
+                <label for="show-items" class="personnel">บุคลากร<i class="fas fa-caret-right"></i></label>
                 <ul>
                   <li class="right-b"><a href="./personel-cs.html" id="T-CS">คณาจารย์ประจำหลักสูตร CS</a></li>
                   <li class="right-b"><a href="./personel-it.html" id="T-IT">คณาจารย์ประจำหลักสูตร IT</a></li>
                   <li class="right-b"><a href="./personel-gis.html" id="T-GIS">คณาจารย์ประจำหลักสูตร GIS</a></li>
                 </ul>
               </li>
+              <li class="right-b"><a href="./news.html" class="news-class">ข่าวสาร</a></li>
             </ul>
           </li>
           <li>
-            <a href="#" class="desktop-link" id="education">การศึกษา</a>
+            <a href="#" class="desktop-link education">การศึกษา</a>
             <input type="checkbox" id="show-services">
-            <label for="show-services" id="education2">การศึกษา</label>
+            <label for="show-services" class="education">การศึกษา</label>
             <ul>
               
               <li>
-                <a href="#" class="desktop-link" id="syllabus">หลักสูตร<i class="fas fa-caret-right"></i></a>
+                <a href="#" class="desktop-link syllabus">หลักสูตร<i class="fas fa-caret-right"></i></a>
                 <input type="checkbox" id="show-items2">
-                <label for="show-items2" id="syllabus">หลักสูตร<i class="fas fa-caret-right"></i></label>
+                <label for="show-items2" class="syllabus">หลักสูตร<i class="fas fa-caret-right"></i></label>
                 <ul>
-                  <li class="right-b"><a href="./syllabus-bachelor.html" id="bachelor-text">ระดับปริญญาตรี</a></li>
-                  <li class="right-b"><a href="./syllabus-master.html" id="master-text">ระดับปริญญาโท</a></li>
-                  <li class="right-b"><a href="./syllabus-doctor.html" id="doctor-text">ระดับปริญญาเอก</a></li>
+                  <li class="right-b"><a href="./syllabus-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./syllabus-master.html" class="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./syllabus-doctor.html" class="doctor-text">ระดับปริญญาเอก</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="desktop-link" id="scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></a>
+                <a href="#" class="desktop-link scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></a>
                 <input type="checkbox" id="show-items3">
-                <label for="show-items3" id="scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></label>
+                <label for="show-items3" class="scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></label>
                 <ul>
-                  <li class="right-b"><a href="./scholarship-bachelor.html" id="bachelor-text">ระดับปริญญาตรี</a></li>
-                  <li class="right-b"><a href="./scholarship-master.html" id="master-text">ระดับปริญญาโท</a></li>
-                  <li class="right-b"><a href="./scholarship-doctor.html" id="doctor-text">ระดับปริญญาเอก</a></li>
+                  <li class="right-b"><a href="./scholarship-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./scholarship-master.html" class="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./scholarship-doctor.html" class="doctor-text">ระดับปริญญาเอก</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="desktop-link" id="calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></a>
+                <a href="#" class="desktop-link calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></a>
                 <input type="checkbox" id="show-items4">
-                <label for="show-items4" id="calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></label>
+                <label for="show-items4" class="calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></label>
                 <ul>
-                  <li class="right-b"><a href="./calendar-grad.html" id="grad">ระดับบัณฑิตศึกษา</a></li>
-                  <li class="right-b"><a href="./calendar-bachelor.html" id="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./calendar-grad.html" class="grad">ระดับบัณฑิตศึกษา</a></li>
+                  <li class="right-b"><a href="./calendar-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
                 </ul>
               </li>
               <li class="right-b"><a href="https://reg.kku.ac.th/" target="_blank" id="service">บริการการศึกษา</a></li>
@@ -98,23 +100,15 @@
             <label for="show-services2" id="admission2">การรับเข้าศึกษา</label>
             <ul>
               <li>
-                <a href="#" class="desktop-link" id="bachelor">ระดับปริญญาตรี<i class="fas fa-caret-right"></i></a>
-                <input type="checkbox" id="show-items5">
-                <label for="show-items5" id="bachelor">ระดับปริญญาตรี<i class="fas fa-caret-right"></i></label>
-                <ul>
-                  <li class="right-b"><a href="./round2.html" id="round2">รอบที่ 2</a></li>
-                  <li class="right-b"><a href="./round2-2.html" id="round2-2">รอบที่ 2.2</a></li>
-                  <li class="right-b"><a href="./round3.html" id="round3">รอบที่ 3</a></li>
-                </ul>
-              </li>
-              <li class="right-b"><a href="https://gs.kku.ac.th" target="_blank" id="grad">ระดับบัณฑิตศึกษา</a></li>
+                <li class="right-b"><a href="./admission.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                <li class="right-b"><a href="https://gs.kku.ac.th" target="_blank" class="grad">ระดับบัณฑิตศึกษา</a></li>
             </ul>
           </li>
 
           <li>
-            <a href="#" class="desktop-link" id="research">งานวิจัย</a>
+            <a href="#" class="desktop-link research">งานวิจัย</a>
             <input type="checkbox" id="show-services3">
-            <label for="show-services3" id="research">งานวิจัย</label>
+            <label for="show-services3" class="research">งานวิจัย</label>
             <ul>
               <li class="right-b"><a href="./research.html" id="researchGroup">ศูนย์วิจัยและกลุ่มวิจัย</a></li>
               <li class="right-b"><a href="./mou.html" id="MOU">ความร่วมมือ MOU</a></li>
@@ -124,7 +118,7 @@
         </ul>
       </div>
       <!-- START CHANGE LANG. -->
-        <label for="" class="lang">
+        <label class="lang">
           <span class="slide">
             <span class="slide-text1">TH</span>
             <span class="slide-text2">EN</span>
@@ -149,10 +143,10 @@
 
   <!-- START BANNER -->
   <div class="banner" data-aos="flip-left">
-    <img src="./img/banner/history_th.jpg" alt="history_banner" class="banner-img" id="history-th">
+    <img src="./img/banner/banner_admin_th.jpg" alt="history_banner" class="banner-img" id="admins-th">
   </div>
   <!-- END BANNER -->
-
+  <p class="breadcrumb">หน้าหลัก > การรับเข้าศึกษา > ระดับปริญญาตรี</p>
   <h1 class="text-adminitrators">คณะผู้บริหาร</h1>
 
   <div class="container">
@@ -161,18 +155,18 @@
       <div class="col-sm colGra">
         <div class="card cardGra" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <img src="./img/administrators/DrSirapat.jpg" class="card-img-top" alt="Vice President">
-          <p class="card-text">
+          <div class="card-text">
             <h4>รศ.ดร.สิรภัทร เชี่ยวชาญวัฒนา</h4>
-            <h5>หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
-          </p>
+            <h5>ผู้รักษาการแทนคณะบดีวิทยาลัยการคอมพิวเตอร์</h5>
+          </div>
         </div>
       </div>
       <div class="rowGra"></div>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
+              <h5 class="modal-title" id="exampleModalLabel1">ผู้รักษาการแทนคณะบดีวิทยาลัยการคอมพิวเตอร์</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -191,18 +185,18 @@
       <div class="col-sm" data-aos="fade-up">
         <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal2">
           <img src="./img/administrators/DrWaranya.jpg" class="card-img-top" alt="Vice President">
-          <p class="card-text">
+          <div class="card-text">
             <h4>อ.ดร.วรัญญา วรรณศรี</h4>
             <p>รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</p>
             <p>ฝ่ายแผนยุทธศาตร์</p>
-          </p>
+          </div>
         </div>
       </div>
-      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
+              <h5 class="modal-title" id="exampleModalLabel2">รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -219,18 +213,18 @@
       <div class="col-sm" data-aos="fade-up">
         <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal3">
           <img src="./img/administrators/DrChitSuta.jpg" class="card-img-top" alt="Vice President">
-          <p class="card-text">
+          <div class="card-text">
             <h4>ผศ.ดร.ชิตสุธา สุ่มเล็ก</h4>
             <p>รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</p>
             <p>ฝ่ายวิชาการ</p>
-          </p>
+          </div>
         </div>
       </div>
-      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
+              <h5 class="modal-title" id="exampleModalLabel3">รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -246,18 +240,18 @@
       <div class="col-sm" data-aos="fade-up">
         <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal4">
           <img src="./img/administrators/DrWachirawut.jpg" class="card-img-top" alt="Vice President">
-          <p class="card-text">
+          <div class="card-text">
             <h4>อ.ดร.วชิราวุธ ธรรมวิเศษ</h4>
             <p>รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</p>
             <p>ฝ่ายสารสนเทศ</p>
-          </p>
+          </div>
         </div>
       </div>
-      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
+              <h5 class="modal-title" id="exampleModalLabel4">รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -276,18 +270,18 @@
       <div class="col-sm" data-aos="fade-up">
         <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal5">
           <img src="./img/administrators/Nakorn.jpg" class="card-img-top" alt="Vice President">
-          <p class="card-text">
+          <div class="card-text">
             <h4>ผศ.ดร.ณกร วัฒนกิจ</h4>
             <p>รองหัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</p>
             <p>ฝ่ายพัฒนานักศึกษาและศิษย์เก่าสัมพันธ์</p>
-          </p>
+          </div>
         </div>
       </div>
-      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
+              <h5 class="modal-title" id="exampleModalLabel5">หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -304,18 +298,18 @@
       <div class="col-sm" data-aos="fade-up">
         <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal6">
           <img src="./img/administrators/AjSaran.jpg" class="card-img-top" alt="Vice President">
-          <p class="card-text">
+          <div class="card-text">
             <h4>อ.ศรัณย์ อภิชนตระกูล</h4>
             <p>หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</p>
             <p>ฝ่ายวิจัย</p>
-          </p>
+          </div>
         </div>
       </div>
-      <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
+              <h5 class="modal-title" id="exampleModalLabel6">หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -331,17 +325,17 @@
       <div class="col-sm" data-aos="fade-up">
         <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal7">
           <img src="./img/administrators/KPraiwan.jpg" class="card-img-top" alt="Vice President">
-          <p class="card-text">
+          <div class="card-text">
             <h4>คุณไพรวัลย์ คุณาสถิต์ชัย</h4>
             <p>เลขาณุการวิชาวิทยาการคอมพิวเตอร์</p>
-          </p>
+          </div>
         </div>
       </div>
-      <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">เลขาณุการวิชาวิทยาการคอมพิวเตอร์</h5>
+              <h5 class="modal-title" id="exampleModalLabel7">เลขาณุการวิชาวิทยาการคอมพิวเตอร์</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
