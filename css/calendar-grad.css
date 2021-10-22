@@ -1,0 +1,41 @@
+.container-content {
+    margin-top: 5%;
+}
+
+.container-content .row .col-sm p{
+    text-indent: 3rem;
+}
+
+.container-content .row .col-sm {
+    padding: 4rem;
+}
+
+
+
+img.gradcalendar_thumbnail{
+    width: fit-content;
+}
+
+ul{
+    list-style-type: none;
+}
+  
+
+.gradcalendar{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.gradcalendar:hover {
+    transform: scale(0.975);
+}
+
+table{
+    margin-top: 1rem;
+}
+
+

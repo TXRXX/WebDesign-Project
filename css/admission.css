@@ -2,7 +2,7 @@
     margin-top: 5%;
 }
 
-.container-content .row .col-sm p{
+.container-content .row .col-sm p {
     text-indent: 3rem;
 }
 
@@ -10,21 +10,15 @@
     padding: 4rem;
 }
 
-
-
-
-
 table, td, th {
     text-align: center;
     padding: 0.5rem;
     border: 1px solid black;
 }
 
-td, th{
+td, th {
     width: fit-content;
 }
-
-
 
 td:hover, th:hover {
     padding: 0.5rem;
@@ -35,13 +29,8 @@ td:hover, th:hover {
 
 table {
     border-collapse: collapse;
-  }
-
-li.admissionlink{
-    list-style-type: none;
-    
 }
 
-
-
-
+li.admissionlink {
+    list-style-type: none;
+}

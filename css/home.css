@@ -2,6 +2,10 @@
     font-family: 'IBM Plex Sans Thai', sans-serif;
 }
 
+*:focus {
+    outline: none;
+}
+
 .container {}
 
 .wel-text {
@@ -53,6 +57,7 @@
 .image4 {
     background-image: url("../img/quicklink_4.jpg");
 }
+
 
 .hello {
     position: absolute;

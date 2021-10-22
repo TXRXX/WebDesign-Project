@@ -1,0 +1,10 @@
+.breadcrumb {
+    margin: 2% 0 0 2%;
+    padding-left: 10px;
+    padding-top: 3px;
+    border-left: 4px solid #375977;
+}
+
+.breadcrumb a {
+    padding-right: 5px;
+}
