@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/35c103d6a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/lang.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/sylla-ba-cs.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&display=swap');
+	  * {
+		  box-sizing: border-box;
+	  }
+    </style>
+    <title>COLLEGE OF COMPUTING @KKU</title>
+</head>
+<body>
+  <!-- START NAV-BAR -->
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="./index.html"><img src="./img/logoC2.png" alt="" width="120"></a></div>
+        <ul class="links">
+          <li><a href="./index.html" class="home">หน้าหลัก</a></li>
+          <li>
+            <a href="#" class="desktop-link about">เกี่ยวกับ</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features" class="about">เกี่ยวกับ</label>
+            <ul>
+              <li class="right-b"><a href="./history.html" class="history">ประวัติ</a></li>
+              <li class="right-b"><a href="./administrators.html" class="admins">คณะผู้บริหาร</a></li>
+              <li>
+                <a href="#" class="desktop-link personnel">บุคลากร<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items" class="personnel">บุคลากร<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./personel-cs.html" id="T-CS">คณาจารย์ประจำหลักสูตร CS</a></li>
+                  <li class="right-b"><a href="./personel-it.html" id="T-IT">คณาจารย์ประจำหลักสูตร IT</a></li>
+                  <li class="right-b"><a href="./personel-gis.html" id="T-GIS">คณาจารย์ประจำหลักสูตร GIS</a></li>
+                </ul>
+              </li>
+              <li class="right-b"><a href="./news.html" class="news-class">ข่าวสาร</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link education">การศึกษา</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services" class="education">การศึกษา</label>
+            <ul>
+              
+              <li>
+                <a href="#" class="desktop-link syllabus">หลักสูตร<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items2">
+                <label for="show-items2" class="syllabus">หลักสูตร<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./syllabus-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./syllabus-master.html" class="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./syllabus-doctor.html" class="doctor-text">ระดับปริญญาเอก</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items3">
+                <label for="show-items3" class="scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./scholarship-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./scholarship-master.html" class="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./scholarship-doctor.html" class="doctor-text">ระดับปริญญาเอก</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items4">
+                <label for="show-items4" class="calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./calendar-grad.html" class="grad">ระดับบัณฑิตศึกษา</a></li>
+                  <li class="right-b"><a href="./calendar-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                </ul>
+              </li>
+              <li class="right-b"><a href="https://reg.kku.ac.th/" target="_blank" id="service">บริการการศึกษา</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link" id="admission">การรับเข้าศึกษา</a>
+            <input type="checkbox" id="show-services2">
+            <label for="show-services2" id="admission2">การรับเข้าศึกษา</label>
+            <ul>
+              <li>
+                <li class="right-b"><a href="./admission.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                <li class="right-b"><a href="https://gs.kku.ac.th" target="_blank" class="grad">ระดับบัณฑิตศึกษา</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#" class="desktop-link research">งานวิจัย</a>
+            <input type="checkbox" id="show-services3">
+            <label for="show-services3" class="research">งานวิจัย</label>
+            <ul>
+              <li class="right-b"><a href="./research.html" id="researchGroup">ศูนย์วิจัยและกลุ่มวิจัย</a></li>
+              <li class="right-b"><a href="./mou.html" id="MOU">ความร่วมมือ MOU</a></li>
+            </ul>
+          </li>
+          <li><a href="./contact.html" id="contact">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <!-- START CHANGE LANG. -->
+        <label class="lang">
+          <span class="slide">
+            <span class="slide-text1">TH</span>
+            <span class="slide-text2">EN</span>
+          <span class="slider">
+            <span class="slider-text" id="selected-lang">TH</span>
+          </span>
+        </span>
+        </label>
+      <!-- END CHANGE LANG. -->
+
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Search.." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  <!-- END NAV-BAR -->
+
+
+<!--***** START CONTENT *****-->
+<div class="banner">
+	<img src="./img/banner/p2scholarship_th.jpg" alt="p2scholarship_banner" class="banner-img" id="p2scholarship-th">
+</div>
+<!-- BANNER HERE -->
+
+<!--  -->
+  	<div class="container tabs">
+		  <div class="row">
+			  <div class="col-sm">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item" role="presentation">
+					  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+					</li>
+					<li class="nav-item" role="presentation">
+					  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+					</li>
+					<li class="nav-item" role="presentation">
+					  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+					</li>
+				  </ul>
+				  <div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home Content<br>Home Content<br>Home Content<br>Home Content<br>Home Content<br>Home Content<br>Home Content<br>Home Content<br>Home Content<br>Home Content<br>Home Content<br>Home Content<br>Home Content<br>Home Content<br>Home Content<br>Home Content<br>Home Content<br>Home Content<br></div>
+					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Profile Content</div>
+					<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact Content</div>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+
+
+<!--***** END CONTENT *****-->
+  
+
+    <!-- START FOOTER -->
+    <div class="footer">
+      <span class="footer-text">COPYRIGHT © 2021 ALL RIGHTS RESERVED</span> 
+    </div>
+    <!-- END FOOTER -->
+  <script src="./js/lang.js"></script>
+  </body>
+</html>
