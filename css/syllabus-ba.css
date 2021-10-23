@@ -1,0 +1,52 @@
+.container {
+    /* padding-top: 20%; */
+    margin-top: 10%;
+}
+
+.ba-text {
+    text-align: center;
+    font-weight: 900;
+    color: rgb(26, 26, 26);
+    margin-bottom: 3%;
+}
+
+.cont {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.fa-hive, .fa-laptop-code, .fa-satellite {
+    font-size: 2rem;
+    padding-right: .5rem;
+    rotate: 20deg;
+}
+
+.frame {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    color: #375977;
+    border: 5px solid #375977;
+    padding: 5% 0;
+    margin: 1% auto;
+}
+
+.frame::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #375977;
+    transition: all .35s;
+}
+
+.frame:hover {
+    color: white;
+}
+
+.frame:hover:after{
+    width: 100%;
+}
