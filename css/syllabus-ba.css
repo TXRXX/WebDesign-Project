@@ -14,6 +14,7 @@
     position: relative;
     display: inline-block;
     z-index: 1;
+    font-size: 2rem;
 }
 
 .fa-hive, .fa-laptop-code, .fa-satellite {
@@ -24,7 +25,7 @@
 
 .frame {
     position: relative;
-    width: 50%;
+    width: 80%;
     text-align: center;
     color: #375977;
     border: 5px solid #375977;
