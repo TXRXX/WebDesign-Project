@@ -148,8 +148,16 @@
         display: none;
     }
     .news-container {
-        left: 9%;
+        left: 0;
         margin-bottom: 0;
         margin-top: 0;
+    }
+
+    .name-news {
+        width: 97%;
+    }
+
+    .news-container .images-news {
+        width: 97%;
     }
 }
