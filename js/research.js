@@ -6,7 +6,7 @@ langSwitch.addEventListener("click", () => {
     document.getElementById("mou-th").src="./img/banner/research_th.jpg";
   } else {
     document.querySelector(".breadcrumb").textContent = "HOME > RESEARCH > RESEARCH GROUP";
-    document.getElementById("mou-th").src="./img/banner/research_en.jpg";x
+    document.getElementById("mou-th").src="./img/banner/research_en.jpg";
   }
   isThai = !isThai;
 });
