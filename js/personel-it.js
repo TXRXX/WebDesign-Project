@@ -29,7 +29,7 @@ const observer = new IntersectionObserver(entries => {
       document.querySelector(".text-personel").textContent = "คณาจารย์ประจำหลักสูตร IT";
       document.getElementById("staffIT-th").src="./img/banner/banner_ITstaff_th.jpg";
     } else {
-      document.querySelector(".breadcrumb").textContent = "HOME > ABOUT > PERSONEL > TEACHING STAFF IN IT";
+      document.querySelector(".breadcrumb").textContent = "HOME > ABOUT > PERSONNEL > TEACHING STAFF IN IT";
       document.querySelector(".text-personel").textContent = "TEACHING STAFF IN IT";
       document.getElementById("staffIT-th").src="./img/banner/banner_ITstaff_en.jpg";
     }

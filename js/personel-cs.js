@@ -29,7 +29,7 @@ langSwitch.addEventListener("click", () => {
     document.querySelector(".text-personel").textContent = "คณาจารย์ประจำหลักสูตร CS";
     document.getElementById("staffCS-th").src="./img/banner/banner_CSstaff_th.jpg";
   } else {
-    document.querySelector(".breadcrumb").textContent = "HOME > ABOUT > PERSONEL > TEACHING STAFF IN CS";
+    document.querySelector(".breadcrumb").textContent = "HOME > ABOUT > PERSONNEL > TEACHING STAFF IN CS";
     document.querySelector(".text-personel").textContent = "TEACHING STAFF IN CS";
     document.getElementById("staffCS-th").src="./img/banner/banner_CSstaff_en.jpg";
   }

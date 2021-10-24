@@ -19,7 +19,7 @@ if (isThai) {
     document.querySelector(".text-personel").textContent = "คณาจารย์ประจำหลักสูตร GIS";
     document.getElementById("staffGIS-th").src="./img/banner/banner_GISstaff_th.jpeg";
 } else {
-    document.querySelector(".breadcrumb").textContent = "HOME > ABOUT > PERSONEL > TEACHING STAFF IN GIS";
+    document.querySelector(".breadcrumb").textContent = "HOME > ABOUT > PERSONNEL > TEACHING STAFF IN GIS";
     document.querySelector(".text-personel").textContent = "TEACHING STAFF IN GIS";
     document.getElementById("staffGIS-th").src="./img/banner/banner_GISstaff_en.jpeg";
 }
