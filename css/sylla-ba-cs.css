@@ -1,0 +1,60 @@
+.tabs {
+    position: relative;
+    margin-top: 5%;
+}
+
+
+table, td, th {
+    text-align: left;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+td, th {
+    width: fit-content;
+}
+
+td:hover, th:hover {
+    background-color: #dddddd;
+}
+
+table {
+    width: 100%;
+    margin: 1rem;
+    border-collapse: collapse;
+}
+
+h4, h5{
+    margin: 1rem;
+}
+
+td.emptycell{
+    background-color: #f2f2f2;
+}
+
+th{
+    text-align: center;
+}
+
+table.eduplan{
+    margin: 2rem;
+}
+
+p.subjecttext{
+    margin: 1rem;
+}
+
+
+/* เผื่อเปลี่ยนสี */
+/* 
+th{
+    color: white;
+    background-color: #46667e;
+    text-align: center;
+}
+
+
+th:hover{
+    color: white;
+    background-color: #374f61;
+} */
