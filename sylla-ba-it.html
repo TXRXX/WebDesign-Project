@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/35c103d6a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/lang.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/sylla-ba-it.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&display=swap');
+	  * {
+		  box-sizing: border-box;
+	  }
+    </style>
+    <title>COLLEGE OF COMPUTING @KKU</title>
+</head>
+<body>
+  <!-- START NAV-BAR -->
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="./index.html"><img src="./img/logoC2.png" alt="" width="120"></a></div>
+        <ul class="links">
+          <li><a href="./index.html" class="home">หน้าหลัก</a></li>
+          <li>
+            <a href="#" class="desktop-link about">เกี่ยวกับ</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features" class="about">เกี่ยวกับ</label>
+            <ul>
+              <li class="right-b"><a href="./history.html" class="history">ประวัติ</a></li>
+              <li class="right-b"><a href="./administrators.html" class="admins">คณะผู้บริหาร</a></li>
+              <li>
+                <a href="#" class="desktop-link personnel">บุคลากร<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items" class="personnel">บุคลากร<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./personel-cs.html" id="T-CS">คณาจารย์ประจำหลักสูตร CS</a></li>
+                  <li class="right-b"><a href="./personel-it.html" id="T-IT">คณาจารย์ประจำหลักสูตร IT</a></li>
+                  <li class="right-b"><a href="./personel-gis.html" id="T-GIS">คณาจารย์ประจำหลักสูตร GIS</a></li>
+                </ul>
+              </li>
+              <li class="right-b"><a href="./news.html" class="news-class">ข่าวสาร</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link education">การศึกษา</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services" class="education">การศึกษา</label>
+            <ul>
+              
+              <li>
+                <a href="#" class="desktop-link syllabus">หลักสูตร<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items2">
+                <label for="show-items2" class="syllabus">หลักสูตร<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./syllabus-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./syllabus-master.html" class="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./syllabus-doctor.html" class="doctor-text">ระดับปริญญาเอก</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items3">
+                <label for="show-items3" class="scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./scholarship-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./scholarship-master.html" class="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./scholarship-doctor.html" class="doctor-text">ระดับปริญญาเอก</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items4">
+                <label for="show-items4" class="calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./calendar-grad.html" class="grad">ระดับบัณฑิตศึกษา</a></li>
+                  <li class="right-b"><a href="./calendar-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                </ul>
+              </li>
+              <li class="right-b"><a href="https://reg.kku.ac.th/" target="_blank" id="service">บริการการศึกษา</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link" id="admission">การรับเข้าศึกษา</a>
+            <input type="checkbox" id="show-services2">
+            <label for="show-services2" id="admission2">การรับเข้าศึกษา</label>
+            <ul>
+              <li>
+                <li class="right-b"><a href="./admission.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                <li class="right-b"><a href="https://gs.kku.ac.th" target="_blank" class="grad">ระดับบัณฑิตศึกษา</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#" class="desktop-link research">งานวิจัย</a>
+            <input type="checkbox" id="show-services3">
+            <label for="show-services3" class="research">งานวิจัย</label>
+            <ul>
+              <li class="right-b"><a href="./research.html" id="researchGroup">ศูนย์วิจัยและกลุ่มวิจัย</a></li>
+              <li class="right-b"><a href="./mou.html" id="MOU">ความร่วมมือ MOU</a></li>
+            </ul>
+          </li>
+          <li><a href="./contact.html" id="contact">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <!-- START CHANGE LANG. -->
+        <label class="lang">
+          <span class="slide">
+            <span class="slide-text1">TH</span>
+            <span class="slide-text2">EN</span>
+          <span class="slider">
+            <span class="slider-text" id="selected-lang">TH</span>
+          </span>
+        </span>
+        </label>
+      <!-- END CHANGE LANG. -->
+
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Search.." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  <!-- END NAV-BAR -->
+
+
+<!--***** START CONTENT *****-->
+<div class="banner">
+	<img src="./img/banner/it_th.jpg" alt="p2scholarship_banner" class="banner-img" id="p2scholarship-th">
+</div>
+<!-- BANNER HERE -->
+
+<!--  -->
+  	<div class="container tabs">
+		  <div class="row">
+			  <div class="col-sm">
+
+          <h1>หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศศาสตร์(หลักสูตรปรับปรุง พ.ศ. 2560)</h1>
+          <br>
+
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item" role="presentation">
+					  <button class="nav-link active" id="detail-tab" data-bs-toggle="tab" data-bs-target="#detail" type="button" role="tab" aria-controls="detail" aria-selected="true">รายละเอียด</button>
+					</li>
+					<li class="nav-item" role="presentation">
+					  <button class="nav-link" id="plan-tab" data-bs-toggle="tab" data-bs-target="#structure" type="button" role="tab" aria-controls="structure" aria-selected="false">โครงสร้างหลักสูตร</button>
+					</li>
+					<li class="nav-item" role="presentation">
+            <button class="nav-link" id="structure-tab" data-bs-toggle="tab" data-bs-target="#plan" type="button" role="tab" aria-controls="plan" aria-selected="false">แผนการศึกษา</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="subject-tab" data-bs-toggle="tab" data-bs-target="#subject" type="button" role="tab" aria-controls="subject" aria-selected="false">รายวิชาที่เปิดสอน</button>
+          </li>
+				  </ul>
+				  <div class="tab-content" id="myTabContent">
+
+					<div class="tab-pane fade show active" id="detail" role="tabpanel" aria-labelledby="detail-tab">
+            <br>
+            <h4>1. ชื่อหลักสูตร</h4>
+            <table>
+              <tr>
+                <td>ภาษาไทย</td>
+                <td>วิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ</td>
+              </tr>
+              <tr>
+                <td>ภาษาอังกฤษ</td>
+                <td>Bachelor of Science Program in Information Technology</td>
+              </tr>
+            </table>
+
+
+            <br>
+            <h4>2. ชื่อปริญญา</h4>
+            <table>
+              <tr>
+                <td>ภาษาไทย</td>
+                <td>วิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ
+                    <br>วท.บ. (เทคโนโลยีสารสนเทศ)</td>
+              </tr>
+              <tr>
+                <td>ภาษาอังกฤษ</td>
+                <td>Bachelor of Science (Information Technology) 
+                  <br>B.Sc. (Information Technology)</td>
+              </tr>
+            </table>
+
+            <br>
+            <h4>3. หน่วยงานที่รับผิดชอบ</h4>
+            <p>ภาควิชาวิทยาการคอมพิวเตอร์คณะวิทยาศาสตร์มหาวิทยาลัยขอนแก่น</p>
+
+            <br>
+            <h4>4. หลักการและเหตุผล ปรัชญาและวัตถุประสงค์ของหลักสูตร</h4>
+            <br>
+            <h5>4.1 หลักการและเหตุผล</h5>
+            <p>ปัจจุบันโลกมีการพัฒนาเปลี่ยนแปลงและวิวัฒนาการทางด้านเทคโนโลยีอย่างรวดเร็ว องค์กรต่างๆ มีการนำเทคโนโลยีคอมพิวเตอร์และระบบสารนเทศต่างๆ เข้ามาใช้งานอย่างกว้างขวางมากขึ้นเพื่อสนับสนุนการปฏิบัติการในองค์กร รวมถึงการสกัดองค์ความรู้ต่างๆจากระบบสารสนเทศที่มีอยู่มาช่วยในการตัดสินใจในองค์กร สำหรับประเทศไทยได้มีการจัดทำแผนแม่บทเทคโนโลยีและการสื่อสารฉบับที่ 1 ระหว่างปี 2545 - 2549 และแผนแม่บทฉบับที่ 2 ระหว่างปี พ.ศ. 2550 – 2554 ได้มีการกำหนดยุทธศาสตร์การนำ ICT มาใช้ในการบริหารภาครัฐ และเอกชน สร้างมาตรฐานการวิจัย ที่มีศักยภาพต่อการพัฒนาประเทศ มุ่งเป็นองค์กรที่มีบุคลากรที่มีความพร้อมความสามารถ พัฒนาด้าน IT ให้อยู่ในกลุ่มประเทศที่มีศักยภาพในการเป็นผู้นำ มีการลงทุนในการพัฒนาทักษะกำลังคน ซึ่งนำไปสู่ความต้องการกำลังคนที่มีความสามารถในการดำเนินด้านวิทยาการคอมพิวเตอร์และสารสนเทศเพื่อสนับสนุนการดำเนินการดังกล่าว</p>
+            <p>สำหรับมหาวิทยาลัยขอนแก่น มีหน้าที่และความรับผิดชอบในการดำเนินการจัดการศึกษาระดับอุดมศึกษา กำหนดนโยบายและจัดทำแผนการพัฒนามหาวิทยาลัยให้สอดคล้องกับนโยบายและแผนการพัฒนาประเทศ ในส่วนของภาควิชาวิทยาการคอมพิวเตอร์มีบุคลากรที่มีความรู้ความเชี่ยวชาญด้านวิทยาการคอมพิวเตอร์, เทคโนโลยีสารสนเทศและภูมิสารสนเทศศาสตร์ ที่พร้อมจะส่งเสริมและผลิตบัณฑิต ให้สอดคล้องกับภารกิจของภาควิชาวิทยาการคอมพิวเตอร์ ในการจัดการเรียนการสอนทั้งในระดับปริญญาตรี โท และระดับปริญญาเอก เพื่อผลิตบัณฑิตให้มีความรอบรู้วิชาการทั้งภาคทฤษฎี และภาคปฏิบัติ มีความสามารถในการใช้คอมพิวเตอร์และเทคโนโลยีสารสนเทศ มีความรู้ภาษาอังกฤษในระดับสื่อสาร มีความสามารถในการคิดและวิเคราะห์อย่างเป็นระบบ มีคุณธรรม จริยธรรม และรับผิดชอบต่อสังคม สอดคล้องกับความต้องการบุคลากรทางด้านวิทยาการคอมพิวเตอร์ ทั้งภาครัฐและเอกชน  </p>
+            <h5>4.2 ปรัชญา</h5>
+            <p>หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์ เป็นหลักสูตรที่มุ่งหวังจะผลิตบัณฑิตที่มีความรู้ความสามารถทางด้านวิทยาการคอมพิวเตอร์ทั้งภาคทฤษฎีและภาคปฎิบัติ มีทักษะทางด้านคอมพิวเตอร์ตามความสนใจและศักยภาพส่วนบุคคล มีความสามารถในการคิดและวิเคราะห์ได้อย่างเป็นระบบ มีความคิดริเริ่มสร้างสรรค์ มีความสามารถทางวิชาการ มีความสนใจใฝ่หาความรู้ ศึกษาตลอดชีวิต สามารถนำความรู้ไปประยุกต์ใช้ได้อย่างเหมาะสม สามารถทำงานร่วมกับผู้อื่นได้ดี มีความรับผิดชอบต่อสังคม มีจิตสำนึกในคุณธรรม จริยธรรมและจรรยาบรรณ  </p>
+            <h5>4.3   วัตถุประสงค์ของหลักสูตร</h5>
+            <p>
+              หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์ ฉบับเดิมเริ่มใช้เมื่อปี พ.ศ. 2536 ความจำเป็นต้องปรับปรุงใหม่ให้สอดคล้องกับความก้าวหน้าของวิทยาการด้านคอมพิวเตอร์ โดยมีวัตถุประสงค์ของหลักสูตร ดังนี้
+              <br>
+              เพื่อผลิตบัณฑิตระดับปริญญาตรี สาขาวิชาวิทยาการคอมพิวเตอร์ให้มีความรู้ ความสามารถในการประกอบวิชาชีพด้านคอมพิวเตอร์และมีความพร้อมในด้านต่าง ๆ คือ
+              <br>มีความคิดริเริ่ม สร้างสรรค์ สามารถติดตามความก้าวหน้าทางวิชาการอย่างต่อเนื่อง
+              <br>มีความสำนึกใหม่ในหน้าที่รับผิดชอบต่อตนเองและสังคม มีมนุษยสัมพันธ์ที่ดี สามารถทำงานเป็นกลุ่มได้อย่างมีประสิทธิภาพ
+              <br>มีทัศนคติที่ดีต่อวิชาชีพ มีคุณธรรมและจรรยาบรรณ 
+            </p>
+            <h5>4.4 จุดเด่นหรือจุดแข็งของหลักสูตร</h5>
+            <p>หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์ เป็นหลักสูตรที่สอดคล้องกับการใช้ชีวิตประจำวันของทุกคนในยุคปัจจุบัน ซึ่งเป็นยุคโลกาภิวัตน์หรือโลกไร้พรมแดนและมีการติดต่อสื่อสารข้อมูลผ่านระบบเครือข่ายโลก โดยทุกหน่วยงานทั้งภาครัฐและเอกชนจะเน้นการนำคอมพิวเตอร์และเทคโนโลยีสารสนเทศเข้ามาใช้งาน หลักสูตรนี้ยังเน้นการผลิตนักศึกษาในตำแหน่งงานที่ตลาดแรงงานต้องการเป็นจำนวนมาก ได้แก่ โปรแกรมเมอร์ นักวิเคราะห์ระบบ ผู้ดูแลระบบเครือข่าย นักวิศวกรซอฟต์แวร์ ผู้บริหารโครงการซอฟต์แวร์ นักวิจัย บุคลากรด้าน Graphics Multimedia และส่วนมากบัณฑิตที่สำเร็จการศึกษาหลักสูตรฯ นี้ มีงานทำ 100% และได้รับเงินเดือนสูงกว่าสาขาวิชาอื่น นอกจากนี้หลักสูตรยังให้ความสำคัญกับแนวคิดทางปรัชญา ซึ่งจะทำให้นักศึกษามีความคิดและวิเคราะห์ได้อย่างเป็นระบบ มีความสามารถทางวิชาการ มีความรับผิดชอบต่อสังคม มีจิตสำนึกในคุณธรรม จริยธรรมและจรรยาบรรณ</p>
+           
+            <br>
+            <h4>5. กำหนดการเปิดสอน</h4>
+            <p>จะเปิดดำเนินการเรียนการสอนหลักสูตรนี้ ตั้งแต่ภาคการศึกษาต้น ปีการศึกษา 2555 เป็นต้นไป</p>
+
+            <br>
+            <h4>6. คุณสมบัติของผู้เข้าศึกษา</h4>
+            <p>เป็นผู้มีคุณสมบัติตามระเบียบมหาวิทยาลัยขอนแก่น ว่าด้วยการศึกษาขั้นปริญญาตรี พ.ศ. 2550 หมวดที่ 2 ข้อ 9 หรือเป็นไปตามระเบียบมหาวิทยาลัยขอนแก่นที่ปรับปรุงใหม่</p>
+
+            <br>
+            <h4>7. การคัดเลือกผู้เข้าศึกษา</h4>
+            <p>ให้เป็นไปตามระเบียบมหาวิทยาลัยขอนแก่น ว่าด้วยการศึกษาขั้นปริญญาตรี พ.ศ. 2548 หมวดที่ 2 ข้อ 8 หรือเป็นไปตามระเบียบมหาวิทยาลัยขอนแก่นที่ปรับปรุงใหม่่</p>
+
+            <br>
+            <h4>8. จำนวนรับเข้าศึกษา</h4>
+            <p>ประมาณ 80 คน</p>
+
+            <h4>9.  วิชาที่สอบ</h4>
+            <table>
+              <tr>
+                <td>ภาษาอังกฤษ</td>
+                <td>30%</td>
+              </tr>
+              <tr>
+                <td>คณิตศาสตร์1</td>
+                <td>30%</td>
+              </tr>
+              <tr>
+                <td>เคมี</td>
+                <td>15%</td>
+              </tr>
+              <tr>
+                <td>ฟิสิกส์</td>
+                <td>25%</td>
+              </tr>
+              <tr>
+                <td>รวม</td>
+                <td>100%</td>
+              </tr>
+            </table>
+
+
+
+
+
+          </div>
+
+          <div class="tab-pane fade" id="structure" role="tabpanel" aria-labelledby="structure-tab">
+            <h4>นักศึกษาจะต้องมีจำนวนหน่วยกิตรวมตลอดหลักสูตร ไม่น้อยกว่า 137 หน่วยกิต นักศึกษาที่จะสำเร็จการศึกษาได้จะต้องผ่านวิชาสหกิจศึกษาหรือวิชาโครงงานคอมพิวเตอร์ และผ่านการฝึกงาน</h4>
+          
+            <table>
+              <tr>
+                <th>หมวดวิชาศึกษาทั่วไป</th>
+                <th>30 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <td>- กลุ่มวิชาภาษา</td>
+                <td>12 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <td>- กลุ่มวิชามนุษยศาสตร์และสังคมศาสตร์</td>
+                <td>3 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <td>- กลุ่มวิชาวิทยาศาสตร์และคณิตศาสตร์</td>
+                <td>15 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <td class = "emptycell"> </td>
+                <td class = "emptycell"> </td>
+              </tr>
+              <tr>
+                <th>หมวดวิชาเฉพาะ</th>
+                <th>101 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <td>- กลุ่มวิชาพื้นฐานวิชาชีพ</td>
+                <td>28 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <td>- กลุ่มวิชาบังคับ</td>
+                <td>52 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <td>1.กลุ่มวิชาชีพ</td>
+                <td>46 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <td>2.กลุ่มวิชาฝึกงานและสหกิจศึกษา</td>
+                <td>6 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <td>- กลุ่มวิชาเลือก</td>
+                <td>21  หน่วยกิต</td>
+              </tr>
+
+              <tr>
+                <th>หมวดวิชาเลือกเสรี</th>
+                <th>ไม่น้อยกว่า 6 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <th>รวมทั้งหมด</th>
+                <th>137 หน่วยกิต</th>
+              </tr>
+              
+              
+            </table>
+          </div>
+
+					<div class="tab-pane fade" id="plan" role="tabpanel" aria-labelledby="plan-tab">
+            <table class = "eduplan">
+              <tr>
+                <th colspan="2">ปีที่ 1 ภาคการศึกษาที่ 1</th>
+                <th>หน่วยกิต</th>
+              </tr>
+              <tr>
+                <td>000 101</td>
+                <td>
+                  ภาษาอังกฤษ1
+                  <br>English I
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>000 174</td>
+                <td>
+                  ทักษะการเรียนรู้
+                  <br>Learning Skills
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC001 002</td>
+                <td>
+                  วิทยาศาสตร์ เทคโนโลยีและนวัตกรรมเพื่อการพัฒนาที่ยั่งยืน
+                  <br>Science , technology and innovation for sustainable development
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>000 159</td>
+                <td>
+                  ความเป็นพลเมืองในสังคมประชาธิปไตย
+                  <br>Citizenship in Democratic Society
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC401 201</td>
+                <td>แคลคูลัสสำหรับวิทยาศาสตร์กายภาพ1
+                  <br>Calculus for Physical Science I
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC311 001</td>
+                <td>
+                  วิทยาการคอมพิวเตอร์หลักมูล
+                  <br>Fundamentals of Computer Science
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              <tr>
+                <td>SC311 002</td>
+                <td>
+                  	การเขียนโปรแกรมเชิงโครงสร้างสำหรับวิทยาการคอมพิวเตอร์
+                  <br>Structured Programming for Computer Science
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตลงทะเบียนเรียน</th>
+                <th>21 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตสะสม</th>
+                <th>21 หน่วยกิต</th>
+              </tr>
+            </table>
+
+
+
+            <table class = "eduplan">
+              <tr>
+                <th colspan="2">ปีที่ 1 ภาคการศึกษาที่ 2</th>
+                <th>หน่วยกิต</th>
+              </tr>
+              <tr>
+                <td>000 102</td>
+                <td>
+                  ภาษาอังกฤษ2
+                  <br>English II
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>000 153
+                  <br>หรือ
+                  <br>000 156
+                </td>
+                <td>
+                  ภูมิปัญญาท้องถิ่น
+                  <br>Local Wisdom
+                  <br><br>พหุวัฒนธรรม
+                  <br>Multiculturalism
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC002 104</td>
+                <td>
+                  วิทยาศาสตร์กายภาพ
+                  <br>Physical Science
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC401 202</td>
+                <td>แคลคูลัสสำหรับวิทยาศาสตร์กายภาพ2
+                  <br>Calculus for Physical Science II
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC311 003</td>
+                <td>
+                  การเขียนโปรแกรมเชิงวัตถุ
+                  <br>Object-Oriented Programming
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              <tr>
+                <td>SC311 004</td>
+                <td>
+                  สถาปัตยกรรมระบบคอมพิวเตอร์
+                  <br>Computer Systems Architecture
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              <tr>
+                <td>Xxxxx xxx</td>
+                <td>
+                  วิชาเลือกเฉพาะทาง
+                  <br>Specialized Electives
+                </td>
+                <td>3 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตลงทะเบียนเรียน</th>
+                <th>21 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตสะสม</th>
+                <th>42 หน่วยกิต</th>
+              </tr>
+            </table>
+
+
+
+            <table class = "eduplan">
+              <tr>
+                <th colspan="2">ปีที่ 2 ภาคการศึกษาที่ 1</th>
+                <th>หน่วยกิต</th>
+              </tr>
+              <tr>
+                <td>000 103</td>
+                <td>
+                  ภาษาอังกฤษ3
+                  <br>English III
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>000 175
+                  <br>หรือ
+                  <br>000 176
+                </td>
+                <td>
+                  การคิดเชิงสร้างสรรค์และการแก้ปัญหา
+                  <br>Creative Thinking and Problem Solving
+                  <br><br>ผู้ประกอบการสร้างสรรค์
+                  <br>Creative Entrepreneurs
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC402 101</td>
+                <td>
+                  พีชคณิตเชิงเส้น1
+                  <br>Linear Algebra 1
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC602 005</td>
+                <td>ความน่าจะเป็นและสถิติ
+                  <br>Probability and Statistics
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC312 001</td>
+                <td>
+                  โครงสร้างข้อมูล
+                  <br>Data Structure
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              <tr>
+                <td>SC312 002</td>
+                <td>
+                  การโต้ตอบระหว่างมนุษย์และคอมพิวเตอร์
+                  <br>Human Computer Interaction
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              <tr>
+                <td>Xxxxx xxx</td>
+                <td>
+                  วิชาเลือกเฉพาะทาง
+                  <br>Specialized Electives
+                </td>
+                <td>3 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตลงทะเบียนเรียน</th>
+                <th>21 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตสะสม</th>
+                <th>63 หน่วยกิต</th>
+              </tr>
+            </table>
+
+
+
+            <table class = "eduplan">
+              <tr>
+                <th colspan="2">ปีที่ 2 ภาคการศึกษาที่ 2</th>
+                <th>หน่วยกิต</th>
+              </tr>
+              <tr>
+                <td>000 103</td>
+                <td>
+                  ภาษาอังกฤษ4
+                  <br>English IV
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC402 401</td>
+                <td>
+                  วิยุตคณิตและการประยุกต์
+                  <br>Discrete Mathematic and Applications
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC312 003</td>
+                <td>ระบบจัดการฐานข้อมูลและการออกแบบฐานข้อมูล
+                  <br>Database Management System and Database Design
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC312 004</td>
+                <td>
+                  ปฏิบัติการระบบฐานข้อมูลและการออกแบบ
+                  <br>Database System and Design Laboratory
+                </td>
+                <td>1(0-2-1)</td>
+              </tr>
+              <tr>
+                <td>SC312 005</td>
+                <td>
+                  เครือข่ายคอมพิวเตอร์
+                  <br>Computer Networks
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              <tr>
+                <td>SC312 006</td>
+                <td>
+                  การวิเคราะห์ขั้นตอนวิธี
+                  <br>Analysis of Algorithms
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>Xxxxx xxx</td>
+                <td>
+                  วิชาเลือกเฉพาะทาง
+                  <br>Specialized Electives
+                </td>
+                <td>3 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตลงทะเบียนเรียน</th>
+                <th>19 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตสะสม</th>
+                <th>82 หน่วยกิต</th>
+              </tr>
+            </table>
+
+
+
+            <table class = "eduplan">
+              <tr>
+                <th colspan="2">ปีที่ 3 ภาคการศึกษาที่ 1</th>
+                <th>หน่วยกิต</th>
+              </tr>
+              <tr>
+                <td>411 224</td>
+                <td>
+                  ภาษาอังกฤษเทคนิคสำหรับวิทยาศาสตร์และเทคโนโลยี2
+                  <br>Technical English for Science and Technology II
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC403 602</td>
+                <td>
+                  วิธีเชิงตัวเลขสำหรับวิทยาการคอมพิวเตอร์
+                  <br>Numerical Methods for Computer Science
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC313 001</td>
+                <td>
+                  ระบบปฏิบัติการและการเขียนโปรแกรมซีสเต็มคอล
+                  <br>Operating Systems and System Calls programming
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              <tr>
+                <td>SC313 002</td>
+                <td>หลักการออกแบบพัฒนาซอฟต์แวร์
+                  <br>Principles of Software Design and Development
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              <tr>
+                <td>SC313 003</td>
+                <td>
+                  การวิเคราะห์และออกแบบระบบ
+                  <br>Systems analysis and design
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              <tr>
+                <td>SC313 761</td>
+                <td>
+                  สัมมนาทางวิทยาการคอมพิวเตอร์
+                  <br>Seminar in Computer Science
+                </td>
+                <td>1(1-0-2)</td>
+              </tr>
+              <tr>
+                <td>Xxxxx xxx</td>
+                <td>
+                  วิชาเลือกเฉพาะทาง
+                  <br>Specialized Electives
+                </td>
+                <td>6 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตลงทะเบียนเรียน</th>
+                <th>22 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตสะสม</th>
+                <th>104 หน่วยกิต</th>
+              </tr>
+            </table>
+
+
+
+            <table class = "eduplan">
+              <tr>
+                <th colspan="2">ปีที่ 3 ภาคการศึกษาที่ 2</th>
+                <th>หน่วยกิต</th>
+              </tr>
+              <tr>
+                <td>000 145</td>
+                <td>
+                  ภาวะผู้นำและการจัดการ
+                  <br>Leadership and Management
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC313 004</td>
+                <td>
+                  วิศวกรรมซอฟต์แวร์
+                  <br>Software Engineering
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              <tr>
+                <td>SC313 005</td>
+                <td>
+                  ทฤษฎีการคำนวณ
+                  <br>Theory of Computation
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC313 006</td>
+                <td>ปัญญาประดิษฐ์
+                  <br>Artificial Intelligence
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              <tr>
+                <td>SC313 762</td>
+                <td>
+                  ระเบียบวิธีทำวิจัย
+                  <br>Research Methodology
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>Xxxxx xxx</td>
+                <td>
+                  วิชาเลือกเฉพาะทาง
+                  <br>Specialized Electives
+                </td>
+                <td>6 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตลงทะเบียนเรียน</th>
+                <th>21 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตสะสม</th>
+                <th>125 หน่วยกิต</th>
+              </tr>
+            </table>
+
+
+
+            <h5>สำหรับนักศึกษาที่จะเลือกแผนสหกิจศึกษาให้ลงเพิ่มอีก1รายวิชา</h5>
+            <p>
+              SC002 001    การเตรียมความพร้อมก่อนปฏิบัติงานสหกิจศึกษาสำหรับนัก (ไม่นับหน่วยกกิจคณะวิทยาศาสตร์)
+              <br>
+              Orientation to Co-Operative Education for Science Student
+              <br><i>หมายเหตุ: มีการประเมินผลเป็นS/U</i> 
+            </p>
+
+
+
+            <table class = "eduplan">
+              <tr>
+                <th colspan="2">ปีที่ 4 ภาคการศึกษาที่ 1</th>
+                <th>หน่วยกิต</th>
+              </tr>
+              <tr>
+                <th colspan="3">แบบเลือกเรียนวิชาโครงงานคอมพิวเตอร์</th>
+              </tr>
+              <tr>
+                <td>SC314 774</td>
+                <td>
+                  โครงงานวิทยาการคอมพิวเตอร์1
+                  <br>Computer Science Project I
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>Xxxxx xxx</td>
+                <td>
+                  วิชาเลือกเสรี
+                  <br>Free Electives
+                </td>
+                <td>6 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตลงทะเบียนเรียน</th>
+                <th>9 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตสะสม</th>
+                <th>134 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <td colspan = "3c" class = "emptycell"></td>
+              </tr>
+              <tr>
+                <th colspan="3">แบบเลือกเรียนวิชาสหกิจศึกษา</th>
+              </tr>
+              <tr>
+                <td>Xxxxx xxx</td>
+                <td>
+                  วิชาเลือกเฉพาะทาง
+                  <br>Specialized Electives
+                </td>
+                <td>3 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <td>Xxxxx xxx</td>
+                <td>
+                  วิชาเลือกเสรี
+                  <br>Free Electives
+                </td>
+                <td>6 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตลงทะเบียนเรียน</th>
+                <th>9 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตสะสม</th>
+                <th>131 หน่วยกิต</th>
+              </tr>
+            </table>
+
+
+
+            <table class = "eduplan">
+              <tr>
+                <th colspan="2">ปีที่ 4 ภาคการศึกษาที่ 2</th>
+                <th>หน่วยกิต</th>
+              </tr>
+              <tr>
+                <th colspan="3">แบบเลือกเรียนวิชาโครงงานคอมพิวเตอร์</th>
+              </tr>
+              <tr>
+                <td>SC314 775</td>
+                <td>
+                  โครงงานวิทยาการคอมพิวเตอร์2
+                  <br>Computer Science Project II
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตลงทะเบียนเรียน</th>
+                <th>3 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตสะสม</th>
+                <th>137 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <td colspan="3" class = "emptycell"></td>
+              </tr>
+              <tr>
+                <th colspan="3">แบบเลือกเรียนวิชาสหกิจศึกษา</th>
+              </tr>
+              <tr>
+                <td>SC314 785</td>
+                <td>
+                  สหกิจศึกษาทางวิทยาการคอมพิวเตอร์
+                  <br>Co-operative Education in Computer Science
+                </td>
+                <td>6(0-18-9)</td>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตลงทะเบียนเรียน</th>
+                <th>6 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <th colspan="2">รวมจำนวนหน่วยกิตสะสม</th>
+                <th>137 หน่วยกิต</th>
+              </tr>
+            </table>
+
+            <h5>หมายเหตุ ภาควิชาวิทยาการคอมพิวเตอร์ อาจจะพิจารณาเปิดรายวิชาสหกิจศึกษาทั้งภาคต้นและภาคปลาย</h5>
+          
+          </div>
+
+          <div class="tab-pane fade" id="subject" role="tabpanel" aria-labelledby="subject-tab">
+            <p class = "subjecttext">ให้นักศึกษาเลือกจากรายวิชาในกลุ่มวิชาภาษา กลุ่มวิชามนุษยศาสตร์และสังคมศาสตร์ กลุ่มวิชา วิทยาศาสตร์และคณิตศาสตร์ หรือรายวิชาอื่นที่ภาควิชาวิทยาการคอมพิวเตอร์จะเปิดสอนเพิ่มเติมอีกภาค</p>
+            
+            <table class = "eduplan">
+              <tr>
+                <th colspan="2">1. หมวดวิชาศึกษาทั่วไป</th>
+                <th>30 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <th colspan="2">1.1 กลุ่มวิชาภาษา</th>
+                <th>12 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <td>000 101</td>
+                <td>
+                  ภาษาอังกฤษ1
+                  <br>English I
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>000 102</td>
+                <td>
+                  ภาษาอังกฤษ2
+                  <br>English II
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>000 103</td>
+                <td>
+                  ภาษาอังกฤษ3
+                  <br>English III
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>000 104</td>
+                <td>
+                  ภาษาอังกฤษ4
+                  <br>English IV
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+
+              <tr>
+                <th colspan="2">1.2 กลุ่มวิชามนุษยศาสตร์และสังคมศาสตร์</th>
+                <th>9 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <td>000 145</td>
+                <td>
+                  ภาวะผู้นำและการจัดการ
+                  <br>Leadership and Management
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td colspan="3">และเลือกจากรายวิชาดังต่อไปนี้</td>
+              </tr>
+              <tr>
+                <td>000 153</td>
+                <td>
+                  ภูมิปัญญาท้องถิ่น
+                  <br>Local Wisdom
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>000 156</td>
+                <td>
+                  พหุวัฒนธรรม
+                  <br>Multiculturalism
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>000 159</td>
+                <td>
+                  ความเป็นพลเมืองในสังคมประชาธิปไตย
+                  <br>Citizenship in Democratic Society
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              
+              <tr>
+                <th colspan="2">1.3 กลุ่มวิชาคณิตศาสตร์และวิทยาศาสตร์</th>
+                <th>9 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <td>000 174</td>
+                <td>
+                  ทักษะการเรียนรู้
+                  <br>Learning Skills
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td colspan="3">และเลือกจากรายวิชาดังต่อไปนี้</td>
+              </tr>
+              <tr>
+                <td>000 175</td>
+                <td>
+                  การคิดเชิงสร้างสรรค์และการแก้ปัญหา
+                  <br>Creative Thinking and Problem Solving
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>000 176</td>
+                <td>
+                  ผู้ประกอบการสร้างสรรค์
+                  <br>Creative Entrepreneurs
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC001 002</td>
+                <td>
+                  วิทยาศาสตร์ เทคโนโลยีและนวัตกรรมเพื่อการพัฒนาที่ยั่งยืน
+                  <br>Science , technology and innovation for sustainable development
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+
+            </table>
+
+
+
+            <p  class = "subjecttext">นักศึกษาต้องลงทะเบียนและสอบผ่านทุกรายวิชา ดังต่อไปนี้</p>
+            <table class = "eduplan">
+              <tr>
+                <th colspan="2">2. หมวดวิชาเฉพาะ</th>
+                <th>? หน่วยกิต</th>
+              </tr>
+              <tr>
+                <th colspan="2">2.1 กลุ่มวิชาบังคับพื้นฐานวิชาชีพ</th>
+                <th>28 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <td>SC002 104</td>
+                <td>
+                  วิทยาศาสตร์กายภาพ
+                  <br>Physical Science
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC401 201</td>
+                <td>
+                  แคลคูลัสสำหรับวิทยาศาสตร์กายภาพ1
+                  <br>Calculus for Physical Science I
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              <tr>
+                <td>SC401 202</td>
+                <td>
+                  แคลคูลัสสำหรับวิทยาศาสตร์กายภาพ2
+                  <br>Calculus for Physical Science II
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+                <td>SC402 101</td>
+                <td>
+                  พีชคณิตเชิงเส้น1
+                  <br>Linear Algebra I
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              </tr>
+                <td>SC602 005</td>
+                <td>
+                  ความน่าจะเป็นและสถิติ
+                  <br>Probability and Statistics
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              </tr>
+                <td>SC402 401</td>
+                <td>
+                  วิยุตคณิตและการประยุกต์
+                  <br>Discrete Mathematics and Applications
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              </tr>
+                <td>SC403 602</td>
+                <td>
+                  วิธีเชิงตัวเลขสำหรับวิทยาการคอมพิวเตอร์
+                  <br>Numerical Methods for Computer Science
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              </tr>
+                <td>**SC313 761</td>
+                <td>
+                  สัมมนาทางวิทยาการคอมพิวเตอร์
+                  <br>Seminar in Computer Science
+                </td>
+                <td>1(1-0-2)</td>
+              </tr>
+              </tr>
+                <td>**SC313 762</td>
+                <td>
+                  ระเบียบวิธีวิจัย
+                  <br>Research Methodology
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              </tr>
+                <td>411 224</td>
+                <td>
+                  ภาษาอังกฤษเทคนิคสำหรับวิทยาศาสตร์และเทคโนโลยี2
+                  <br>Technical English for Science and Technology II
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+
+              <tr>
+                <th colspan="2">2.2 กลุ่มวิชาบังคับ</th>
+                <th>52 หน่วยกิต</th>
+              </tr>
+              <tr>
+                <td colspan="3">นักศึกษาต้องลงทะเบียนและสอบผ่านทุกรายวิชาจานวน52 หน่วยกิตดังต่อไปนี้</td>
+              </tr>
+              <tr>
+                <td colspan="2">2.2.1 กลุ่มวิชาชีพ</td>
+                <td>46 หน่วยกิต</td>
+              </tr>
+              <tr>
+                <td colspan="2">กลุ่มที่ 1 ประเด็นด้านองค์การและระบบสารสนเทศ</td>
+                <td>3 หน่วยกิต</td>
+              </tr>
+              </tr>
+                <td>**SC313 003</td>
+                <td>
+                  การวิเคราะห์และออกแบบระบบ
+                  <br>System Analysis and Design
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+
+              <tr>
+                <td colspan="2">กลุ่มที่ 2 เทคโนโลยีเพื่องานประยุกต์</td>
+                <td>10 หน่วยกิต</td>
+              </tr>
+              </tr>
+                <td>**SC312 002</td>
+                <td>
+                  การโต้ตอบระหว่างมนุษย์และคอมพิวเตอร์
+                  <br>Human Computer Interaction
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              </tr>
+                <td>**SC312 003</td>
+                <td>
+                  ระบบจัดการฐานข้อมูลและการออกแบบฐานข้อมูล
+                  <br>Database Management System and Database Design
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              </tr>
+                <td>**SC312 004</td>
+                <td>
+                  ปฏิบัติการระบบฐานข้อมูลและการออกแบบ
+                  <br>Database System and Design Laboratory
+                </td>
+                <td>1(0-2-1)</td>
+              </tr>
+              </tr>
+                <td>**SC312 005</td>
+                <td>
+                  เครือข่ายคอมพิวเตอร์
+                  <br>Computer Networks
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+
+              <tr>
+                <td colspan="2">กลุ่มที่ 3 เทคโนโลยีและวิธีการทางซอฟต์แวร์ </td>
+                <td>12 หน่วยกิต</td>
+              </tr>
+              </tr>
+                <td>**SC311 002</td>
+                <td>
+                  การเขียนโปรแกรมเชิงโครงสร้างสำหรับวิทยาการคอมพิวเตอร์
+                  <br>Structured Programming for Computer Science
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              </tr>
+                <td>**SC311 003</td>
+                <td>
+                  การเขียนโปรแกรมเชิงวัตถุ
+                  <br>Object – Oriented Programming
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              </tr>
+                <td>**SC313 002</td>
+                <td>
+                  หลักการออกแบบพัฒนาซอฟต์แวร์
+                  <br>Principles of Software Design and Development
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              </tr>
+                <td>**SC313 004</td>
+                <td>
+                  วิศวกรรมซอฟต์แวร์
+                  <br>Software Engineering
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+
+              <tr>
+                <td colspan="2">กลุ่มที่ 4 โครงสร้างพื้นฐานของระบบ </td>
+                <td>18 หน่วยกิต</td>
+              </tr>
+              </tr>
+                <td>**SC311 001</td>
+                <td>
+                  วิทยาการคอมพิวเตอร์หลักมูล
+                  <br>Fundamentals of Computer Science
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              </tr>
+                <td>**SC312 001</td>
+                <td>
+                  โครงสร้างข้อมูล
+                  <br>Data Structures
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              </tr>
+                <td>**SC312 006</td>
+                <td>
+                  การวิเคราะห์ขั้นตอนวิธี
+                  <br>Analysis of Algorithm
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              </tr>
+                <td>**SC313 001</td>
+                <td>
+                  ระบบปฏิบัติการและการเขียนโปรแกรมซีสเต็มคอล
+                  <br>Operating Systems and System Calls Programming
+                </td>
+                <td>3(2-2-5)</td>
+              </tr></tr>
+                <td>**SC313 005</td>
+                <td>
+                  ทฤษฎีการคำนวณ
+                  <br>Theory of Computation
+                </td>
+                <td>3(3-0-6)</td>
+              </tr>
+              </tr>
+                <td>**SC313 006</td>
+                <td>
+                  ปัญญาประดิษฐ์
+                  <br>Artificial Intelligence
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+
+              <tr>
+                <td colspan="2">กลุ่มที่ 5 ฮาร์ดแวร์และสถาปัตยกรรมคอมพิวเตอร์ </td>
+                <td>3 หน่วยกิต</td>
+              </tr>
+              </tr>
+                <td>**SC311 004</td>
+                <td>
+                  สถาปัตยกรรมระบบคอมพิวเตอร์
+                  <br>Computer Systems Architecture
+                </td>
+                <td>3(2-2-5)</td>
+              </tr>
+              <tr>
+                <td colspan="2">2.2.2 กลุ่มวิชาฝึกงานและสหกิจศึกษาแผนสหกิจศึกษา</td>
+                <td>6 หน่วยกิต</td>
+              </tr>
+              </tr>
+                <td>SC002 001</td>
+                <td>
+                  การเตรียมความพร้อมก่อนปฏิบัติงานสหกิจศึกษาสำหรับคณะวิทยาศาสตร์
+                  <br>Orientation to Co-Operative Education for Science Student
+                </td>
+                <td>ไม่นับหน่วยกิต</td>
+              </tr>
+              </tr>
+                <td>**SC314 785</td>
+                <td>
+                  สหกิจศึกษาทางวิทยาการคอมพิวเตอร์
+                  <br>Co-operative Education in Computer Science
+                </td>
+                <td>6(0-18-9)</td>
+              </tr>
+              <tr>
+                <td colspan="3">แผนปกติ</td>
+              </tr>
+              </tr>
+                <td>**SC314 774</td>
+                <td>
+                  โครงงานวิทยาการคอมพิวเตอร์1
+                  <br>Computer Science Project I
+                </td>
+                <td>3(0-9-6)</td>
+              </tr>
+              </tr>
+                <td>**SC314 775</td>
+                <td>
+                  โครงงานวิทยาการคอมพิวเตอร์2
+                  <br>Computer Science Project II
+                </td>
+                <td>3(0-9-6)</td>
+              </tr>
+              <tr>
+                <th colspan="2">2.3 กลุ่มวิชาเลือก</th>
+                <th> ไม่น้อยกว่า 21 หน่วยกิต</th>
+              </tr>
+
+            </table>
+
+            <p class = "subjecttext">
+              ให้นักศึกษาเลือกจากรายวิชาในกลุ่มวิชาวิทยาการคอมพิวเตอร์ที่เปิดสอนเพิ่มเติมอีกหรือรายวชา
+              ภายหลังจำนวนไม่น้อยกว่า18หน่วยกิตโดยนักศึกษาสามารถเลือกเรียนในรายวิชาต่างๆในแต่ละกลุ่มสาขาวิชาได้ทุก
+              กลุ่มและเลือกเรียนจากกลุ่มวิชาสังคมศาสตร์และการจัดการอีกไม่น้อยกว่า3หน่วยกิต
+            <p>
+          
+            <h5>1) กลุ่มวิชาวิทยาการคอมพิวเตอร์ ไม่น้อยกว่า18 หน่วยกิต</h5>
+              <table class = "eduplan">
+                <tr>
+                  <th colspan="3">กลุ่มย่อยที่ 1 ระบบอัจฉริยะ</th>
+                </tr>
+                <tr>
+                  <td>*SC312 101</td>
+                  <td>
+                    การเรียนรู้เชิงเครื่องจักรส าหรับวิทยาการข้อมูล
+                    <br>Machine Learning for Data Science
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC312 102</td>
+                  <td>
+                    การจัดการความรู้
+                    <br>Knowledge Management
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC312 103</td>
+                  <td>
+                    การค้นคืนสารสนเทศ
+                    <br>Information Retrieval
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC313 101</td>
+                  <td>
+                    วิทยาการคำนวณ
+                    <br>Computational Science
+                  </td>
+                  <td>3(3-0-6)</td>
+                </tr>
+                <tr>
+                  <td>**SC313 102</td>
+                  <td>
+                    โครงข่ายประสาท
+                    <br>Neural Networks
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>*SC313 103</td>
+                  <td>
+                    การวิเคราะห์วิทยาข้อมูลและการท าเหมืองข้อมูล
+                    <br>Data Analytics and Mining
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>*SC313 104</td>
+                  <td>
+                    ชีวสารสนเทศศาสตร์เบื้องต้น
+                    <br>Fundamental of Bioinformaics
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>*SC313 105</td>
+                  <td>
+                    การประมวลผลภาษาธรรมชาติ
+                    <br>Natural Language Processing
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>*SC313 106</td>
+                  <td>
+                    ตัวแบบกระบวนการหาค่าเหมาะที่สุด
+                    <br>Optimization and Modeling
+                  </td>
+                  <td>3(3-0-6)</td>
+                </tr>
+                <tr>
+                  <td>*SC313 107</td>
+                  <td>
+                    การวิเคราะห์ข้อมูลขนาดใหญ
+                    <br>Big Data Analytics
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>SC322 301</td>
+                  <td>
+                    ตรรกะดิจิทัลและระบบฝังตัว
+                    <br>Digital Logic and Embedded Systems
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+
+              </table>
+
+              <table class = "eduplan">
+
+                <tr>
+                  <th colspan="3">กลุ่มย่อยที่ 2 สื่อดิจิทัล</th>
+                </tr>
+                <tr>
+                  <td>*SC311 201</td>
+                  <td>
+                    ภาพเคลื่อนไหวคอมพิวเตอร์ 2 มิติ
+                    <br>2D Computer Animation
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC312 201</td>
+                  <td>
+                    พื้นฐานการเขียนโปรแกรมเกม
+                    <br>Basic of Game Programming
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC313 201</td>
+                  <td>
+                    การประมวลผลภาพดิจิทัล
+                    <br>Digital Image Processing
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>*SC313 202</td>
+                  <td>
+                    การเขียนโปรแกรมเกมขั้นสูง
+                    <br>Advance Game Programming
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>SC332 101</td>
+                  <td>
+                    ภูมิสารสนเทศศาสตร์สำหรับชีวิตประจำวัน
+                    <br>Geo-informatics for Daily Life
+                  </td>
+                  <td>2(2-0-6)</td>
+                </tr>
+                <tr>
+                  <td>SC332 002</td>
+                  <td>
+                    ระบบสารสนเทศภูมิศาสตร์ขั้นแนะนำ
+                    <br>Introduction to Geographic Information System
+                  </td>
+                  <td>3(2-3-6)</td>
+                </tr>
+                <tr>
+                  <td>SC332 011</td>
+                  <td>
+                    หลักมูลการรับรู้จากระยะไกล
+                    <br>Fundamentals of Remote Sensing
+                  </td>
+                  <td>3(2-3-6)</td>
+                </tr>
+                <tr>
+                  <td>SC333 302</td>
+                  <td>
+                    การประยุกต์ทำแผนที่บนเว็บ
+                    <br>Web Mapping Application
+                  </td>
+                  <td>3(2-3-6)</td>
+                </tr>
+
+              </table>
+
+              <table class = "eduplan">
+
+                <tr>
+                  <th colspan="3">กลุ่มย่อยที่ 3 เครือข่ายและการเคลื่อนที่</th>
+                </tr>
+                <tr>
+                  <td>**SC311 301</td>
+                  <td>
+                    การพัฒนาโปรแกรมประยุกต์บนเว็บ
+                    <br>Web Application Development
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC312 301</td>
+                  <td>
+                    เครือข่ายการสื่อสารไร้สายและอุปกรณ์เคลื่อนที่
+                    <br>Wireless and Mobile Communication Networks
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC312 302</td>
+                  <td>
+                    เทคโนโลยีการออกแบบเว็บ
+                    <br>Web Design Technologies
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC312 303</td>
+                  <td>
+                    การพัฒนาแอปพลิเคชันบนอุปกรณ์เคลื่อนที่
+                    <br>Mobile Application Development
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>*SC312 304</td>
+                  <td>
+                    การพัฒนาโปรแกรมประยุกต์บนเว็บขั้นสูง
+                    <br>Advance Web Application Development
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC313 301</td>
+                  <td>
+                    สถาปัตยกรรมเครือข่าย
+                    <br>Network Architecture
+                  </td>
+                  <td>3(3-0-6)</td>
+                </tr>
+                <tr>
+                  <td>**SC313 302</td>
+                  <td>
+                    การเชื่อมต่ออินเทอร์เน็ต
+                    <br>Internetworking
+                  </td>
+                  <td>3(3-0-6)</td>
+                </tr>
+                <tr>
+                  <td>**SC313 303</td>
+                  <td>
+                    การพัฒนาโปรแกรมประยุกต์สำหรับองค์กร
+                    <br>Enterprise Application Development
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>*SC313 304</td>
+                  <td>
+                    เครือข่ายเซ็นเซอร์ไร้สาย
+                    <br>Wireless Sensor Networks
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>*SC313 305</td>
+                  <td>
+                    คลาวด์คอมพิวติ้งขั้น
+                    <br>Introduction to Cloud Computing
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>*SC313 306</td>
+                  <td>
+                    อินเทอร์เน็ตของสรรพสิ่ง
+                    <br>Internet of Things
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+
+              </table>
+
+
+
+              <table class = "eduplan">
+
+                <tr>
+                  <th colspan="3">กลุ่มย่อยที่ 4 ระบบสารสนเทศและความมั่นคงไซเบอร์</th>
+                </tr>
+                <tr>
+                  <td>**SC312 401</td>
+                  <td>
+                    การพาณิชย์อิเล็กทรอนิกส์
+                    <br>Electronic Commerce
+                  </td>
+                  <td>3(3-0-6)</td>
+                </tr>
+                <tr>
+                  <td>*SC312 402</td>
+                  <td>
+                    กลยุทธ์และการจัดการเทคโนโลยีดิจิทัล
+                    <br>Digital Technology Management and Strategies
+                  </td>
+                  <td>3(3-0-6)</td>
+                </tr>
+                <tr>
+                  <td>*SC313 402</td>
+                  <td>
+                    การเข้ารหัสและความมั่นคงระบบเครือข่าย
+                    <br>Cryptography and Network Security
+                  </td>
+                  <td>3(3-0-6)</td>
+                </tr>
+                <tr>
+                  <td>*SC313 403</td>
+                  <td>
+                    ความมั่นคงสารสนเทศและไซเบอร์
+                    <br>Information and Cyber Security
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>*SC313 404</td>
+                  <td>
+                    การบริหารระบบคอมพิวเตอร์และเครือข่าย
+                    <br>Computer System and Network Administration
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                
+              </table>
+              
+
+
+              <table class = "eduplan">
+
+                <tr>
+                  <th colspan="3">กลุ่มย่อยที่ 5 การพัฒนาซอฟต์แวร์และระบบ</th>
+                </tr>
+                <tr>
+                  <td>**SC311 501</td>
+                  <td>
+                    การเขียนโปรแกรมภาษาจาวา
+                    <br>Programming in Java
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC311 502</td>
+                  <td>
+                    การเขียนโปรแกรมเชลล์
+                    <br>Shell Programming
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC311 503</td>
+                  <td>
+                    การเขียนโปรแกรมสคริปต์
+                    <br>Script Programming
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC312 501</td>
+                  <td>
+                    การเขียนโปรแกรมภาษาจาวาขั้นสูง
+                    <br>Advance Programming in Java
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC312 502</td>
+                  <td>
+                    ฝึกปฏิบัติการสำหรับวิทยาการคอมพิวเตอร์
+                    <br>Workshop for Computer Science
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC312 503</td>
+                  <td>
+                    การแข่งขันการเขียนโปรแกรมคอมพิวเตอร์
+                    <br>Computer Programming Contest
+                  </td>
+                  <td>1(0-2-1)</td>
+                </tr>
+                <tr>
+                  <td>**SC313 501</td>
+                  <td>
+                    หลักภาษาโปรแกรม
+                    <br>Principles of Programming Languages
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>*SC313 502</td>
+                  <td>
+                    การออกแบบภาษาโปรแกรม
+                    <br>Programming Language Design
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>*SC313 503</td>
+                  <td>
+                    การเขียนซอฟต์แวร์อัตโนมัติ
+                    <br>Automatic Programming
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC313 504</td>
+                  <td>
+                    การประกันคุณภาพซอฟต์แวร์
+                    <br>Software Quality Assurance
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+                <tr>
+                  <td>**SC313 505</td>
+                  <td>
+                    การปรับปรุงและประเมินกระบวนการซอฟต์แวร์
+                    <br>Software Process Appraisals and Improvement
+                  </td>
+                  <td>3(3-0-6))</td>
+                </tr>
+                <tr>
+                  <td>SC323 107</td>
+                  <td>
+                    การเป็นผู้ประกอบการเทคโนโลยีสารสนเทศ
+                    <br>Information Technology Entrepreneurship
+                  </td>
+                  <td>3(3-0-6)</td>
+                </tr>
+                <tr>
+                  <td>SC323 004</td>
+                  <td>
+                    การบริหารโครงการ
+                    <br>Project Management
+                  </td>
+                  <td>3(2-2-5)</td>
+                </tr>
+   
+              </table>
+
+              <table class = "eduplan">
+
+                <tr>
+                  <th colspan="2">กลุ่มวิชาสังคมศาสตร์และการจัดการ</th>
+                  <th>ไม่น้อยกว่า 3 หน่วยกิต</th>
+                </tr>
+                <tr>
+                  <td>777 100</td>
+                  <td>
+                    ความรู้เบื้องต้นเกี่ยวกับกฎหมายทั่วไป
+                    <br>Introduction to Law
+                  </td>
+                  <td>3(3-0-6)</td>
+                </tr>
+                <tr>
+                  <td>967 261</td>
+                  <td>
+                    หลักการจัดการ
+                    <br>Principles of Management
+                  </td>
+                  <td>3(3-0-6))</td>
+                </tr>
+                <tr>
+                  <td>967 262</td>
+                  <td>
+                    การจัดการทรัพยากรมนุษย์
+                    <br>Human Resource Management
+                  </td>
+                  <td>3(3-0-6)</td>
+                </tr>
+                <tr>
+                  <td>967 363</td>
+                  <td>
+                    การจัดการธุรกิจขนาดกลางและขนาดย่อม
+                    <br>Small and Medium Enterprises Management
+                  </td>
+                  <td>3(3-0-6)</td>
+                </tr>
+                
+              </table>
+
+              <table class = "eduplan">
+                <tr>
+                  <th colspan="2">3. หมวดวิชาเลือกเสรี </th>
+                  <th>6 หน่วยกิต</th>
+                </tr>
+              </table>
+
+              <p>
+                ให้นักศึกษาลงทะเบียนเรียนรายวิชาเลือกที่เปิดสอนในมหาวิทยาลัยขอนแก่น หรือสถาบันการศึกษาอื่นจำนวนไม่น้อยกว่า 6 หน่วยกิต
+                <br>หมายเหตุ
+                <br>* หมายถึง รายวิชาใหม่
+                <br>** หมายถึง รายวิชาปรับปรุงใหม่
+              </p>
+              
+              <h5>คำอธิบายระบบรหัสวิชา</h5>
+              <p>
+                รหัสวิชาสำหรับสาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ตัวอักษรและตัวเลขประกอบด้วย6 ตัว ดังนี้ SC หมายถึง คณะวิทยาศาสตร์
+                <br><br>ตัวเลขหลักที่ 1 และตัวเลขหลักที่ 2 หมายถึงรหัสสาขาวิชาหรือหลักสูตรในคณะ
+                <br><br>31 หมายถึง สาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์
+                <br><br>ตัวเลขหลักที่3 หมายถึง ระดับของวิชา
+                <ul>
+                  <li>1 หมายถึง วิชาระดับปริญญาตรี ชั้นปีที่ 1</li>
+                  <li>2 หมายถึง วิชาระดับปริญญาตรี ชั้นปีที่ 2</li>
+                  <li>4 หมายถึง วิชาระดับปริญญาตรี ชั้นปีที่ 4</li>
+                </ul>
+
+                <br>ตัวเลขหลักที่4 หมายถึง หมวดวิชา
+                <ul>
+                  <li>0   หมายถึง หมวดวิชาบังคับ</li>
+                  <li>1   หมายถึง วิชาเลือกหมวดระบบอัจฉริยะ</li>
+                  <li>2   หมายถึง วิชาเลือกหมวดสื่อดิจิทัล</li>
+                  <li>3   หมายถึง วิชาเลือกหมวดเครือข่ายและการเคลื่อนที่</li>
+                  <li>4   หมายถึง วิชาเลือกหมวดระบบสารสนเทศและความมั่นคงไซเบอร์</li>
+                  <li>5   หมายถึง วิชาเลือกหมวดการพัฒนาซอฟต์แวร์และระบบ</li>
+                  <li>6  หมายถึง ส ารองสหรับการใช้ในอนาคต</li>
+                  <li>7   หมายถึงวิชาสัมมนา ระเบียบวิธีวิจัย ปัญหาพิเศษ สหกิจศึกษา ฝึกงาน</li>
+                  <li>8   หมายถึง ส ารองส าหรับการใช้ในอนาคต</li>
+                  <li>9   หมายถึง ส ารองส าหรับการใช้ในอนาคต</li>
+                </ul>
+
+                <br>ตัวเลขหลักที่ 5 และหลักที่6หมายถึง ลำดับที่ของวิชาในแต่ละหมวดวิชา
+                <ul>
+                  <li>761 - 763 หมายถึงวิชาสัมมนาระดับปริญญาตรี</li>
+                  <li>774 - 775 หมายถึงวิชาปัญหาพิเศษระดับปริญญาตรี</li>
+                  <li>785 หมายถึงวิชาสหกิจศึกษา</li>
+                  <li>796 หมายถึงวิชาฝึกงาน</li>
+                </ul>
+
+              </p>
+
+
+
+
+          </div>  
+
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+
+
+<!--***** END CONTENT *****-->
+  
+
+    <!-- START FOOTER -->
+    <div class="footer">
+      <span class="footer-text">COPYRIGHT © 2021 ALL RIGHTS RESERVED</span> 
+    </div>
+    <!-- END FOOTER -->
+  <script src="./js/lang.js"></script>
+  </body>
+</html>
