@@ -46,15 +46,30 @@ p.subjecttext{
 
 
 /* เผื่อเปลี่ยนสี */
-/* 
+
 th{
-    color: white;
-    background-color: #46667e;
+    color: white !important;
+    background-color: #46667e !important;
     text-align: center;
 }
 
 
 th:hover{
+    color: white !important;
+    background-color: #374f61 !important;
+}
+
+.uptop {
+    width: 50px;
+    height: 50px;
+    text-align: center;
     color: white;
     background-color: #374f61;
-} */
+    box-sizing: border-box;
+    line-height: 1rem;
+}
+
+.fa-chevron-up {
+    font-size: 2rem;
+    margin: auto 0;
+}
